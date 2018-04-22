@@ -1,7 +1,7 @@
 ---
 title: "SOC 4650 & 5650: Introduction to GIS"
 author: "Christopher Prener, Ph.D."
-date: "`r Sys.Date()`"
+date: "2018-04-22"
 site: bookdown::bookdown_site
 documentclass: book
 bibliography: [book.bib, packages.bib]
@@ -20,9 +20,4 @@ Copyright © 2016-2018 [Christopher G. Prener](https://chris-prener.github.io)
 
 <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-sa/4.0/88x31.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License</a>.
 
-```{r include=FALSE}
-# automatically create a bib database for R packages
-knitr::write_bib(c(
-  .packages(), 'bookdown', 'knitr', 'rmarkdown'
-), 'packages.bib')
-```
+
