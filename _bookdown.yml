@@ -7,5 +7,10 @@ delete_merged_file: true
 output_dir: "docs"
 
 rmd_files: [
-  "index.Rmd"
+  "index.Rmd",
+  
+  "intro.Rmd",
+  "policies.Rmd",
+  "success.Rmd",
+  "grading.Rmd"
 ]
