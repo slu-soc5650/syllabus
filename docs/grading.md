@@ -47,7 +47,7 @@ The final project corresponds with the fourth learning outcome. It will be organ
 As work progresses, there will be a number of **waypoints** where students will need to submit updates on their progress. Waypoints beyond the memo submission are as follows:
 
 1. Lecture-04 (**February 4^th^**) - select and submit their topic as an "Issue" in their individual [**GitHub**](https://github.com/slu-soc5650) assignments repository.
-2. Lecutre-08 (**March 4^th^**) - progress report from each student due as a GitHub issue in each student's final project repository
+2. Lecture-08 (**March 4^th^**) - progress report from each student due as a GitHub issue in each student's final project repository
 3. Lecture-11 (**March 25^th^**) - progress report from each student due as a GitHub issue in each student's final project repository
 4. Lecture-13 (**April 8^th^**) - draft materials due in each student's final project repository
 5. Lecture-14 (**April 15^th^**) - peer reviews due as a GitHub issue in partner's final project repository
@@ -68,3 +68,108 @@ Draft Code & Docs   35 pts    x1         35 pts
 Draft Poster        35 pts    x1         35 pts  
 Final Code & Docs   100 pts   x1         100 pts 
 Final Poster        100 pts   x1         100 pts 
+
+#### SOC 5650
+If you are enrolled in SOC 5650, you will also need to create a digital paper that combines the scholarly literature on your topic with interactive and static maps. This can be created using `R` (using `radix`) or ArcGIS Pro (a story map). The following additional deadlines apply:
+
+1. Lecture-08 (**March 4^th^**) - annotated Bibliography with a minimum of fifteen peer reviewed sources
+2. Lecture-13 (**April 8^th^**) - a draft story map or `radix` document due in each student's final project repository
+3. Lecture-14 (**April 15^th^**) - peer reviews of the story map or `radix` document due as a GitHub issue in partner's final project repository
+
+Grading for SOC 5650 is broken down as follows:
+
+
+Table: (\#tab:unnamed-chunk-6)SOC 5650 Final Project Breakdown
+
+Assignment               Points   Quantity   Total  
+-----------------------  -------  ---------  -------
+Waypoints                10 pts   x6         60 pts 
+Annotated Bibliography   25 pts   x1         25 pts 
+Draft Code & Docs        25 pts   x1         25 pts 
+Draft Poster             25 pts   x1         25 pts 
+Draft Paper              25 pts   x1         25 pts 
+Final Code & Docs        60 pts   x1         60 pts 
+Final Poster             70 pts   x1         70 pts 
+Final Paper              70 pts   x1         70 pts 
+
+## Submission and Late Work
+
+### Assignment Submission
+
+Copies of all assignment requested deliverables should be uploaded to your private assignments repository on [GitHub](https://github.com/slu-soc5650) before class on the day that the assignments are due. All assignments will contain details on required deliverables.
+
+The GitHub submission policy is in place because it facilitates clear, easy grading that can be turned around to you quickly. Submitting assignments in ways that deviate from this policy will result in a late grade (see below) being applied in the first instance and a zero grade for each subsequent instance.
+
+### Licensing of Student Work
+
+All assignment repositories are licensed under a [Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International License](https://creativecommons.org/licenses/by-nc-nd/4.0/). This license explicitly gives you copyright to all work you create for this course. The license gives Chris permission to copy your work (such as for grading) and to re-use your work later for non-commercial purposes (such as in-class examples) so long as you are given credit for it. However, your work cannot be used for monetary gain (such as in a textbook) and derivative works based on your work are prohibited.
+
+The syllabus agreement at the end of the Student Information Sheet includes an acknowledgement of this licensing arrangement. If you have questions about this, please contact Chris before submitting the form.
+
+### Late Work
+
+Once the class begins, any assignments submitted will be treated as late. Assignments handed in within 24-hours of the beginning of class will have 15% deducted from the grade. I will deduct 15% per day for the next two 24-hour periods that assignments are late. After 72 hours, I will not accept late work. If you cannot attend class because of personal illness, a family issue, jury duty, an athletic match, or a religious observance, you must contact me beforehand to discuss alternate submission of work.
+
+## Extra Credit
+
+From time to time I may offer extra credit to be applied to your final grade. I will only offer extra credit if it is open to the entire class (typically for something like attending a lecture or event on-campus). If I offer extra credit, I will typically require you to submit a short written summary of the activity within a week of the event to obtain the credit. When offered, extra credit opportunities cannot be made-up or substituted if you are unable to attend the event.
+
+## Grading
+
+Grades will be included with assignment feedback, which will be disseminated through Github’s **Issues** tool. At midterms, Lecture-17, and finals, I will upload a summary of all assignment grades to a new **Issue** on GitHub.
+
+All grades that use a “check” system (the lecture preps, labs, and some aspects of the final project) will be calculated using the following approach. A “check-plus” represents excellent work and will get full credit. A “check” represents satisfactory work and will get 85% of the points available for that assignment. A “check-minus” represents work that needs substantial improvement and will get 75% of the points available for that assignment.
+
+I use a point system for calculating grades. The following table gives the weighting and final point totals for all assignments for this course:
+
+
+Table: (\#tab:unnamed-chunk-7)SOC 4650 and 5650 Points Breakdown
+
+Assignment      Points    Quantity   Total     Percent 
+--------------  --------  ---------  --------  --------
+Participation   50 pts    x2         100 pts   10%     
+Labs            16 pts    x15        240 pts   24%     
+Problem Sets    50 pts    x6         300 pts   30%     
+Final Project   360 pts   x1         360 pts   36%     
+
+All feedback will include grades that represent number of points earned. If you want to know your percentage on a particular assignment, divide the number of points earned by the number of points possible and then multiply it by 100.
+
+Final grades will be calculated by taking the sum of all points earned and dividing it by the total number of points possible (1,000). This will be multiplied by 100 and then converted to a letter grade using the
+following table:
+
+
+<table class="kable_wrapper">
+<caption>(\#tab:unnamed-chunk-8)Course Grading Scale</caption>
+<tbody>
+  <tr>
+   <td> 
+
+GPA   Letter   Percent       
+----  -------  --------------
+4.0   A        93.0% - 100%  
+3.7   A-       90.0% - 92.9% 
+3.3   B+       87.0% - 89.9% 
+3.0   B        83.0% - 86.9% 
+2.7   B-       80.0% - 82.9% 
+
+ </td>
+   <td> 
+
+GPA   Letter   Percent       
+----  -------  --------------
+2.3   C+       77.0% - 79.9% 
+2.0   C        73.0% - 76.9% 
+1.7   C-       70.0% - 72.9% 
+1.0   D        63.0% - 69.9% 
+0.0   F        < 63.0%       
+
+ </td>
+  </tr>
+</tbody>
+</table>
+
+Borderline grades (i.e. a grade within half a percentage point of the next highest letter grade) *will* be rounded up before final grade submission at the end of the semester. A grade of 89.6% would therefore be submitted to SLU as an "A-" while a grade of 89.4% would be submitted to SLU as a "B+". The final grade report will include both the original letter grade and the rounded letter grade if applicable.
+
+<div class="rmdwarning">
+<p>No chances will be given for revisions of poor grades. Incomplete grades will be given upon request only if you have a “C” average and have completed at least two-thirds of the assignments. You should note that incomplete grades must be rectified by the specified deadline or they convert to an “F”.</p>
+</div>
