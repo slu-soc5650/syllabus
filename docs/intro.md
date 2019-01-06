@@ -57,7 +57,7 @@ The majority of course content (sample code, documentation, and assignments) for
 
 ### Discourse
 
-[Discourse](http://discourse.org) is commerical forum software that we will be using as a central place to post annoucements, ask questions, and get help. Quite a few major open source platforms utilize Discourse's software, including [RStudio](http://community.rstudio.com) and [ROpenSci](http://discuss.ropensci.org), so it is worth knowing how to use their software. You will be invited to the course Discourse community, which is not publicly accessible.
+[Discourse](http://discourse.org) is commerical forum software that we will be using as a central place to post annoucements, ask questions, and get help. Quite a few major open source platforms utilize Discourse's software, including [RStudio](http://community.rstudio.com) and [ROpenSci](http://discuss.ropensci.org), so it is worth knowing how to use their software. You will be invited to the course [discussion forums](https://discuss.slu-ssds.org), which are not publicly accessible, and are expected to check them regularly.
 
 ## Software
 There are three principle applications we'll be using this semester in addition to the services listed previously: [ArcGIS Pro](https://pro.arcgis.com/en/pro-app/), [RStudio](https://www.rstudio.com), and [GitHub Desktop](https://desktop.github.com). Both RStudio and GitHub Desktop of these are open-source applications that can be downloaded and used without cost. All applications are available in our classroom, which you will have 24-hour access to throughout the semester. All students will need access to these tools every week, so plan to either set-up your computer accordingly or budget time to spend in the lab.
