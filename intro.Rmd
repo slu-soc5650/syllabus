@@ -46,7 +46,7 @@ There are three books required for this course with an optional fourth book. Eac
 
 I do not require students to buy physical copies of texts. You are free to select a means for accessing these texts that meets your budget and learning style. If eBook editions (e.g. Kindle, iBooks, `pdf`, etc.) of texts are available, they are acceptable for this course. All texts should be obtained in the edition noted above.
 
-All readings are listed on the **Reading List** and should be completed before the course meeting on the week in which they are assigned. Full text versions of most readings not found in the books assigned for the course can be obtained using the library’s [Electronic Reserves](http://eres.slu.edu/eres/coursepass.aspx?cid=4444) system. The password for the Electric Reserves will be posted on Slack at the beginning of the semester.
+All readings are listed on the **Reading List** and should be completed before the course meeting on the week in which they are assigned. Full text versions of most readings not found in the books assigned for the course can be obtained using the library’s [Electronic Reserves](http://eres.slu.edu/eres/coursepass.aspx?cid=4444) system. The password for the Electric Reserves will be posted on the course [discussion forums](https://discuss.slu-ssds.org) at the beginning of the semester.
 
 ## Services
 Over the course of the semester, we'll use two web-based services. Each of these will require you to create an account with a username and password. GitHub will require you to enable [two-factor authentication](https://en.wikipedia.org/wiki/Multi-factor_authentication) as well. I strongly recommend using a [password manager](https://lifehacker.com/5529133/five-best-password-managers).
