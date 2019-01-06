@@ -46,7 +46,7 @@ All students should also familiarize themselves with [Saint Louis University’s
 
 Instances of abusive, harassing, or otherwise unacceptable behavior should be reported either directly to the instructor or to the University Administration. Consistent with the above policies, I will forward all reports of inappropriate conduct to the Title IX Coordinator’s office or to the Office of Diversity and Affirmative Action. Please be aware that University policies may require me to forward information about the identity of any students connected to the disclosure.
 
-Please also be aware that communications over various online services, including (but not limited to) Slack, GitHub, and Google Apps, are covered by this policy.
+Please also be aware that communications over various online services, including (but not limited to) Discourse forums, GitHub, and Google Apps, are covered by this policy.
 
 ## Attendance and Participation
 
