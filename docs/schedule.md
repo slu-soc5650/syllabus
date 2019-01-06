@@ -7,31 +7,31 @@ The following is a high-level schedule that details the general topic covered by
 
 Table: (\#tab:unnamed-chunk-1)SOC 4615 and 5650 Course Overview
 
-Lecture   Date                      Topic                                        
---------  ------------------------  ---------------------------------------------
-                                    **Unit 1: Visualize**                        
-          prior to January 14^th^   Course Preview                               
-01        January 14^th^            Course Introduction: What We Learn from Maps 
-02        January 21^st^            ArcGIS Pro Overview                          
-03        January 28^th^            Cartography 101                              
-04        February 4^th^            Map Production in ArcGIS Pro                 
-05        February 11^th^           Map Production in `R`                        
-06        February 18^th^           Communicating with Maps                      
-                                    **Unit 2: Tidy**                             
-07        February 25^th^           Data Cleaning                                
-08        March 4^th^               Table Joins; Data Storage                    
-09        March 11^th^              Accessing Census Data via APIs               
-10        March 18^th^              Managing Projections                         
-                                    **Unit 3: Process**                          
-11        March 25^th^              Select and Aggregate Features                
-12        April 1^st^               Clip and Dissolve Features                   
-13        April 8^th^               Intersect, Union, and Merge Features         
-14        April 15^th^              Digitizing Data                              
-15        April 22^nd^              Geocoding Data                               
-                                    **Unit 4: Analyze**                          
-16        April 29^th^              Basic Spatial Analyses                       
-17        May 6^th^                 Combining `R` and ArcGIS Pro with Python     
-          May 13^th^                Final Presentations                          
+Lecture   Date                      Topic                                    
+--------  ------------------------  -----------------------------------------
+                                    **Unit 1: Visualize**                    
+          prior to January 14^th^   Course Preview                           
+01        January 14^th^            Course Introduction                      
+02        January 21^st^            ArcGIS Pro Overview                      
+03        January 28^th^            Cartography 101                          
+04        February 4^th^            Map Production in ArcGIS Pro             
+05        February 11^th^           Map Production in `R`                    
+06        February 18^th^           Communicating with Maps                  
+                                    **Unit 2: Tidy**                         
+07        February 25^th^           Data Cleaning                            
+08        March 4^th^               Table Joins; Data Storage                
+09        March 11^th^              Accessing Census Data via APIs           
+10        March 18^th^              Managing Projections                     
+                                    **Unit 3: Process**                      
+11        March 25^th^              Select and Aggregate Features            
+12        April 1^st^               Clip and Dissolve Features               
+13        April 8^th^               Intersect, Union, and Merge Features     
+14        April 15^th^              Digitizing Data                          
+15        April 22^nd^              Geocoding Data                           
+                                    **Unit 4: Analyze**                      
+16        April 29^th^              Basic Spatial Analyses                   
+17        May 6^th^                 Combining `R` and ArcGIS Pro with Python 
+          May 13^th^                Final Presentations                      
 
 ## Planned Online Lectures
 

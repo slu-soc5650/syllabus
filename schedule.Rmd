@@ -33,7 +33,7 @@ schedule <- data.frame(
            "May 13^th^"),
   Topic = c("**Unit 1: Visualize**",
             "Course Preview", 
-            "Course Introduction: What We Learn from Maps", 
+            "Course Introduction", 
             "ArcGIS Pro Overview", 
             "Cartography 101", 
             "Map Production in ArcGIS Pro", 
