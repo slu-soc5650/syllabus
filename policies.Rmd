@@ -62,13 +62,13 @@ Please also note that lectures and discussions cannot be recorded by any means (
 
 ## Communication
 
-Slack and email are my preferred methods of communication.
+Our course [discussion forums](http://discuss.slu-ssds.org) and email are my preferred methods of communication.
 
-I am on Slack during workday hours, though I may be "away" during meetings and while I teach my other class. I also may have limited availability on Tuesdays, a day that I am not typically on-campus. I will also monitor Slack during weekday evening hours and will respond to messages if I am able. Likewise, I dedicate time to email responses each workday, meaning that my response time is typically within 24 hours during the workweek. Please use your SLU email account when emailing me.
+I will the forums during weekday business hours and will respond to messages if I am able. Likewise, I dedicate time to email responses each workday, meaning that my response time is typically within 24 hours during the workweek. Please use your SLU email account when emailing me.
 
-For both email and Slack, if you have not received a response from me after 48 hours (or by end of business on Monday if you messaged me over the weekend), please follow-up to ensure that your message did not get lost in the shuffle.
+For both email and the forums, if you have not received a response from me after 48 hours (or by end of business on Monday if you messaged me over the weekend), please follow-up to ensure that your message did not get lost in the shuffle.
 
-All messages regarding course updates, assignments, and changes to the class schedule, including cancellations, will be posted on the `_news` channel in Slack. Changes to the class schedule, including cancellations, will also sent to your SLU email account. It is imperative that you check both Slack and your SLU email account regularly.
+All messages regarding course updates, assignments, and changes to the class schedule, including cancellations, will be posted on the main [Introduction to GIS category](https://discuss.slu-ssds.org/c/intro-to-gis) on the forums. Changes to the class schedule, including cancellations, will also sent to your SLU email account. It is imperative that you check both the forums and your SLU email account regularly.
 
 Please also ensure that all concerns or questions about your standing in the course are directed to me immediately. Inquires from parents, SLU staff members, and others will not be honored.
 
