@@ -28,3 +28,18 @@ pre code {
 .rmdwarning {
   background-image: url("images/warning.png");
 }
+
+.button {
+    background-color: #92d094; /* Green */
+    border: 2px solid #4CAF50; /* Green */
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+
+.section.level4.unnumbered {
+  margin-left: 30px;
+}
