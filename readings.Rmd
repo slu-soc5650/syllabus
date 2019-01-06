@@ -21,7 +21,7 @@ knitr::kable(
 
 ## Course Preview {-}
 
-<div class="button"><a href="https://slu-soc5050.github.io/docs/course-preview/" target="_blank">View on Course Website</a></div>
+<div class="button"><a href="https://slu-soc5650.github.io/docs/course-preview/" target="_blank">View on Course Website</a></div>
 
 <br>
 <br>
@@ -37,7 +37,7 @@ knitr::kable(
 
 #### Required {-}
 
-* ...
+* Coral, Lilian. 2016. "City of Los Angeles GeoHub." Presented at the ESRI User Conference, San Diego, CA. (<a href="https://slu-soc5050.github.io/course-preview/#open-data-and-gis-in-los-angeles" target="_blank">Link</a>)
 * Parker, Hilary. 2017. "Opinionated analysis development." Presented at rstudio::conf, Orlando, FL. (<a href="https://slu-soc5050.github.io/course-preview/#analysis-development" target="_blank">Link</a>)
 
 ### Readings {-}
