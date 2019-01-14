@@ -1,0 +1,2250 @@
+\documentclass[]{book}
+\usepackage{lmodern}
+\usepackage{amssymb,amsmath}
+\usepackage{ifxetex,ifluatex}
+\usepackage{fixltx2e} % provides \textsubscript
+\ifnum 0\ifxetex 1\fi\ifluatex 1\fi=0 % if pdftex
+  \usepackage[T1]{fontenc}
+  \usepackage[utf8]{inputenc}
+\else % if luatex or xelatex
+  \ifxetex
+    \usepackage{mathspec}
+  \else
+    \usepackage{fontspec}
+  \fi
+  \defaultfontfeatures{Ligatures=TeX,Scale=MatchLowercase}
+\fi
+% use upquote if available, for straight quotes in verbatim environments
+\IfFileExists{upquote.sty}{\usepackage{upquote}}{}
+% use microtype if available
+\IfFileExists{microtype.sty}{%
+\usepackage{microtype}
+\UseMicrotypeSet[protrusion]{basicmath} % disable protrusion for tt fonts
+}{}
+\usepackage[margin=1in]{geometry}
+\usepackage{hyperref}
+\hypersetup{unicode=true,
+            pdftitle={SOC 4650 \& 5650: Introduction to GIS},
+            pdfauthor={Christopher Prener, Ph.D.},
+            pdfborder={0 0 0},
+            breaklinks=true}
+\urlstyle{same}  % don't use monospace font for urls
+\usepackage{natbib}
+\bibliographystyle{apalike}
+\usepackage{longtable,booktabs}
+\usepackage{graphicx,grffile}
+\makeatletter
+\def\maxwidth{\ifdim\Gin@nat@width>\linewidth\linewidth\else\Gin@nat@width\fi}
+\def\maxheight{\ifdim\Gin@nat@height>\textheight\textheight\else\Gin@nat@height\fi}
+\makeatother
+% Scale images if necessary, so that they will not overflow the page
+% margins by default, and it is still possible to overwrite the defaults
+% using explicit options in \includegraphics[width, height, ...]{}
+\setkeys{Gin}{width=\maxwidth,height=\maxheight,keepaspectratio}
+\IfFileExists{parskip.sty}{%
+\usepackage{parskip}
+}{% else
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{6pt plus 2pt minus 1pt}
+}
+\setlength{\emergencystretch}{3em}  % prevent overfull lines
+\providecommand{\tightlist}{%
+  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+\setcounter{secnumdepth}{5}
+% Redefines (sub)paragraphs to behave more like sections
+\ifx\paragraph\undefined\else
+\let\oldparagraph\paragraph
+\renewcommand{\paragraph}[1]{\oldparagraph{#1}\mbox{}}
+\fi
+\ifx\subparagraph\undefined\else
+\let\oldsubparagraph\subparagraph
+\renewcommand{\subparagraph}[1]{\oldsubparagraph{#1}\mbox{}}
+\fi
+
+%%% Use protect on footnotes to avoid problems with footnotes in titles
+\let\rmarkdownfootnote\footnote%
+\def\footnote{\protect\rmarkdownfootnote}
+
+%%% Change title format to be more compact
+\usepackage{titling}
+
+% Create subtitle command for use in maketitle
+\newcommand{\subtitle}[1]{
+  \posttitle{
+    \begin{center}\large#1\end{center}
+    }
+}
+
+\setlength{\droptitle}{-2em}
+
+  \title{SOC 4650 \& 5650: Introduction to GIS}
+    \pretitle{\vspace{\droptitle}\centering\huge}
+  \posttitle{\par}
+    \author{Christopher Prener, Ph.D.}
+    \preauthor{\centering\large\emph}
+  \postauthor{\par}
+      \predate{\centering\large\emph}
+  \postdate{\par}
+    \date{2019-01-13}
+
+\usepackage{booktabs}
+\usepackage{amsthm}
+\makeatletter
+\def\thm@space@setup{%
+  \thm@preskip=8pt plus 2pt minus 4pt
+  \thm@postskip=\thm@preskip
+}
+\makeatother
+
+% work around for errors related to the undefined shaded* enviornment:
+\usepackage{color}
+\usepackage{fancyvrb}
+\newcommand{\VerbBar}{|}
+\newcommand{\VERB}{\Verb[commandchars=\\\{\}]}
+\DefineVerbatimEnvironment{Highlighting}{Verbatim}{commandchars=\\\{\}}
+% Add ',fontsize=\small' for more characters per line
+\usepackage{framed}
+\definecolor{shadecolor}{RGB}{248,248,248}
+\newenvironment{Shaded}{\begin{snugshade}}{\end{snugshade}}
+\newcommand{\KeywordTok}[1]{\textcolor[rgb]{0.13,0.29,0.53}{\textbf{#1}}}
+\newcommand{\DataTypeTok}[1]{\textcolor[rgb]{0.13,0.29,0.53}{#1}}
+\newcommand{\DecValTok}[1]{\textcolor[rgb]{0.00,0.00,0.81}{#1}}
+\newcommand{\BaseNTok}[1]{\textcolor[rgb]{0.00,0.00,0.81}{#1}}
+\newcommand{\FloatTok}[1]{\textcolor[rgb]{0.00,0.00,0.81}{#1}}
+\newcommand{\ConstantTok}[1]{\textcolor[rgb]{0.00,0.00,0.00}{#1}}
+\newcommand{\CharTok}[1]{\textcolor[rgb]{0.31,0.60,0.02}{#1}}
+\newcommand{\SpecialCharTok}[1]{\textcolor[rgb]{0.00,0.00,0.00}{#1}}
+\newcommand{\StringTok}[1]{\textcolor[rgb]{0.31,0.60,0.02}{#1}}
+\newcommand{\VerbatimStringTok}[1]{\textcolor[rgb]{0.31,0.60,0.02}{#1}}
+\newcommand{\SpecialStringTok}[1]{\textcolor[rgb]{0.31,0.60,0.02}{#1}}
+\newcommand{\ImportTok}[1]{#1}
+\newcommand{\CommentTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textit{#1}}}
+\newcommand{\DocumentationTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
+\newcommand{\AnnotationTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
+\newcommand{\CommentVarTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
+\newcommand{\OtherTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{#1}}
+\newcommand{\FunctionTok}[1]{\textcolor[rgb]{0.00,0.00,0.00}{#1}}
+\newcommand{\VariableTok}[1]{\textcolor[rgb]{0.00,0.00,0.00}{#1}}
+\newcommand{\ControlFlowTok}[1]{\textcolor[rgb]{0.13,0.29,0.53}{\textbf{#1}}}
+\newcommand{\OperatorTok}[1]{\textcolor[rgb]{0.81,0.36,0.00}{\textbf{#1}}}
+\newcommand{\BuiltInTok}[1]{#1}
+\newcommand{\ExtensionTok}[1]{#1}
+\newcommand{\PreprocessorTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textit{#1}}}
+\newcommand{\AttributeTok}[1]{\textcolor[rgb]{0.77,0.63,0.00}{#1}}
+\newcommand{\RegionMarkerTok}[1]{#1}
+\newcommand{\InformationTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
+\newcommand{\WarningTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
+\newcommand{\AlertTok}[1]{\textcolor[rgb]{0.94,0.16,0.16}{#1}}
+\newcommand{\ErrorTok}[1]{\textcolor[rgb]{0.64,0.00,0.00}{\textbf{#1}}}
+\newcommand{\NormalTok}[1]{#1}
+
+% create callout boxes:
+\newenvironment{rmdblock}[1]
+  {\begin{shaded*}
+  \begin{itemize}
+  \renewcommand{\labelitemi}{
+    \raisebox{-.7\height}[0pt][0pt]{
+      {\setkeys{Gin}{width=3em,keepaspectratio}\includegraphics{images/#1}}
+    }
+  }
+  \item
+  }
+  {
+  \end{itemize}
+  \end{shaded*}
+  }
+\newenvironment{rmdnote}
+  {\begin{rmdblock}{note}}
+  {\end{rmdblock}}
+\newenvironment{rmdtip}
+  {\begin{rmdblock}{tip}}
+  {\end{rmdblock}}
+\newenvironment{rmdwarning}
+  {\begin{rmdblock}{warning}}
+  {\end{rmdblock}}
+
+% set part and section names:
+\usepackage{fancyhdr}
+\renewcommand{\chaptername}{Section}
+\renewcommand\thesection{\Alph{section}}
+
+\begin{document}
+\maketitle
+
+\begin{center}
+{\huge Preface and Warning} \\
+\end{center}
+\vspace{5mm}
+This is the hardcopy version of the \textbf{Spring 2019} syllabus.
+\vspace{5mm}
+\par \noindent This \texttt{.pdf} version of the course syllabus is automatically created as part of the document generation process. It is meant for students who wish to keep a hardcopy of the course policies and planned course schedule. This may be particularly useful for honors and M.A. students who plan to continue their graduate education after SLU and hope to petition out of a basic course requirement. \textbf{Since it is automatically created, it is not optimized for easy use} - readers may notice formatting inconsitencies and stray characters that are a result of the markdown to \LaTeX{} conversion process. The web version (located at \href{https://slu-soc5650.github/syllabus/}{https://slu-soc5650.github/syllabus/}) is meant to be the version of the syllabus used for everyday reference during the semester. As such, this \texttt{.pdf} version will not be updated as the semester progresses should any changes to the course schedule be necessary.
+
+\hypertarget{basics}{%
+\chapter*{Basics}\label{basics}}
+\addcontentsline{toc}{chapter}{Basics}
+
+\hypertarget{course-meetings}{%
+\subsection*{Course Meetings}\label{course-meetings}}
+\addcontentsline{toc}{subsection}{Course Meetings}
+
+\emph{When:} Mondays, 4:15pm to 7:00pm
+
+\emph{Where:} 3600 Morrissey (GeoSRI Lab)
+
+\hypertarget{course-website}{%
+\subsection*{Course Website}\label{course-website}}
+\addcontentsline{toc}{subsection}{Course Website}
+
+\url{https://slu-soc5650.github.io}
+
+\hypertarget{chriss-information}{%
+\subsection*{Chris's Information}\label{chriss-information}}
+\addcontentsline{toc}{subsection}{Chris's Information}
+
+\emph{Office:} 1918 Morrissey Hall
+
+\emph{Email:} \href{mailto:chris.prener@slu.edu}{\nolinkurl{chris.prener@slu.edu}}
+
+\emph{GitHub:} \texttt{@chris-prener}
+
+\emph{Discuss:} \texttt{@chris.prener}
+
+\emph{Office Hours:}
+
+\begin{itemize}
+\item
+  Mondays, 7:00pm to 7:30pm in 3600 Morrissey (GeoSRI Lab)
+\item
+  Wednesdays, 10:00am to 12:00pm in 3600 Morrissey (GeoSRI Lab)
+\end{itemize}
+
+\hypertarget{bransons-information}{%
+\subsection*{Branson's Information}\label{bransons-information}}
+\addcontentsline{toc}{subsection}{Branson's Information}
+
+\emph{Email:} \href{mailto:chris.prener@slu.edu}{\nolinkurl{chris.prener@slu.edu}}
+
+\emph{GitHub:} \texttt{@bransonf}
+
+\emph{Discuss:}
+
+\emph{Office Hours:}
+
+\hypertarget{hardcopy-syllabus}{%
+\section*{Hardcopy Syllabus}\label{hardcopy-syllabus}}
+\addcontentsline{toc}{section}{Hardcopy Syllabus}
+
+If you would like to keep a record of the syllabus, there is a \texttt{.pdf} download button () in the top toolboar. This may be particularly useful for honors and M.A.~students who plan to continue their graduate education after SLU and hope to petition out of a basic statistics requirement. This document will contain a ``snapshot'' of the course policies and planned schedule as of the beginning of the semester but will not be subsequently updated. See the ``Preface and Warning'' on page 2 of the \texttt{.pdf} for additional details.
+
+\hypertarget{change-log}{%
+\section*{Change Log}\label{change-log}}
+\addcontentsline{toc}{section}{Change Log}
+
+\hypertarget{license}{%
+\section*{License}\label{license}}
+\addcontentsline{toc}{section}{License}
+
+Copyright © 2016-2018 \href{https://chris-prener.github.io}{Christopher G. Prener}
+
+This work is licensed under a Creative Commons Attribution-ShareAlike 4.0 International License.
+
+\hypertarget{part-syllabus}{%
+\part{Syllabus}\label{part-syllabus}}
+
+\hypertarget{course-introduction}{%
+\chapter{Course Introduction}\label{course-introduction}}
+
+\begin{quote}
+{[}One{]} cannot understand social life without understanding the arrangements of particular social actors in particular social times and places\ldots{}\textbf{\emph{social facts are located}}.
+\end{quote}
+
+\textbf{Andrew Abbot (1997)}
+
+This class introduces both the theoretical and technical skills that constitute the growing field of Geographic Information Science (GISc). Techniques introduced include data cleaning and management, map production and cartography, and the manipulation of both tabular and spatial data. The course incorporates a wide variety of social, economic, health, urban, meteorological, and environmental data. These data are mapped at a variety of extents, from the City of St.~Louis to the St.~Louis Metropolitan region, Missouri, all United States counties, and all U.S. states.
+
+\hypertarget{two-courses-one-goal}{%
+\section{Two Courses, One Goal}\label{two-courses-one-goal}}
+
+Students will quickly notice that this course has two numbers. SOC 4650 is the undergraduate section, and SOC 5650 is the graduate section. This quickly leads to anxiety for some students, who worry they have signed up for the wrong class (occasionally this is not misplaced anxiety - make sure you are enrolled in the correct section!) or who worry that they are taking a class that is not appropriate for their skill level. This class is designed for students with little to no background in GIS and scientific computing more generally. For those students, the level is largely irrelevant - undergraduate and graduate students who have not been exposed to these ideas need to cover the same material.
+
+Graduate students who take this class will have to do some additional work - the final project is more rigorous than the project that undergraduates will complete. Otherwise, the course is the same because what content students need is largely the same as well.
+
+\hypertarget{course-objectives}{%
+\section{Course Objectives}\label{course-objectives}}
+
+This course has five intertwined objectives. After completing the course, students will be able to:
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\item
+  \emph{Geographic information science}: Describe the concepts that form the foundation of GISc work.
+\item
+  \emph{Data management}: Perform basic data cleaning tasks using \texttt{R},construct geo-databases using ArcGIS Pro for data organization and storage, and modify that data using ArcGIS Pro's geoprocessing tools.
+\item
+  \emph{Data visualization}: Create and present visualizations of spatial data using \texttt{R} and ArcGIS Pro, and other design tools.
+\item
+  \emph{Analysis development}: Apply techniques that make GISc work more reproducible, accurate, and collaborative using GitHub, \texttt{R}, Markdown, and other tools.
+\item
+  \emph{Research synthesis}: Plan and implement a spatial data analysis project that utilizes the techniques described throughout the course.
+\end{enumerate}
+
+\hypertarget{core-resources}{%
+\section{Core Resources}\label{core-resources}}
+
+There are two core documents and resources for this course. This \textbf{Syllabus} sets out core expectations and policies for the course - i.e.~what is \emph{required} for this course. It includes a \textbf{Reading List} that contains topics, readings (both required and optional), and assignment due dates for each week. Once the semester starts, these documents will only be updated if a schedule change is necessary.
+
+In addition to these documents, regular updates will be provided on the \href{https://slu-soc5650.github.io}{\textbf{course website}}. Each lecture will have a corresponding page on the site that includes links to handouts, YouTube videos, sample code, and additional descriptions of concepts covered in class. If bugs or issues arise, they will be documented along with solutions here as well. Please check the website regularly for updates and new content.
+
+\hypertarget{readings}{%
+\section{Readings}\label{readings}}
+
+There are three books required for this course with an optional fourth book. Each book has been selected to correspond with one or more of the course objectives. The books are:
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  Brewer, Cynthia. 2015. \emph{Designing Better Maps: A Guide for GIS users}. Redlands, CA: ESRI Press.
+
+  \begin{itemize}
+  \tightlist
+  \item
+    This book can be purchased in the bookstore or online
+  \end{itemize}
+\item
+  Gorr, Wilpen and Kristen Kurland. 2017. \emph{GIS Tutorial 1 for ArcGIS Pro.} Redlands, CA: ESRI Press.
+\item
+  Wickham, Hadley and Garrett Grolemund. 2017. \emph{R for Data Science}. O'Reily Media: Sebastopol, CA.
+
+  \begin{itemize}
+  \tightlist
+  \item
+    This book book can be purchased in the bookstore, online, or accessed for free \href{http://r4ds.had.co.nz}{as a webbook}.
+  \end{itemize}
+\end{enumerate}
+
+I do not require students to buy physical copies of texts. You are free to select a means for accessing these texts that meets your budget and learning style. If eBook editions (e.g.~Kindle, iBooks, \texttt{pdf}, etc.) of texts are available, they are acceptable for this course. All texts should be obtained in the edition noted above.
+
+All readings are listed on the \textbf{Reading List} and should be completed before the course meeting on the week in which they are assigned. Full text versions of most readings not found in the books assigned for the course can be obtained using the library's \href{http://eres.slu.edu/eres/coursepass.aspx?cid=4444}{Electronic Reserves} system. The password for the Electric Reserves will be posted on the course \href{https://discuss.slu-ssds.org}{discussion forums} at the beginning of the semester.
+
+\hypertarget{services}{%
+\section{Services}\label{services}}
+
+Over the course of the semester, we'll use two web-based services. Each of these will require you to create an account with a username and password. GitHub will require you to enable \href{https://en.wikipedia.org/wiki/Multi-factor_authentication}{two-factor authentication} as well. I strongly recommend using a \href{https://lifehacker.com/5529133/five-best-password-managers}{password manager}.
+
+\hypertarget{github}{%
+\subsection{GitHub}\label{github}}
+
+The majority of course content (sample code, documentation, and assignments) for this course will be made available using \textbf{\href{http://www.github.com}{GitHub}}. GitHub is a website used by programmers, data analysts, and researchers to share computer code and projects. GitHub will also be used for assignment submission and feedback. In addition to providing us with platform for hosting course content, using GitHub will give you experience in some of the techniques that researchers use to conduct both open-source and collaborative research. GitHub is free to use but does have some premium features, which students can access for free through their \href{https://education.github.com/pack/}{Student Developer program}. As I noted above, these premium features \emph{are not required} for this course but are worth knowing about if you decide to continue using GitHub.
+
+\hypertarget{discourse}{%
+\subsection{Discourse}\label{discourse}}
+
+\href{http://discourse.org}{Discourse} is commerical forum software that we will be using as a central place to post annoucements, ask questions, and get help. Quite a few major open source platforms utilize Discourse's software, including \href{http://community.rstudio.com}{RStudio} and \href{http://discuss.ropensci.org}{ROpenSci}, so it is worth knowing how to use their software. You will be invited to the course \href{https://discuss.slu-ssds.org}{discussion forums}, which are not publicly accessible, and are expected to check them regularly.
+
+\hypertarget{software}{%
+\section{Software}\label{software}}
+
+There are three principle applications we'll be using this semester in addition to the services listed previously: \href{https://pro.arcgis.com/en/pro-app/}{ArcGIS Pro}, \href{https://www.rstudio.com}{RStudio}, and \href{https://desktop.github.com}{GitHub Desktop}. Both RStudio and GitHub Desktop of these are open-source applications that can be downloaded and used without cost. All applications are available in our classroom, which you will have 24-hour access to throughout the semester. All students will need access to these tools every week, so plan to either set-up your computer accordingly or budget time to spend in the lab.
+
+\hypertarget{arcgis-pro}{%
+\subsection{ArcGIS Pro}\label{arcgis-pro}}
+
+The primary software platform we will use is the ArcGIS Pro suite of applications. Though it is relatively expensive, ArcGIS is the industry standard GIS software application. ArcGIS is available only for Windows. It is available in 3600 Morrissey (GeoSRI Lab) and thus purchasing it is not required for this course. For students who have Windows on their computer, I will make free student licenses available if your computer meets the \href{http://pro.arcgis.com/en/pro-app/get-started/arcgis-pro-system-requirements.htm}{system requirements}.
+
+If you have used ArcGIS before or have access to it, all course documents will assume that you are using the most modern release of ArcGIS Pro. Older versions of ArcGIS Desktop will not be compatible with our textbook, course materials, or assignment structure.
+
+\hypertarget{r-and-rstudio}{%
+\subsection{\texorpdfstring{\texttt{R} and RStudio}{R and RStudio}}\label{r-and-rstudio}}
+
+The primary tool we will use for data manipulation and analysis is the programming language \texttt{R}. \texttt{R} is open-source, freely available, and highly extensible analysis environment. We'll use \href{https://www.rstudio.com}{RStudio} as the ``front end'' for our analyses. RStudio makes it easier to write \texttt{R} code and to produce well documented analyses. Like the \texttt{R} programming language itself, RStudio is freely available.
+
+You will need to decide whether you want to install \texttt{R} and RStudio locally on a computer you own or if you would rather use the desktop computers in our computer lab. Detailed instructions are available for both options on the \href{https://slu-soc5650.github.io/docs/course-software/}{course website}.
+
+\hypertarget{github-desktop}{%
+\subsection{GitHub Desktop}\label{github-desktop}}
+
+You will need another free application called \href{https://desktop.github.com}{GitHub Desktop}. This program allows you to easily copy data from GitHub onto your computer. It also makes it easy to upload files like labs and problem sets to GitHub. If you have already used Git via the command line, you can continue to do so without utilizing GitHub Desktop.
+
+\hypertarget{additional-software}{%
+\subsection{Additional Software}\label{additional-software}}
+
+You will need to use some type of word processing and presentation software. We'll use some specific \texttt{R} packages to produce output in Microsoft Word and PowerPoint formats, but these can be readily used with other programs (like Apple's iWork suite) without actually having Microsoft Office installed on your computer.
+
+\hypertarget{data-and-data-storage}{%
+\section{Data and Data Storage}\label{data-and-data-storage}}
+
+Spatial data files tend to be large, and this course will involve tens of gigabytes worth of data. If you are going to use a Windows personal computer for this course, you will need to have at least 60GB of space to install all of the required software and download all of the course data. Mac users who will only be using their computer for the \texttt{R} portion will need less - probably in the neighborhood of 20GB. If you want to use your computer but do not have enough space, you will need to make some room. Some options are discussed on the \href{https://slu-soc5650.github.io/docs/course-software/}{course website}.
+
+\hypertarget{other-materials}{%
+\section{Other Materials}\label{other-materials}}
+
+All of the course materials are online and can be accessed through the \href{https://slu-soc5650.github.io}{\textbf{course website}} and \href{http://www.github.com}{\textbf{GitHub}}, some of the handouts are easiest to
+use when printed. I will provide the first week's handouts printed to give you a sense of what they look like. If you would like to continue reciving hard copy handouts, there will be a way to indicate that you'd prefer them prior to our second in-person meeting for Lecture-03. If you opt-in to hard copy materials, I recommend purchasing a 1.5"
+three-ring binder along with dividers. If you choose to only recieve digital course materials, you do not need a binder. You can opt back in to reciving printed materials at any time, and I will even provide back handouts if necessary.
+
+\hypertarget{course-policies}{%
+\chapter{Course Policies}\label{course-policies}}
+
+My priority is that class periods are productive learning experiences for all students. In order to foster this type of productive environment, I ask students to follow a few general policies and expectations:\footnote{These general expectations were adopted from language originally used by Dr.~Shelley Kimmelberg.}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  Work each week to contribute to a positive, supportive, welcoming, and compassionate class environment.
+\item
+  Arrive to class on time and stay for the entire class period.
+\item
+  Silence \emph{all} electronic devices before entering the classroom.
+\item
+  Do not engage in side conversations. This is disrespectful to the speaker (whether me or a classmate), and can affect the ability of others in the class to learn.
+\item
+  Be respectful of your fellow classmates. Do not interrupt when someone is speaking, monopolize the conversation, or belittle the ideas or opinions of others.
+\item
+  Complete the assigned readings for each class in advance, and come prepared with discussion points and questions.
+\end{enumerate}
+
+The following sections contain additional details about specific course policies related to attendance, participation, electronic device use, student support, academic honesty, and Title IX.
+
+\hypertarget{compassionate-coursework}{%
+\section{Compassionate Coursework}\label{compassionate-coursework}}
+
+\begin{quote}
+Being around people who are different from us makes us more creative, more diligent and harder-working
+\end{quote}
+
+\textbf{\href{https://www.scientificamerican.com/article/how-diversity-makes-us-smarter/}{Katherine Phillips, 2014}}
+
+The goal of this course is not just to impart knowledge related to GIS and data science, but to purposefully create an environment where all students feel welcome and supported even as they feel challenged intellectually.\footnote{Much of this approach to ``compassionate coursework'' is adopted from \href{https://twitter.com/aprilwensel}{April Wensel's} work at \href{https://compassionatecoding.com}{Compassionate Coding}.} This is especially important in a STEM course, where stress levels among students can be generally high. For those of you who have not created maps or written computer code before, that could be enough to treat GIS coursework with apprehension. Feeling at least a little anxious about a course like this is understandable and to be expected.
+
+In response to this stress, students sometimes develop ``impostor syndrome'', a feeling that academic gains are not the result of their own abilities and a fear that they will soon be ``found out'' (\href{https://www.physiology.org/doi/10.1152/advan.00085.2017}{Cooper et al.~2018}, \href{http://genderandset.open.ac.uk/index.php/genderandset/article/view/435}{Lindemann et al.~2016}). This is reported with particular frequency by students from social groups traditionally underrepresented in STEM courses (\href{https://onlinelibrary.wiley.com/doi/pdf/10.1002/sce.20307}{Malone and Barabino 2008}, \href{https://doi.org/10.1525/sp.2005.52.4.593}{Ong 2005}, \href{https://doi.org/10.17763/haer.81.2.t022245n7x4752v2}{Ong et al.~2011}). Taking these concerns seriously is imperative not just for reasons of academic retention and its future implications (\href{https://open.nytimes.com/why-having-a-diverse-team-will-make-your-products-better-c73e7518f677}{Akinnawonu 2017}, \href{https://www.tandfonline.com/doi/abs/10.5172/impp.2013.15.2.149}{Diaz-Garcia et al.~2011}, \href{https://www.aauw.org/aauw_check/pdf_download/show_pdf.php?file=why-so-few-research}{Hill et al.~2010}, \href{https://www.tandfonline.com/doi/abs/10.1111/ecge.12016}{Nathan and Lee 2015}), but also because we are called to do so by the \href{https://www.slu.edu/about/catholic-jesuit-identity/mission.php}{University's mission} both in our classrooms and in the wider world.
+
+If you are feeling stressed about the coursework, feel like it is taking what seems like an excessive amount of time, or want to talk about strategies for problem solving, please reach out during class, office hours, or via Discourse. This will be my eleventh semester teaching research methods, and I have plenty of strategies for success in these courses that I am happy to share!
+
+\hypertarget{code-of-conduct}{%
+\subsection{Code of Conduct}\label{code-of-conduct}}
+
+While I take a leading role in fostering a welcoming and supportive environment, I need each student's help in making that environment a reality. To that end, you should familiarize themselves with \href{https://www.contributor-covenant.org}{Contributor Covenant's} \href{https://www.contributor-covenant.org/version/1/4/code-of-conduct}{Code of Conduct}, which is increasingly included in open source projects and is included with each lecture repository on \href{https://github.com/slu-soc5650}{GitHub}. The Code of Conduct lays out expectations for how all students should to conduct themselves. I want to emphasize one piece here in the syllabus, which includes concrete examples of things each student \emph{can} and \emph{should} do to help create a compassionate class atmosphere:
+
+\begin{quote}
+Examples of behavior that contributes to creating a positive environment include: using welcoming and inclusive language, being respectful of differing viewpoints and experiences, gracefully accepting constructive criticism, focusing on what is best for the {[}class{]}, {[}and{]} showing empathy towards other community members
+\end{quote}
+
+The degree to which students are positively engaged with our class along these lines will be reflected in participation grades given at the mid and end points of the semester. If you feel that a colleague's conduct is not in line with creating compassionate coursework experience, you are encouraged to speak to me. I will treat all discussions with discretion and will work with you to make a plan for addressing any concerns you might have.
+
+\hypertarget{harrassment-and-title-ix}{%
+\subsection{Harrassment and Title IX}\label{harrassment-and-title-ix}}
+
+While I have every expectation that each member of the Saint Louis University community is capable and able to treat community members with dignity and respect, I fully recognize that there may be instances where students fall short of that expectation. Students should generally be aware that:
+
+\begin{quote}
+Saint Louis University prohibits harassment because of sex, race, color, religion, national origin, ancestry, disability, age, sexual orientation, marital status, military status, veteran status, gender expression/identity, genetic information, pregnancy, or any other characteristics protected by law.
+\end{quote}
+
+All students should also familiarize themselves with \href{http://www.slu.edu/general-counsel-home/office-of-institutional-equity-and-diversity}{Saint Louis University's polices} on bias, discrimination, harassment, and sexual misconduct. In particular, they should be aware of policies on \href{https://www.slu.edu/general-counsel/institutional-equity-diversity/pdfs/harassment-policy.pdf}{harassment} and \href{https://www.slu.edu/about/safety/sexual-assault-resources.php}{sexual misconduct}:
+
+\begin{quote}
+Saint Louis University and its faculty are committed to supporting our students and seeking an environment that is free of bias, discrimination, and harassment. If you have encountered any form of sexual misconduct (e.g.~sexual assault, sexual harassment, stalking, domestic or dating violence), we encourage you to report this to the University. If you speak with a faculty member about an incident of misconduct, that faculty member must notify SLU's Title IX Coordinator, Anna R. Kratky (DuBourg Hall, Room 36; \href{mailto:anna.kratky@slu.edu}{\nolinkurl{anna.kratky@slu.edu}}); 314-977-3886) and share the basic facts of your experience with her. The Title IX coordinator will then be available to assist you in understanding all of your options and in connecting you with all possible resources on and off campus.
+\end{quote}
+
+\begin{quote}
+If you wish to speak with a confidential source, you may contact the counselors at the University Counseling Center at 314-977-TALK.
+\end{quote}
+
+Instances of abusive, harassing, or otherwise unacceptable behavior should be reported either directly to the instructor or to the University Administration. Consistent with the above policies, I will forward all reports of inappropriate conduct to the Title IX Coordinator's office or to the Office of Diversity and Affirmative Action. Please be aware that University policies may require me to forward information about the identity of any students connected to the disclosure.
+
+Please also be aware that communications over various online services, including (but not limited to) Discourse forums, GitHub, and Google Apps, are covered by this policy.
+
+\hypertarget{attendance-and-participation}{%
+\section{Attendance and Participation}\label{attendance-and-participation}}
+
+Attendance and participation are important components of this course since we only meet once a week. Students are expected to attend all class sessions; missing even one class can create a significant roadblock for many students. If you cannot attend class or arrive on time because of a personal illness, a family issue, jury duty, an athletic match, or a religious observance, you must contact me \textbf{beforehand} to let me know. I may ask for more information, such as a note from a physician, a travel letter from Athletics, or other documentation for absences.
+
+A penalty will not be applied to your first unexcused absence or late arrival. Any absences or late arrivals beyond the first will result in no credit (for an absences) or only partial credit (for a late arrival) being earned for that day's participation grade.
+
+Making up missed classes are your responsibility. I do post slide decks on the course website, but my slides are intended only to serve as references. This semester, I am also \textbf{experimenting} with Tegrity recordings for this course. Recordings will typically be posted within 24-hours of class and will be linked to through the course website.
+
+The academic literature (see \href{https://link.springer.com/article/10.1007/s10734-018-0275-9}{this recent article} for a nice overview) suggests that the impact of lecture capture tools like Tegrity is mixed at best. Students tend to rate their experience with lecture capture far more positively than faculty do. Students who continue to attend class regularly and use lecture recordings as part of an \emph{active} approach to studying and filling in specific areas of their notes may benefit from recordings. Students who use recordings as a replacement for attending class do not benefit from the recordings.
+
+Please also note that lectures and discussions cannot be recorded by any means (e.g.~audio or video recordings, or photographs) without my permission.
+
+\hypertarget{communication}{%
+\section{Communication}\label{communication}}
+
+Our course \href{http://discuss.slu-ssds.org}{discussion forums} and email are my preferred methods of communication.
+
+I will the forums during weekday business hours and will respond to messages if I am able. Likewise, I dedicate time to email responses each workday, meaning that my response time is typically within 24 hours during the workweek. Please use your SLU email account when emailing me.
+
+For both email and the forums, if you have not received a response from me after 48 hours (or by end of business on Monday if you messaged me over the weekend), please follow-up to ensure that your message did not get lost in the shuffle.
+
+All messages regarding course updates, assignments, and changes to the class schedule, including cancellations, will be posted on the main \href{https://discuss.slu-ssds.org/c/intro-to-gis}{Introduction to GIS category} on the forums. Changes to the class schedule, including cancellations, will also sent to your SLU email account. It is imperative that you check both the forums and your SLU email account regularly.
+
+Please also ensure that all concerns or questions about your standing in the course are directed to me immediately. Inquires from parents, SLU staff members, and others will not be honored.
+
+\hypertarget{electronic-devices}{%
+\section{Electronic Devices}\label{electronic-devices}}
+
+During class periods, students are asked to refrain from using electronic devices (including cell phones) for activities not directly related to the course. For this class, I expect students to limit their use of electronic devices to accessing course software, readings, and notes.
+
+There is evidence that using electronic devices during lectures results in decreased retention of course content (\href{https://link.springer.com/article/10.1007/BF02940852}{Hembrooke and Gay 2003}) and lower overall course performance (\href{https://www.sciencedirect.com/science/article/pii/S0360131506001436}{Fried 2008}). Students who are not using a laptop but are in direct view of another student's laptop also have decreased performance in courses (\href{https://www.sciencedirect.com/science/article/pii/S0360131512002254}{Sana et al.~2013}). Conversely, students who take notes the ``old fashioned way'' have better performance on tests compared to students who take notes on laptops (\href{http://journals.sagepub.com/doi/abs/10.1177/0956797614524581}{Mueller and Oppenheimer 2014}).
+
+I therefore ask students to be conscious of how they are using their devices, the ways such use impacts their own learning, and the effect that it may have on others around them. I reserve the right to alter this policy if electronic device use becomes problematic during the semester.
+
+\hypertarget{student-support}{%
+\section{Student Support}\label{student-support}}
+
+\hypertarget{basic-needs}{%
+\subsection{Basic Needs}\label{basic-needs}}
+
+If you have difficulty affording groceries or accessing sufficient food to eat every day, or lack a safe and stable place to live, you are urged to contact the \href{https://www.slu.edu/student-development/dean-of-students/index.php}{Dean of Students} for support. Likewise if you have concerns about your mental or physical health needs, or lack access to health care services you require, you should contact either the \href{https://www.slu.edu/student-development/dean-of-students/index.php}{Dean of Students}, \href{https://www.slu.edu/life-at-slu/student-health/index.php}{Student Health Services}, or the \href{https://www.slu.edu/life-at-slu/university-counseling/index.php}{University Counseling Center}.\footnote{This language is adopted from text written by \href{https://medium.com/@saragoldrickrab/basic-needs-security-and-the-syllabus-d24cc7afe8c9}{Dr.~Sarah Goldrick-Rab}.}
+
+If you feel comfortable doing so, please discuss any concerns you might have with me. Doing so is particularly important if believe your performance in this course might be affected. I will do my best to work with you to come up with a plan for successfully completing the course and, if need be, work with you to identify on-campus resources. I will treat all discussions with discretion, though please be aware that certain situations, including disclosures of \href{/compassionate-coursework.html}{sexual misconduct} or self harm, must be reported by faculty to the appropriate University office.
+
+\hypertarget{academic-accommodations}{%
+\subsection{Academic Accommodations}\label{academic-accommodations}}
+
+If you meet the eligibility requirements for academic accommodations through the \href{https://www.slu.edu/life-at-slu/student-success-center/disability-services/index.php}{Office of Disability Services} (located within the Student Success Center) \emph{and you wish to use them for this class}, you should arrange to discuss your needs with me after the first class. All discussions of this nature are treated confidentially, and I will make every effort to work with you to come up with a plan for successfully completing the course requirements. Please note that I will not provide accommodations to students who are not working with Disability Services, and that I cannot retroactively alter assignments or grades if they have already been completed.
+
+\hypertarget{writing-services}{%
+\subsection{Writing Services}\label{writing-services}}
+
+I also encourage you to take advantage of the \href{https://www.slu.edu/life-at-slu/student-success-center/academic-support/university-writing-services/index.php}{University Writing Services (UWS) program}. Getting feedback benefits writers at all skill levels and the quality of your writing will be reflected in assignment grades. The UWS has trained writing consultants who can help you improve the quality of your written work. UWS's consultants are available to address everything from brainstorming and developing ideas to crafting strong sentences and documenting sources.
+
+\hypertarget{student-athletes}{%
+\subsection{Student-athletes}\label{student-athletes}}
+
+If you are a student-athlete who is in-season, you should discuss your game schedule with me after the first class and share your travel letter with me as soon as you have a copy. You are reminded that games and tournaments are not excuses for failing to complete assignments, and that NCAA rules prohibit student-athletes from missing classes for practice. Low grades that jeopardize eligibility must be addressed immediately by you, not by a coach or academic coordinator.
+
+\hypertarget{academic-honesty}{%
+\section{Academic Honesty}\label{academic-honesty}}
+
+All students should familiarize themselves with \href{http://www.slu.edu/Documents/provost/academic_affairs/Academic\%20Integrity\%20Policy\%20FINAL\%20\%206-26-15.pd}{Saint Louis University's policies} concerning cheating, plagiarism, and other academically dishonest practices:
+
+\begin{quote}
+Academic integrity is honest, truthful and responsible conduct in all academic endeavors. The mission of Saint Louis University is ``the pursuit of truth for the greater glory of God and for the service of humanity.'' Accordingly, all acts of falsehood demean and compromise the corporate endeavors of teaching, research, health care, and community service via which SLU embodies its mission. The University strives to prepare students for lives of personal and professional integrity, and therefore regards all breaches of academic integrity as matters of serious concern.
+\end{quote}
+
+Any work that is taken from another student, copied from printed material, or copied the internet without proper citation is expressly prohibited. Note that this includes all computer code, narrative text, and documentation written for class assignments - each student is expected to author and de-bug their notebooks and accompanying files.
+
+All relevant assignments should include in-text citations and references formatted using the \href{https://owl.english.purdue.edu/owl/resource/583/1/}{American Sociological Association (ASA)} style guidelines. Any student who is found to have been academically dishonest in their work risks failing both the assignment and this course.
+
+\hypertarget{success-in-this-course}{%
+\chapter{Success in this Course}\label{success-in-this-course}}
+
+Students often ask me how to do well in various aspects of the course, and so this section features my \emph{suggestions} for a successful semester. \emph{These observations are provided with no warranty} - following them does not guarantee any particular outcome. You could do everything in here and still do poorly in the course, and conversely you could ignore much of what is in discussed in the links below and still do well. However, \emph{most} of the students who are successful in this course will follow \emph{most} of these ideas consistently.
+
+These tips are an effort to illuminate what sociologists refer to as the ``\href{https://books.google.com/books?hl=en\&lr=\&id=5r-TAgAAQBAJ\&oi=fnd\&pg=PP1\&dq=hidden+curriculum\#v=onepage\&q=hidden\%20curriculum\&f=false}{hidden curriculum}'' of higher education - there are things you need to do to be successful, but they are often unstated or not clearly communicated.
+
+Since I give this advice out in multiple classes, the documents themselves are stored on my \href{https://chris-prener.github.io}{personal website}:
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  \href{https://chris-prener.github.io/resources/little-things/}{Doing the Little Things Right}
+\item
+  \href{https://chris-prener.github.io/resources/zen/}{Zen and the Art of Data Analysis}
+\item
+  \href{https://chris-prener.github.io/resources/letters/}{Letters of Recommendation}
+\end{enumerate}
+
+If there are other topics you have questions about, please let me know. These documents are a work in progress.
+
+\hypertarget{assignments-and-grading}{%
+\chapter{Assignments and Grading}\label{assignments-and-grading}}
+
+This section provides general details on the different types of assignments for this course. It also contains policies for submitting work, receiving feedback, and late work.
+
+\hypertarget{assignments}{%
+\section{Assignments}\label{assignments}}
+
+Your grade for this course will consist of a number of different assignments on which points may be earned. Each category of assignment is described below.
+
+\hypertarget{attendance-and-participation-1}{%
+\subsection{Attendance and Participation}\label{attendance-and-participation-1}}
+
+\begin{rmdtip}
+Attendance and participation are worth \textbf{10\%} of your final
+grade.
+\end{rmdtip}
+
+Both attendance and participation are critically important aspects of this class. The class participation grade will be based on (a) attendance, (b) level of engagement during lectures and labs, (c) level of engagement on Slack, and (d) the completion of other exercises including ``entry'' and ``exit'' tickets, the student information sheet, a pre-test, and an end of the semester course evaluation.
+
+Each of these elements is assigned a point value and assessed using a scale that awards full, partial, or no credit. Your participation grade will be split, with 50 points (5\% of your final grade) for the first half of the semester (through Lecture-08) and another 50 points (5\%) for the second half. Since the number of points awarded for participation are variable, the total number of points earned for each half will be converted to a 0 to 50 scale.
+
+I provide the final number of points earned for each half of the course. If you would like a more detailed breakdown of your participation grade, please reach out and I will provide one.
+
+\hypertarget{lab-exercises}{%
+\subsection{Lab Exercises}\label{lab-exercises}}
+
+\begin{rmdtip}
+Labs are worth \textbf{24\%} of your final grade.
+\end{rmdtip}
+
+Each course meeting (except the first) will include time dedicated to practicing the techniques and applying the theories described during the day's lecture. These exercises will give you an opportunity to practice skills that correspond with the first four course objectives. Instructions for the labs will be posted in the lecture repositories on \href{https://github.com/slu-soc5650}{\textbf{GitHub}} and will be linked to from the lecture pages on the \href{https://slu-soc5650.github.io/}{\textbf{course website}}. The instructions will also detail the deliverables to be submitted to demonstrate completion of each assignment. Replication files are also provided in the lecture repositories on \href{https://github.com/slu-soc5650}{\textbf{GitHub}}.
+
+There will be a total of fifteen lab exercises over the course of the semester, each of which is worth 16 points (1.6\% of your final grade). Lab exercises are graded using the ``check'' grading system. Since replication files are posted, feedback for labs is not generally returned after the first few assignments and I will only respond with the number of points awarded if you do not earn full credit.
+
+\hypertarget{problem-sets}{%
+\subsection{Problem Sets}\label{problem-sets}}
+
+\begin{rmdtip}
+Problem sets are worth \textbf{30\%} of your final grade.
+\end{rmdtip}
+
+Problem sets will require students to draw on a variety of skills, including cleaning data, performing statistical analyses, producing plots, and reporting results. They are designed to assess your progress with the first four course objectives. Instructions for the problem sets will be posted in the lecture repositories on \href{https://github.com/slu-soc5650}{\textbf{GitHub}} and will be linked to from the lecture pages on the \href{https://slu-soc5650.github.io/}{\textbf{course website}}. The instructions will also detail the deliverables to be submitted to demonstrate completion of each assignment. Replication files that illustrate my approach to each problem set will be posted on \href{https://github.com/slu-soc5650}{\textbf{GitHub}} in the \href{https://github.com/slu-soc5650/Replications}{\texttt{Replications}} repository once all students have submitted their problem sets.
+
+There will be a total of six problem sets over the course of the semester, each of which is worth 50 points (5\% of your final grade). Each Problem Set will include a simple rubric describing how each problem set is evaluated. A key aspect of these assignments is not only demonstrating comfort with a particular set of GIS skills, but also demonstrating and evolving in your analysis development, programming, and cartographic skills as well. The weight given to quality of your process and code will increase as the semester progresses.
+
+\hypertarget{final-project}{%
+\subsection{Final Project}\label{final-project}}
+
+\begin{rmdtip}
+The final project is worth, in total, \textbf{36\%} of your final grade.
+Depending on your section, it will be broken down into a variety of
+assignments, each of which has their own point value. See below for
+details.
+\end{rmdtip}
+
+The final project corresponds with the fourth learning outcome. It will be organized slightly differently depending on which section you are enrolled in. Specific instructions will be provided in the \href{https://slu-soc5650.github.io/finalGuide}{\textbf{final project guide}}, and updates will be posted on the \href{https://slu-soc5650.github.io/}{\textbf{course website's}} \href{https://slu-soc5650.github.io/final-project}{\textbf{final project page}}.
+
+As work progresses, there will be a number of \textbf{waypoints} where students will need to submit updates on their progress. Waypoints beyond the memo submission are as follows:
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  Lecture-04 (\textbf{February 4\textsuperscript{th}}) - select and submit their topic as an ``Issue'' in their individual \href{https://github.com/slu-soc5650}{\textbf{GitHub}} assignments repository.
+\item
+  Lecture-08 (\textbf{March 4\textsuperscript{th}}) - progress report from each student due as a GitHub issue in each student's final project repository
+\item
+  Lecture-11 (\textbf{March 25\textsuperscript{th}}) - progress report from each student due as a GitHub issue in each student's final project repository
+\item
+  Lecture-13 (\textbf{April 8\textsuperscript{th}}) - draft materials due in each student's final project repository
+\item
+  Lecture-14 (\textbf{April 15\textsuperscript{th}}) - peer reviews due as a GitHub issue in partner's final project repository
+\item
+  Lecture-16 (\textbf{April 29\textsuperscript{th}}) - progress report from each student due as a GitHub issue in each student's final project repository
+\end{enumerate}
+
+Deliverables for each waypoint are described in the \href{https://slu-soc5650.github.io/finalGuide}{\textbf{final project guide}}. All waypoints are graded using the ``check'' grading system. Final materials will be due on \textbf{May 13\textsuperscript{th}} (during Finals Week), when we will hold a ``research conference'' in the Busch Student Center. During our conference, each student will present their research posters. Final deliverables differ by course section.
+
+\hypertarget{soc-4650}{%
+\subsubsection{SOC 4650}\label{soc-4650}}
+
+If you are enrolled in SOC 4650, you will need to create a research poster that provides thematic maps of your topic.
+
+\begin{table}[t]
+
+\caption{\label{tab:unnamed-chunk-5}SOC 4650 Final Project Breakdown}
+\centering
+\begin{tabular}{llll}
+\toprule
+Assignment & Points & Quantity & Total\\
+\midrule
+Waypoints & 15 pts & x6 & 90 pts\\
+Draft Code \& Docs & 35 pts & x1 & 35 pts\\
+Draft Poster & 35 pts & x1 & 35 pts\\
+Final Code \& Docs & 100 pts & x1 & 100 pts\\
+Final Poster & 100 pts & x1 & 100 pts\\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\hypertarget{soc-5650}{%
+\subsubsection{SOC 5650}\label{soc-5650}}
+
+If you are enrolled in SOC 5650, you will also need to create a digital paper that combines the scholarly literature on your topic with interactive and static maps. This can be created using \texttt{R} (using \texttt{radix}) or ArcGIS Pro (a story map). The following additional deadlines apply:
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  Lecture-08 (\textbf{March 4\textsuperscript{th}}) - annotated Bibliography with a minimum of fifteen peer reviewed sources
+\item
+  Lecture-13 (\textbf{April 8\textsuperscript{th}}) - a draft story map or \texttt{radix} document due in each student's final project repository
+\item
+  Lecture-14 (\textbf{April 15\textsuperscript{th}}) - peer reviews of the story map or \texttt{radix} document due as a GitHub issue in partner's final project repository
+\end{enumerate}
+
+Grading for SOC 5650 is broken down as follows:
+
+\begin{table}[t]
+
+\caption{\label{tab:unnamed-chunk-6}SOC 5650 Final Project Breakdown}
+\centering
+\begin{tabular}{llll}
+\toprule
+Assignment & Points & Quantity & Total\\
+\midrule
+Waypoints & 10 pts & x6 & 60 pts\\
+Annotated Bibliography & 25 pts & x1 & 25 pts\\
+Draft Code \& Docs & 25 pts & x1 & 25 pts\\
+Draft Poster & 25 pts & x1 & 25 pts\\
+Draft Paper & 25 pts & x1 & 25 pts\\
+\addlinespace
+Final Code \& Docs & 60 pts & x1 & 60 pts\\
+Final Poster & 70 pts & x1 & 70 pts\\
+Final Paper & 70 pts & x1 & 70 pts\\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\hypertarget{submission-and-late-work}{%
+\section{Submission and Late Work}\label{submission-and-late-work}}
+
+\hypertarget{assignment-submission}{%
+\subsection{Assignment Submission}\label{assignment-submission}}
+
+Copies of all assignment requested deliverables should be uploaded to your private assignments repository on \href{https://github.com/slu-soc5650}{GitHub} before class on the day that the assignments are due. All assignments will contain details on required deliverables.
+
+The GitHub submission policy is in place because it facilitates clear, easy grading that can be turned around to you quickly. Submitting assignments in ways that deviate from this policy will result in a late grade (see below) being applied in the first instance and a zero grade for each subsequent instance.
+
+\hypertarget{licensing-of-student-work}{%
+\subsection{Licensing of Student Work}\label{licensing-of-student-work}}
+
+All assignment repositories are licensed under a \href{https://creativecommons.org/licenses/by-nc-nd/4.0/}{Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International License}. This license explicitly gives you copyright to all work you create for this course. The license gives Chris permission to copy your work (such as for grading) and to re-use your work later for non-commercial purposes (such as in-class examples) so long as you are given credit for it. However, your work cannot be used for monetary gain (such as in a textbook) and derivative works based on your work are prohibited.
+
+The syllabus agreement at the end of the Student Information Sheet includes an acknowledgement of this licensing arrangement. If you have questions about this, please contact Chris before submitting the form.
+
+\hypertarget{late-work}{%
+\subsection{Late Work}\label{late-work}}
+
+Once the class begins, any assignments submitted will be treated as late. Assignments handed in within 24-hours of the beginning of class will have 15\% deducted from the grade. I will deduct 15\% per day for the next two 24-hour periods that assignments are late. After 72 hours, I will not accept late work. If you cannot attend class because of personal illness, a family issue, jury duty, an athletic match, or a religious observance, you must contact me beforehand to discuss alternate submission of work.
+
+\hypertarget{extra-credit}{%
+\section{Extra Credit}\label{extra-credit}}
+
+From time to time I may offer extra credit to be applied to your final grade. I will only offer extra credit if it is open to the entire class (typically for something like attending a lecture or event on-campus). If I offer extra credit, I will typically require you to submit a short written summary of the activity within a week of the event to obtain the credit. When offered, extra credit opportunities cannot be made-up or substituted if you are unable to attend the event.
+
+\hypertarget{grading}{%
+\section{Grading}\label{grading}}
+
+Grades will be included with assignment feedback, which will be disseminated through Github's \textbf{Issues} tool. At midterms, Lecture-17, and finals, I will upload a summary of all assignment grades to a new \textbf{Issue} on GitHub.
+
+All grades that use a ``check'' system (the lecture preps, labs, and some aspects of the final project) will be calculated using the following approach. A ``check-plus'' represents excellent work and will get full credit. A ``check'' represents satisfactory work and will get 85\% of the points available for that assignment. A ``check-minus'' represents work that needs substantial improvement and will get 75\% of the points available for that assignment.
+
+I use a point system for calculating grades. The following table gives the weighting and final point totals for all assignments for this course:
+
+\begin{table}[t]
+
+\caption{\label{tab:unnamed-chunk-7}SOC 4650 and 5650 Points Breakdown}
+\centering
+\begin{tabular}{lllll}
+\toprule
+Assignment & Points & Quantity & Total & Percent\\
+\midrule
+Participation & 50 pts & x2 & 100 pts & 10\%\\
+Labs & 16 pts & x15 & 240 pts & 24\%\\
+Problem Sets & 50 pts & x6 & 300 pts & 30\%\\
+Final Project & 360 pts & x1 & 360 pts & 36\%\\
+\bottomrule
+\end{tabular}
+\end{table}
+
+All feedback will include grades that represent number of points earned. If you want to know your percentage on a particular assignment, divide the number of points earned by the number of points possible and then multiply it by 100.
+
+Final grades will be calculated by taking the sum of all points earned and dividing it by the total number of points possible (1,000). This will be multiplied by 100 and then converted to a letter grade using the
+following table:
+
+\begin{table}
+\caption{\label{tab:unnamed-chunk-8}Course Grading Scale}
+
+\centering
+\begin{tabular}{lll}
+\toprule
+GPA & Letter & Percent\\
+\midrule
+4.0 & A & 93.0\% - 100\%\\
+3.7 & A- & 90.0\% - 92.9\%\\
+3.3 & B+ & 87.0\% - 89.9\%\\
+3.0 & B & 83.0\% - 86.9\%\\
+2.7 & B- & 80.0\% - 82.9\%\\
+\bottomrule
+\end{tabular}
+\centering
+\begin{tabular}{lll}
+\toprule
+GPA & Letter & Percent\\
+\midrule
+2.3 & C+ & 77.0\% - 79.9\%\\
+2.0 & C & 73.0\% - 76.9\%\\
+1.7 & C- & 70.0\% - 72.9\%\\
+1.0 & D & 63.0\% - 69.9\%\\
+0.0 & F & < 63.0\%\\
+\bottomrule
+\end{tabular}
+\end{table}
+
+Borderline grades (i.e.~a grade within half a percentage point of the next highest letter grade) \emph{will} be rounded up before final grade submission at the end of the semester. A grade of 89.6\% would therefore be submitted to SLU as an ``A-'' while a grade of 89.4\% would be submitted to SLU as a ``B+''. The final grade report will include both the original letter grade and the rounded letter grade if applicable.
+
+\begin{rmdwarning}
+No chances will be given for revisions of poor grades. Incomplete grades
+will be given upon request only if you have a ``C'' average and have
+completed at least two-thirds of the assignments. You should note that
+incomplete grades must be rectified by the specified deadline or they
+convert to an ``F''.
+\end{rmdwarning}
+
+\hypertarget{part-reading-list}{%
+\part{Reading List}\label{part-reading-list}}
+
+\hypertarget{course-schedule}{%
+\chapter{Course Schedule}\label{course-schedule}}
+
+The following is a high-level schedule that details the general topic covered by each lecture.
+
+\begin{table}[t]
+
+\caption{\label{tab:unnamed-chunk-1}SOC 4615 and 5650 Course Overview}
+\centering
+\begin{tabular}{lll}
+\toprule
+Lecture & Date & Topic\\
+\midrule
+ &  & **Unit 1: Visualize**\\
+ & prior to January 14\textasciicircum{}th\textasciicircum{} & Course Preview\\
+01 & January 14\textasciicircum{}th\textasciicircum{} & Course Introduction\\
+02 & January 21\textasciicircum{}st\textasciicircum{} & ArcGIS Pro Overview\\
+03 & January 28\textasciicircum{}th\textasciicircum{} & Cartography 101\\
+\addlinespace
+04 & February 4\textasciicircum{}th\textasciicircum{} & Map Production in ArcGIS Pro\\
+05 & February 11\textasciicircum{}th\textasciicircum{} & Map Production in `R`\\
+06 & February 18\textasciicircum{}th\textasciicircum{} & Communicating with Maps\\
+ &  & **Unit 2: Tidy**\\
+07 & February 25\textasciicircum{}th\textasciicircum{} & Data Cleaning\\
+\addlinespace
+08 & March 4\textasciicircum{}th\textasciicircum{} & Table Joins; Data Storage\\
+09 & March 11\textasciicircum{}th\textasciicircum{} & Accessing Census Data via APIs\\
+10 & March 18\textasciicircum{}th\textasciicircum{} & Managing Projections\\
+ &  & **Unit 3: Process**\\
+11 & March 25\textasciicircum{}th\textasciicircum{} & Select and Aggregate Features\\
+\addlinespace
+12 & April 1\textasciicircum{}st\textasciicircum{} & Clip and Dissolve Features\\
+13 & April 8\textasciicircum{}th\textasciicircum{} & Intersect, Union, and Merge Features\\
+14 & April 15\textasciicircum{}th\textasciicircum{} & Digitizing Data\\
+15 & April 22\textasciicircum{}nd\textasciicircum{} & Geocoding Data\\
+ &  & **Unit 4: Analyze**\\
+\addlinespace
+16 & April 29\textasciicircum{}th\textasciicircum{} & Basic Spatial Analyses\\
+17 & May 6\textasciicircum{}th\textasciicircum{} & Combining `R` and ArcGIS Pro with Python\\
+ & May 13\textasciicircum{}th\textasciicircum{} & Final Presentations\\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\hypertarget{planned-online-lectures}{%
+\section{Planned Online Lectures}\label{planned-online-lectures}}
+
+This semester, we have two classes that fall on official university holidays: Martin Luther King, Jr.~Day (Lecture-02, \textbf{January 21\textsuperscript{st}}) and Spring Break (Lecture-09, \textbf{March 11\textsuperscript{th}}). These weeks will have materials assigned for them, which will include lectures posted on YouTube. These lectures will be shorter than typical in-class lectures. Students should view these lectures during that week and complete the associated readings and lab exercises. Videos will be embedded in the lecture pages on the \href{https://slu-soc5650.github.io/}{\textbf{course website}}.
+
+\hypertarget{class-progression}{%
+\section{Class Progression}\label{class-progression}}
+
+Each lecture will be broken down roughly the same way. Students are expected to arrive having already completed the previous week's work as well as the assigned readings and lecture prep. Class will begin with any relevant ``front matter'' including follow-up from the previous weeks and relevant announcements. Around 6:00pm, we will take a short break. Most classes will end with time dedicated to working through the lab exercise. After class, students are expected to finish the lab and, if necessary, the assigned problem set as well.
+
+\hypertarget{assignment-due-dates}{%
+\section{Assignment Due Dates}\label{assignment-due-dates}}
+
+All assigments listed on the following table are due \emph{before} the lecture that they are listed under. See assignment or final project instructions for the specific deliverables to be included in each as well as submission instructions.
+
+\begin{table}[t]
+
+\caption{\label{tab:unnamed-chunk-2}SOC 4615 and 5650 Due Dates}
+\centering
+\begin{tabular}{llllll}
+\toprule
+Lecture & Date & Entry.Ticket & Lab & Problem.Set & Final.Project\\
+\midrule
+01 & January 14\textasciicircum{}th\textasciicircum{} & eTicket-01 &  &  & \\
+02 & January 21\textasciicircum{}st\textasciicircum{} & eTicket-02 &  &  & \\
+03 & January 28\textasciicircum{}th\textasciicircum{} & eTicket-03 & Lab-01 &  & \\
+04 & February 4\textasciicircum{}th\textasciicircum{} & eTicket-04 & Lab-02 &  & WP-01 - Topic\\
+05 & February 11\textasciicircum{}th\textasciicircum{} & eTicket-05 & Lab-03 &  & \\
+\addlinespace
+06 & February 18\textasciicircum{}th\textasciicircum{} & eTicket-06 & Lab-04 & PS-01 & \\
+07 & February 25\textasciicircum{}th\textasciicircum{} & eTicket-07 & Lab-05 & PS-02 & \\
+08 & March 4\textasciicircum{}th\textasciicircum{} & eTicket-08 & Lab-06 &  & WP-02\\
+09 & March 11\textasciicircum{}th\textasciicircum{} &  & Lab-07 & PS-03 & \\
+10 & March 18\textasciicircum{}th\textasciicircum{} & eTicket-09 & Lab-08 &  & \\
+\addlinespace
+11 & March 25\textasciicircum{}th\textasciicircum{} &  & Lab-09 &  & WP-03\\
+12 & April 1\textasciicircum{}st\textasciicircum{} & eTicket-10 & Lab-10 & PS-04 & \\
+13 & April 8\textasciicircum{}th\textasciicircum{} &  & Lab-11 & PS-05 & WP-04 - Drafts\\
+14 & April 15\textasciicircum{}th\textasciicircum{} &  & Lab-12 &  & WP-05\\
+15 & April 22\textasciicircum{}nd\textasciicircum{} & eTicket-11 & Lab-13 & PS-06 & \\
+\addlinespace
+16 & April 29\textasciicircum{}th\textasciicircum{} &  & Lab-14 &  & WP-06\\
+17 & May 6\textasciicircum{}th\textasciicircum{} & eTicket-12 & Lab-15 &  & \\
+ & May 13\textasciicircum{}th\textasciicircum{} &  &  &  & Final Presentations\\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\hypertarget{scheduling-notes}{%
+\section{Scheduling Notes}\label{scheduling-notes}}
+
+The lecture schedule may change as it depends on the progress of the class. However, you must keep up with the reading assignments. In the event of a cancellation due to weather or another disruption, I may alter the lecture schedule.
+
+Since this course only meets once per week, cancellations are particularly disruptive. I will make every effort to schedule make-up classes at a time that works for at least a portion of the class. These class sessions will be recorded and made immediately available using YouTube for students who are unable to attend the make-up class. All students will be responsible for either attending the make-up class or watching the lecture as well as completing all readings, lab assignments, and problem sets for make-up classes.
+
+\hypertarget{lecture-schedule}{%
+\chapter{Lecture Schedule}\label{lecture-schedule}}
+
+Select a lecture from the menu to see details about topics, readings, and assignments. Additional notes and links to course materials are available through the \href{https://slu-soc5050.github.io}{course website}, which has dedicated pages for each lecture. Links to these pages are included on each lecture's reading list entry.
+
+The primary readings will be referred to with an abbreviation each time they appear in the reading list:
+
+\begin{table}[t]
+
+\caption{\label{tab:unnamed-chunk-1}SOC 4650 and 5650 Primary Readings}
+\centering
+\begin{tabular}{ll}
+\toprule
+Abbreviation & Citation\\
+\midrule
+Brewer & Brewer, Cynthia. 2015. *Designing Better Maps: A Guide for GIS users*. Redlands, CA: ESRI Press.\\
+Tutorial & Gorr, Wilpen and Kristen Kurland. 2017. *GIS Tutorial 1 for ArcGIS Pro.* Redlands, CA: ESRI Press.\\
+R4DS & Wickham, Hadley and Garrett Grolemund. 2016. *R for data science: import, tidy, transform, visualize, and model data*. Sebastopol, CA: O'Reilly Media, Inc.\\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\hypertarget{course-preview}{%
+\section*{Course Preview}\label{course-preview}}
+\addcontentsline{toc}{section}{Course Preview}
+
+View on Course Website
+
+\hypertarget{topics}{%
+\subsection*{Topics}\label{topics}}
+\addcontentsline{toc}{subsection}{Topics}
+
+\begin{itemize}
+\tightlist
+\item
+  \textbf{GIScience} - Open Data, GISc, and Public Policy
+\item
+  \textbf{Analysis Development} - Opinionated Analysis Development and Plain Text Data Science
+\end{itemize}
+
+\hypertarget{videos}{%
+\subsection*{Videos}\label{videos}}
+\addcontentsline{toc}{subsection}{Videos}
+
+\hypertarget{required}{%
+\subsubsection*{Required}\label{required}}
+\addcontentsline{toc}{subsubsection}{Required}
+
+\begin{itemize}
+\tightlist
+\item
+  Coral, Lilian. 2016. ``City of Los Angeles GeoHub.'' Presented at the ESRI User Conference, San Diego, CA. (Link)
+\item
+  Parker, Hilary. 2017. ``Opinionated analysis development.'' Presented at rstudio::conf, Orlando, FL. (Link)
+\end{itemize}
+
+\hypertarget{readings-1}{%
+\subsection*{Readings}\label{readings-1}}
+\addcontentsline{toc}{subsection}{Readings}
+
+\hypertarget{required-1}{%
+\subsubsection*{Required}\label{required-1}}
+\addcontentsline{toc}{subsubsection}{Required}
+
+\begin{itemize}
+\tightlist
+\item
+  Healy, Kieran. 2018. ``Introduction.'' In \emph{The plain person's guide to plain text}. (Link)
+\end{itemize}
+
+\hypertarget{optional}{%
+\subsubsection*{\texorpdfstring{\emph{Optional}}{Optional}}\label{optional}}
+\addcontentsline{toc}{subsubsection}{\emph{Optional}}
+
+\begin{itemize}
+\tightlist
+\item
+  Parker Hilary. 2017. ``Opinionated analysis development.'' \emph{PeerJ Preprints} 5:e3210v1. (Link)
+\item
+  Thieme, Nick. 2018. ``R generation.'' \emph{Significance} 15(4):14-19. (Link)
+\end{itemize}
+
+\hypertarget{assignments-1}{%
+\subsection*{Assignments}\label{assignments-1}}
+\addcontentsline{toc}{subsection}{Assignments}
+
+\hypertarget{due-before-first-lecture}{%
+\subsubsection*{\texorpdfstring{Due Before \emph{First} Lecture}{Due Before First Lecture}}\label{due-before-first-lecture}}
+\addcontentsline{toc}{subsubsection}{Due Before \emph{First} Lecture}
+
+\begin{itemize}
+\tightlist
+\item
+  eTicket-01
+\end{itemize}
+
+\hypertarget{lecture-01---course-introduction}{%
+\section*{Lecture-01 - Course Introduction}\label{lecture-01---course-introduction}}
+\addcontentsline{toc}{section}{Lecture-01 - Course Introduction}
+
+View on Course Website
+
+\hypertarget{topics-1}{%
+\subsection*{Topics}\label{topics-1}}
+\addcontentsline{toc}{subsection}{Topics}
+
+\begin{itemize}
+\tightlist
+\item
+  \textbf{GIScience} - What are GIS and GISc?
+\item
+  \textbf{Data Management} - Intro to \texttt{R} and RStudio
+\item
+  \textbf{Data Visualization} - What Makes a Good Map, \texttt{leaflet}
+\item
+  \textbf{Analysis Development} - Workflows
+\end{itemize}
+
+\hypertarget{readings-2}{%
+\subsection*{Readings}\label{readings-2}}
+\addcontentsline{toc}{subsection}{Readings}
+
+\hypertarget{required-2}{%
+\subsubsection*{Required}\label{required-2}}
+\addcontentsline{toc}{subsubsection}{Required}
+
+\begin{itemize}
+\tightlist
+\item
+  Goodchild, Michael. 2010. ``Twenty years of progress: GIScience in 2010.'' \emph{Journal of Spatial Information Science} 1(1):3-20. (Electronic Reserves)
+\item
+  Logan, John. 2010. ``Making a place for space: Spatial thinking in social science.'' \emph{Annual Review of Sociology} 38:507-524. (Electronic Reserves)
+\item
+  R4DS:
+
+  \begin{itemize}
+  \tightlist
+  \item
+    \emph{Print} - Preface \textbf{\emph{or}}
+  \item
+    \emph{Web} - Chapter 1 (Link)
+  \end{itemize}
+\end{itemize}
+
+\hypertarget{optional-1}{%
+\subsubsection*{\texorpdfstring{\emph{Optional}}{Optional}}\label{optional-1}}
+\addcontentsline{toc}{subsubsection}{\emph{Optional}}
+
+\begin{itemize}
+\tightlist
+\item
+  Wilson, Greg, Jennifer Bryan, Karen Cranston, Justin Kitzes, Lex Nederbragt, and Tracy Teal. 2017. ``Good enough practices in scientific computing.'' \emph{PLoS Computational Niology} 13(6):e1005510. (Electronic Reserves)
+\end{itemize}
+
+\hypertarget{assignments-2}{%
+\subsection*{Assignments}\label{assignments-2}}
+\addcontentsline{toc}{subsection}{Assignments}
+
+\hypertarget{due-before-lecture}{%
+\subsubsection*{\texorpdfstring{Due \emph{Before} Lecture}{Due Before Lecture}}\label{due-before-lecture}}
+\addcontentsline{toc}{subsubsection}{Due \emph{Before} Lecture}
+
+\begin{itemize}
+\tightlist
+\item
+  eTicket-01
+\end{itemize}
+
+\hypertarget{lecture-02---arcgis-pro-overview}{%
+\section*{Lecture-02 - ArcGIS Pro Overview}\label{lecture-02---arcgis-pro-overview}}
+\addcontentsline{toc}{section}{Lecture-02 - ArcGIS Pro Overview}
+
+View on Course Website
+
+\hypertarget{topics-2}{%
+\subsection*{Topics}\label{topics-2}}
+\addcontentsline{toc}{subsection}{Topics}
+
+\begin{itemize}
+\tightlist
+\item
+  \textbf{Data Visualization} - The ArcGIS Platform
+\item
+  \textbf{Analysis Development} - ArcGIS Projects
+\end{itemize}
+
+\hypertarget{readings-3}{%
+\subsection*{Readings}\label{readings-3}}
+\addcontentsline{toc}{subsection}{Readings}
+
+\begin{itemize}
+\tightlist
+\item
+  Tutorial: Chapter 1 (Link)
+\end{itemize}
+
+\hypertarget{assignments-3}{%
+\subsection*{Assignments}\label{assignments-3}}
+\addcontentsline{toc}{subsection}{Assignments}
+
+\hypertarget{due-before-lecture-1}{%
+\subsubsection*{\texorpdfstring{Due \emph{Before} Lecture}{Due Before Lecture}}\label{due-before-lecture-1}}
+\addcontentsline{toc}{subsubsection}{Due \emph{Before} Lecture}
+
+\begin{itemize}
+\tightlist
+\item
+  eTicket-02
+\end{itemize}
+
+\hypertarget{due-before-next-lecture}{%
+\subsubsection*{\texorpdfstring{Due Before \emph{Next} Lecture}{Due Before Next Lecture}}\label{due-before-next-lecture}}
+\addcontentsline{toc}{subsubsection}{Due Before \emph{Next} Lecture}
+
+\begin{itemize}
+\tightlist
+\item
+  eTicket-03
+\item
+  Lab-01 - Introduction to ArcGIS Pro
+\end{itemize}
+
+\hypertarget{lecture-03---cartography-101}{%
+\section*{Lecture-03 - Cartography 101}\label{lecture-03---cartography-101}}
+\addcontentsline{toc}{section}{Lecture-03 - Cartography 101}
+
+View on Course Website
+
+\hypertarget{topics-3}{%
+\subsection*{Topics}\label{topics-3}}
+\addcontentsline{toc}{subsection}{Topics}
+
+\begin{itemize}
+\tightlist
+\item
+  \textbf{GIScience} - Methodological Challenges for Representing Geography
+\item
+  \textbf{Data Visualization} - Basics of Cartography
+\end{itemize}
+
+\hypertarget{readings-4}{%
+\subsection*{Readings}\label{readings-4}}
+\addcontentsline{toc}{subsection}{Readings}
+
+\hypertarget{required-3}{%
+\subsubsection*{Required}\label{required-3}}
+\addcontentsline{toc}{subsubsection}{Required}
+
+\begin{itemize}
+\item
+  Brewer: Chapters 1-2, 7-8
+\item
+  Tutorial: Chapter 2, \emph{part}, pp.~xx-xx
+\item
+  Tufte, Edward. 1990. ``Color and Information.'' Pp. 81-95 in \emph{Envisioning Information}. Cheshire, CT: Graphics Press. (Electronic Reserves)
+\item
+  Tufte, Edward. 2001 ``Data Maps.'' Pp. 16-27 in \emph{The Visual Display of Quantitative Information}. Cheshire, CT: Graphics Press. (Electronic Reserves)
+\end{itemize}
+
+\hypertarget{optional-2}{%
+\subsubsection*{Optional}\label{optional-2}}
+\addcontentsline{toc}{subsubsection}{Optional}
+
+\begin{itemize}
+\item
+\end{itemize}
+
+\hypertarget{assignments-4}{%
+\subsection*{Assignments}\label{assignments-4}}
+\addcontentsline{toc}{subsection}{Assignments}
+
+\hypertarget{due-before-lecture-2}{%
+\subsubsection*{\texorpdfstring{Due \emph{Before} Lecture}{Due Before Lecture}}\label{due-before-lecture-2}}
+\addcontentsline{toc}{subsubsection}{Due \emph{Before} Lecture}
+
+\begin{itemize}
+\tightlist
+\item
+  \emph{From Lecture-02} - Lab-01 - Introduction to ArcGIS Pro
+\item
+  eTicket-03
+\end{itemize}
+
+\hypertarget{due-before-next-lecture-1}{%
+\subsubsection*{\texorpdfstring{Due Before \emph{Next} Lecture}{Due Before Next Lecture}}\label{due-before-next-lecture-1}}
+\addcontentsline{toc}{subsubsection}{Due Before \emph{Next} Lecture}
+
+\begin{itemize}
+\tightlist
+\item
+  Lab-02 - Cartographic Design
+\item
+  eTicket-04
+\item
+  \emph{From Final Project} - WP-01 - topic selection
+\end{itemize}
+
+\hypertarget{lecture-04---map-production-in-arcgis-pro}{%
+\section*{Lecture-04 - Map Production in ArcGIS Pro}\label{lecture-04---map-production-in-arcgis-pro}}
+\addcontentsline{toc}{section}{Lecture-04 - Map Production in ArcGIS Pro}
+
+View on Course Website
+
+\hypertarget{topics-4}{%
+\subsection*{Topics}\label{topics-4}}
+\addcontentsline{toc}{subsection}{Topics}
+
+\begin{itemize}
+\tightlist
+\item
+  \textbf{Data Visualization} -
+
+  \begin{itemize}
+  \tightlist
+  \item
+    Typography
+  \item
+    Mapping with ArcGIS Pro
+  \end{itemize}
+\end{itemize}
+
+\hypertarget{readings-5}{%
+\subsection*{Readings}\label{readings-5}}
+\addcontentsline{toc}{subsection}{Readings}
+
+\begin{itemize}
+\tightlist
+\item
+  Brewer: Chapters 3, 5, and 6
+\item
+  Tufte, Edward. 2001 ``Chartjunk.'' Pp. 1007-121 in \emph{The Visual Display of Quantitative Information}. Cheshire, CT: Graphics Press. (Electronic Reserves)
+\item
+  Tutorial:
+
+  \begin{itemize}
+  \tightlist
+  \item
+    Chapter 2, \emph{part}, pp.~xx-xx
+  \item
+    Chapter 3, \emph{part}, pp.~xx-xx
+  \end{itemize}
+\end{itemize}
+
+\hypertarget{assignments-5}{%
+\subsection*{Assignments}\label{assignments-5}}
+\addcontentsline{toc}{subsection}{Assignments}
+
+\hypertarget{due-before-lecture-3}{%
+\subsubsection*{\texorpdfstring{Due \emph{Before} Lecture}{Due Before Lecture}}\label{due-before-lecture-3}}
+\addcontentsline{toc}{subsubsection}{Due \emph{Before} Lecture}
+
+\begin{itemize}
+\tightlist
+\item
+  \emph{From Lecture-03} - Lab-02 - Cartographic Design
+\item
+  \emph{From Final Project} - WP-01 - Topic Selection
+\item
+  eTicket-04
+\end{itemize}
+
+\hypertarget{due-before-next-lecture-2}{%
+\subsubsection*{\texorpdfstring{Due Before \emph{Next} Lecture}{Due Before Next Lecture}}\label{due-before-next-lecture-2}}
+\addcontentsline{toc}{subsubsection}{Due Before \emph{Next} Lecture}
+
+\begin{itemize}
+\tightlist
+\item
+  Lab-03 - Map Production in ArcGIS Pro
+\item
+  eTicket-05
+\end{itemize}
+
+\hypertarget{due-in-two-lectures}{%
+\subsubsection*{\texorpdfstring{Due in \emph{Two} Lectures}{Due in Two Lectures}}\label{due-in-two-lectures}}
+\addcontentsline{toc}{subsubsection}{Due in \emph{Two} Lectures}
+
+\begin{itemize}
+\tightlist
+\item
+  PS-01 - Map Production in ArcGIS Pro
+\end{itemize}
+
+\hypertarget{lecture-05---map-production-in-r}{%
+\section*{\texorpdfstring{Lecture-05 - Map Production in \texttt{R}}{Lecture-05 - Map Production in R}}\label{lecture-05---map-production-in-r}}
+\addcontentsline{toc}{section}{Lecture-05 - Map Production in \texttt{R}}
+
+View on Course Website
+
+\hypertarget{topics-5}{%
+\subsection*{Topics}\label{topics-5}}
+\addcontentsline{toc}{subsection}{Topics}
+
+\begin{itemize}
+\tightlist
+\item
+  \textbf{Data Visualization} - Mapping with \texttt{R}
+\item
+  \textbf{Analysis Development} - R Projects, Notebooks, and R Markdown
+\end{itemize}
+
+\hypertarget{readings-6}{%
+\subsection*{Readings}\label{readings-6}}
+\addcontentsline{toc}{subsection}{Readings}
+
+\begin{itemize}
+\tightlist
+\item
+  Lovelace, Robin, Jakub Nowosad, and Jannes Muenchow. 2019. \emph{Geocomputation with R.} New York, NY: CRC Press. Chapter 8, \emph{part}, Sections 8.1-8.2 (Link)
+\item
+  R4DS, Analysis Development:
+
+  \begin{itemize}
+  \tightlist
+  \item
+    \emph{Print} - Preface, TBD \textbf{\emph{or}}
+  \item
+    \emph{Web} - Chapters 1, 2, 4, 6, and 8 (Link)
+  \end{itemize}
+\item
+  R4DS, Data Visualization:
+
+  \begin{itemize}
+  \tightlist
+  \item
+    \emph{Print} - TBD \textbf{or}
+  \item
+    \emph{Web} - Chapter 3, \emph{part}, Sections 3.1-3.4 (Link)
+  \end{itemize}
+\end{itemize}
+
+\hypertarget{assignments-6}{%
+\subsection*{Assignments}\label{assignments-6}}
+\addcontentsline{toc}{subsection}{Assignments}
+
+\hypertarget{due-before-lecture-4}{%
+\subsubsection*{\texorpdfstring{Due \emph{Before} Lecture}{Due Before Lecture}}\label{due-before-lecture-4}}
+\addcontentsline{toc}{subsubsection}{Due \emph{Before} Lecture}
+
+\begin{itemize}
+\tightlist
+\item
+  \emph{From Lecture-04} - Lab-03 - Map Production in ArcGIS Pro
+\item
+  eTicket-05
+\end{itemize}
+
+\hypertarget{due-before-next-lecture-3}{%
+\subsubsection*{\texorpdfstring{Due Before \emph{Next} Lecture}{Due Before Next Lecture}}\label{due-before-next-lecture-3}}
+\addcontentsline{toc}{subsubsection}{Due Before \emph{Next} Lecture}
+
+\begin{itemize}
+\tightlist
+\item
+  \emph{From Lecture-04} - PS-01 - Map Production in ArcGIS Pro
+\item
+  Lab-04 - Map Production in \texttt{R}
+\item
+  eTicket-06
+\end{itemize}
+
+\hypertarget{due-in-two-lectures-1}{%
+\subsubsection*{\texorpdfstring{Due in \emph{Two} Lectures}{Due in Two Lectures}}\label{due-in-two-lectures-1}}
+\addcontentsline{toc}{subsubsection}{Due in \emph{Two} Lectures}
+
+\begin{itemize}
+\tightlist
+\item
+  PS-02 - Map Production in \texttt{R}
+\end{itemize}
+
+\hypertarget{lecture-06---communicating-with-maps}{%
+\section*{Lecture-06 - Communicating with Maps}\label{lecture-06---communicating-with-maps}}
+\addcontentsline{toc}{section}{Lecture-06 - Communicating with Maps}
+
+View on Course Website
+
+\hypertarget{topics-6}{%
+\subsection*{Topics}\label{topics-6}}
+\addcontentsline{toc}{subsection}{Topics}
+
+\begin{itemize}
+\tightlist
+\item
+  \textbf{Data Visualization} - Small Multiples
+\item
+  \textbf{Research Synthesis} - Integrating Map Products into Research
+
+  \begin{itemize}
+  \tightlist
+  \item
+    ArGIS Online Story Maps
+  \item
+    RMarkdown, \texttt{leaflet} and \texttt{Radix} Articles
+  \item
+    Research Posters
+  \end{itemize}
+\end{itemize}
+
+\hypertarget{readings-7}{%
+\subsection*{Readings}\label{readings-7}}
+\addcontentsline{toc}{subsection}{Readings}
+
+\hypertarget{required-4}{%
+\subsubsection*{Required}\label{required-4}}
+\addcontentsline{toc}{subsubsection}{Required}
+
+\begin{itemize}
+\tightlist
+\item
+  Brewer: Chapter 4
+\item
+  R4DS:
+
+  \begin{itemize}
+  \tightlist
+  \item
+    \emph{Print} - TBD \textbf{or}
+  \item
+    \emph{Web} - Chapter 3, \emph{part}, Section 3.5 (Link)
+  \end{itemize}
+\item
+  Tufte, Edward. 1990. ``Small Multiples.'' Pp. 67-79 in \emph{Envisioning Information}. Cheshire, CT: Graphics Press. (Electronic Reserves)
+\item
+  Tufte, Edward. 2006 ``Analytical Design.'' Pp. 125-139 in \emph{Beautiful Evidence}. Cheshire, CT: Graphics Press. (Electronic Reserves)
+\item
+  Tutorial: Chapter 3, \emph{part}, pp.~xx-xx
+\end{itemize}
+
+\hypertarget{optional-3}{%
+\subsubsection*{Optional}\label{optional-3}}
+\addcontentsline{toc}{subsubsection}{Optional}
+
+\begin{itemize}
+\tightlist
+\item
+  Lovelace, Robin, Jakub Nowosad, and Jannes Muenchow. 2019. \emph{Geocomputation with R.} New York, NY: CRC Press. Chapter 8, \emph{part}, Section 8.4 (Link)
+\end{itemize}
+
+\hypertarget{assignments-7}{%
+\subsection*{Assignments}\label{assignments-7}}
+\addcontentsline{toc}{subsection}{Assignments}
+
+\hypertarget{due-before-lecture-5}{%
+\subsubsection*{\texorpdfstring{Due \emph{Before} Lecture}{Due Before Lecture}}\label{due-before-lecture-5}}
+\addcontentsline{toc}{subsubsection}{Due \emph{Before} Lecture}
+
+\begin{itemize}
+\tightlist
+\item
+  \emph{From Lecture-04} - PS-01 - Map Production in ArcGIS Pro
+\item
+  \emph{From Lecture-05} - Lab-04 - Map Production in \texttt{R}
+\item
+  eTicket-06
+\end{itemize}
+
+\hypertarget{due-before-next-lecture-4}{%
+\subsubsection*{\texorpdfstring{Due Before \emph{Next} Lecture}{Due Before Next Lecture}}\label{due-before-next-lecture-4}}
+\addcontentsline{toc}{subsubsection}{Due Before \emph{Next} Lecture}
+
+\begin{itemize}
+\tightlist
+\item
+  \emph{From Lecture-05} - PS-02 - Map Production in \texttt{R}
+\item
+  Lab-05 - Creating Map Products
+\item
+  eTicket-07
+\end{itemize}
+
+\hypertarget{lecture-07---data-cleaning}{%
+\section*{Lecture-07 - Data Cleaning}\label{lecture-07---data-cleaning}}
+\addcontentsline{toc}{section}{Lecture-07 - Data Cleaning}
+
+View on Course Website
+
+\hypertarget{topics-7}{%
+\subsection*{Topics}\label{topics-7}}
+\addcontentsline{toc}{subsection}{Topics}
+
+\begin{itemize}
+\tightlist
+\item
+  \textbf{Data Management} - Preparing Data for Mapping
+\end{itemize}
+
+\hypertarget{readings-8}{%
+\subsection*{Readings}\label{readings-8}}
+\addcontentsline{toc}{subsection}{Readings}
+
+\begin{itemize}
+\tightlist
+\item
+  R4DS:
+
+  \begin{itemize}
+  \tightlist
+  \item
+    \emph{Print} - TBD \textbf{or}
+  \item
+    \emph{Web} - Chapter 5, \emph{part}, Sections 5.1-5.5 (Link)
+  \end{itemize}
+\end{itemize}
+
+\hypertarget{assignments-8}{%
+\subsection*{Assignments}\label{assignments-8}}
+\addcontentsline{toc}{subsection}{Assignments}
+
+\hypertarget{due-before-lecture-6}{%
+\subsubsection*{\texorpdfstring{Due \emph{Before} Lecture}{Due Before Lecture}}\label{due-before-lecture-6}}
+\addcontentsline{toc}{subsubsection}{Due \emph{Before} Lecture}
+
+\begin{itemize}
+\tightlist
+\item
+  \emph{From Lecture-05} - PS-02 - Map Production in \texttt{R}
+\item
+  \emph{From Lecture-06} - Lab-05 - Creating Map Products
+\item
+  eTicket-07
+\end{itemize}
+
+\hypertarget{due-before-next-lecture-5}{%
+\subsubsection*{\texorpdfstring{Due Before \emph{Next} Lecture}{Due Before Next Lecture}}\label{due-before-next-lecture-5}}
+\addcontentsline{toc}{subsubsection}{Due Before \emph{Next} Lecture}
+
+\begin{itemize}
+\tightlist
+\item
+  \emph{From Final Project} - WP-02
+
+  \begin{itemize}
+  \tightlist
+  \item
+    \emph{SOC 5650 only} - Annotated Bibliography
+  \end{itemize}
+\item
+  Lab-06 - Data Cleaning
+\item
+  eTicket-08
+\end{itemize}
+
+\hypertarget{due-in-two-lectures-2}{%
+\subsubsection*{\texorpdfstring{Due in \emph{Two} Lectures}{Due in Two Lectures}}\label{due-in-two-lectures-2}}
+\addcontentsline{toc}{subsubsection}{Due in \emph{Two} Lectures}
+
+\begin{itemize}
+\tightlist
+\item
+  PS-03 - Data Cleaning
+\end{itemize}
+
+\hypertarget{lecture-08---table-joins-data-storage}{%
+\section*{Lecture-08 - Table Joins; Data Storage}\label{lecture-08---table-joins-data-storage}}
+\addcontentsline{toc}{section}{Lecture-08 - Table Joins; Data Storage}
+
+View on Course Website
+
+\hypertarget{topics-8}{%
+\subsection*{Topics}\label{topics-8}}
+\addcontentsline{toc}{subsection}{Topics}
+
+\begin{itemize}
+\tightlist
+\item
+  \textbf{Data Management} -
+
+  \begin{itemize}
+  \tightlist
+  \item
+    Combining Multiple Tables
+  \item
+    Exporting Data from ArcGIS Pro and \texttt{R}
+  \item
+    Geodatabases
+  \end{itemize}
+\end{itemize}
+
+\hypertarget{readings-9}{%
+\subsection*{Readings}\label{readings-9}}
+\addcontentsline{toc}{subsection}{Readings}
+
+\begin{itemize}
+\tightlist
+\item
+  Tutorial: Chapter 4, \emph{part}, pp.~xx-xx
+\end{itemize}
+
+\hypertarget{assignments-9}{%
+\subsection*{Assignments}\label{assignments-9}}
+\addcontentsline{toc}{subsection}{Assignments}
+
+\hypertarget{due-before-lecture-7}{%
+\subsubsection*{\texorpdfstring{Due \emph{Before} Lecture}{Due Before Lecture}}\label{due-before-lecture-7}}
+\addcontentsline{toc}{subsubsection}{Due \emph{Before} Lecture}
+
+\begin{itemize}
+\tightlist
+\item
+  \emph{From Lecture-07} - Lab-06 - Data Cleaning
+\item
+  \emph{From Final Project} - WP-02
+
+  \begin{itemize}
+  \tightlist
+  \item
+    \emph{SOC 5650 only} - Annotated Bibliography
+  \end{itemize}
+\item
+  eTicket-08
+\end{itemize}
+
+\hypertarget{due-before-next-lecture-6}{%
+\subsubsection*{\texorpdfstring{Due Before \emph{Next} Lecture}{Due Before Next Lecture}}\label{due-before-next-lecture-6}}
+\addcontentsline{toc}{subsubsection}{Due Before \emph{Next} Lecture}
+
+\begin{itemize}
+\tightlist
+\item
+  \emph{From Lecture-07} - PS-03 - Data Cleaning
+\item
+  Lab-07 - Joining and Storing Data
+\end{itemize}
+
+\hypertarget{lecture-09---accessing-census-data-via-apis}{%
+\section*{Lecture-09 - Accessing Census Data via APIs}\label{lecture-09---accessing-census-data-via-apis}}
+\addcontentsline{toc}{section}{Lecture-09 - Accessing Census Data via APIs}
+
+View on Course Website
+
+\hypertarget{topics-9}{%
+\subsection*{Topics}\label{topics-9}}
+\addcontentsline{toc}{subsection}{Topics}
+
+\begin{itemize}
+\tightlist
+\item
+  \textbf{Data Management} - Georeferenced Demographic Data
+\end{itemize}
+
+\hypertarget{videos-1}{%
+\subsection*{Videos}\label{videos-1}}
+\addcontentsline{toc}{subsection}{Videos}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  Video a - American Fact Finder (Link)
+\item
+  Video b - Accessing Census Data in \texttt{R} (Link)
+\item
+  Video c - Accessing Spatial Data in \texttt{R} (Link)
+\end{enumerate}
+
+\emph{Note}: These videos are labeled as ``Lecture-08'' on YouTube, which was the lecture they were given under during Spring 2018.
+
+\hypertarget{assignments-10}{%
+\subsection*{Assignments}\label{assignments-10}}
+\addcontentsline{toc}{subsection}{Assignments}
+
+\hypertarget{due-before-lecture-8}{%
+\subsubsection*{\texorpdfstring{Due \emph{Before} Lecture}{Due Before Lecture}}\label{due-before-lecture-8}}
+\addcontentsline{toc}{subsubsection}{Due \emph{Before} Lecture}
+
+\begin{itemize}
+\tightlist
+\item
+  \emph{From Lecture-07} - PS-03 - Data Cleaning
+\item
+  \emph{From Lecture-08} - Lab-07 - Joining and Storing Data
+\end{itemize}
+
+\hypertarget{due-before-next-lecture-7}{%
+\subsubsection*{\texorpdfstring{Due Before \emph{Next} Lecture}{Due Before Next Lecture}}\label{due-before-next-lecture-7}}
+\addcontentsline{toc}{subsubsection}{Due Before \emph{Next} Lecture}
+
+\begin{itemize}
+\tightlist
+\item
+  Lab-08 - Georeferenced Demographic Data
+\item
+  eTicket-09
+\end{itemize}
+
+\hypertarget{lecture-10---managing-projections}{%
+\section*{Lecture-10 - Managing Projections}\label{lecture-10---managing-projections}}
+\addcontentsline{toc}{section}{Lecture-10 - Managing Projections}
+
+View on Course Website
+
+\hypertarget{topics-10}{%
+\subsection*{Topics}\label{topics-10}}
+\addcontentsline{toc}{subsection}{Topics}
+
+\begin{itemize}
+\tightlist
+\item
+  \textbf{GIScience} - Geographic and Projected Coordinate Systems
+\item
+  \textbf{Data Management} -
+
+  \begin{itemize}
+  \tightlist
+  \item
+    Transforming Coordinate Systems
+  \item
+    Working with Dates and Strings
+  \end{itemize}
+\end{itemize}
+
+\hypertarget{readings-10}{%
+\subsection*{Readings}\label{readings-10}}
+\addcontentsline{toc}{subsection}{Readings}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  Maher, Margaret. 2013. ``Defining Projections and Their Parameters; Adding x,y Data; Analyzing the Shape of Buffers.'' Pp. 167-182 in \emph{Lining up data in ArcGIS: A Guide to Map Projections.} Redlands, CA: ESRI Press. (Electronic Reserves)
+\item
+  Maher, Margaret. 2013. ``Identifying the Projected Coordinate System.'' Pp. 35-55 in \emph{Lining up data in ArcGIS: A Guide to Map Projections.} Redlands, CA: ESRI Press. (Electronic Reserves)
+\item
+  Tutorial: TBA
+\item
+  R4DS:
+
+  \begin{itemize}
+  \tightlist
+  \item
+    \emph{Print} - TBD \textbf{or}
+  \item
+    \emph{Web} - Chapters 14 and 16 (Link)
+  \end{itemize}
+\end{enumerate}
+
+\emph{Note:} Read these readings in the order specified here.
+
+\hypertarget{assignments-11}{%
+\subsection*{Assignments}\label{assignments-11}}
+\addcontentsline{toc}{subsection}{Assignments}
+
+\hypertarget{due-before-lecture-9}{%
+\subsubsection*{\texorpdfstring{Due \emph{Before} Lecture}{Due Before Lecture}}\label{due-before-lecture-9}}
+\addcontentsline{toc}{subsubsection}{Due \emph{Before} Lecture}
+
+\begin{itemize}
+\tightlist
+\item
+  \emph{From Lecture-09} - Lab-08 - Georeferenced Demographic Data
+\item
+  eTicket-09
+\end{itemize}
+
+\hypertarget{due-before-next-lecture-8}{%
+\subsubsection*{\texorpdfstring{Due Before \emph{Next} Lecture}{Due Before Next Lecture}}\label{due-before-next-lecture-8}}
+\addcontentsline{toc}{subsubsection}{Due Before \emph{Next} Lecture}
+
+\begin{itemize}
+\tightlist
+\item
+  \emph{From Final Project} - WP-03
+\item
+  Lab-09 - Managing Projections
+\end{itemize}
+
+\hypertarget{due-in-two-lectures-3}{%
+\subsubsection*{\texorpdfstring{Due in \emph{Two} Lectures}{Due in Two Lectures}}\label{due-in-two-lectures-3}}
+\addcontentsline{toc}{subsubsection}{Due in \emph{Two} Lectures}
+
+\begin{itemize}
+\tightlist
+\item
+  PS-04 - Managing Projections
+\end{itemize}
+
+\hypertarget{lecture-11---select-and-aggregate-features}{%
+\section*{Lecture-11 - Select and Aggregate Features}\label{lecture-11---select-and-aggregate-features}}
+\addcontentsline{toc}{section}{Lecture-11 - Select and Aggregate Features}
+
+View on Course Website
+
+\hypertarget{topics-11}{%
+\subsection*{Topics}\label{topics-11}}
+\addcontentsline{toc}{subsection}{Topics}
+
+\begin{itemize}
+\tightlist
+\item
+  \textbf{GIScience} - Centroids
+\item
+  \textbf{Data Management} -
+
+  \begin{itemize}
+  \tightlist
+  \item
+    Select by Location
+  \item
+    Spatial Joins
+  \end{itemize}
+\end{itemize}
+
+\hypertarget{readings-11}{%
+\subsection*{Readings}\label{readings-11}}
+\addcontentsline{toc}{subsection}{Readings}
+
+\begin{itemize}
+\tightlist
+\item
+  R4DS:
+
+  \begin{itemize}
+  \tightlist
+  \item
+    \emph{Print} - TBD \textbf{or}
+  \item
+    \emph{Web} - Chapter 5, \emph{part}, Section 5.6 (Link)
+  \end{itemize}
+\item
+  Tutorial: Chapter 6, \emph{part}, pp.~xx-xx
+\end{itemize}
+
+\hypertarget{assignments-12}{%
+\subsection*{Assignments}\label{assignments-12}}
+\addcontentsline{toc}{subsection}{Assignments}
+
+\hypertarget{due-before-lecture-10}{%
+\subsubsection*{\texorpdfstring{Due \emph{Before} Lecture}{Due Before Lecture}}\label{due-before-lecture-10}}
+\addcontentsline{toc}{subsubsection}{Due \emph{Before} Lecture}
+
+\begin{itemize}
+\tightlist
+\item
+  \emph{From Final Project} - WP-03
+\item
+  \emph{From Lecture-10} - Lab-09 - Managing Projections
+\end{itemize}
+
+\hypertarget{due-before-next-lecture-9}{%
+\subsubsection*{\texorpdfstring{Due Before \emph{Next} Lecture}{Due Before Next Lecture}}\label{due-before-next-lecture-9}}
+\addcontentsline{toc}{subsubsection}{Due Before \emph{Next} Lecture}
+
+\begin{itemize}
+\tightlist
+\item
+  \emph{From Lecture-10} - PS-04 - Managing Projections
+\item
+  Lab-10 - Select and Aggregate Features
+\item
+  eTicket-10
+\end{itemize}
+
+\hypertarget{due-in-two-lectures-4}{%
+\subsubsection*{\texorpdfstring{Due in \emph{Two} Lectures}{Due in Two Lectures}}\label{due-in-two-lectures-4}}
+\addcontentsline{toc}{subsubsection}{Due in \emph{Two} Lectures}
+
+\begin{itemize}
+\tightlist
+\item
+  PS-05 - Select and Aggregate Features
+\end{itemize}
+
+\hypertarget{lecture-12---clip-and-dissolve-features}{%
+\section*{Lecture-12 - Clip and Dissolve Features}\label{lecture-12---clip-and-dissolve-features}}
+\addcontentsline{toc}{section}{Lecture-12 - Clip and Dissolve Features}
+
+View on Course Website
+
+\hypertarget{topics-12}{%
+\subsection*{Topics}\label{topics-12}}
+\addcontentsline{toc}{subsection}{Topics}
+
+\begin{itemize}
+\tightlist
+\item
+  \textbf{Data Management} -
+
+  \begin{itemize}
+  \tightlist
+  \item
+    Clipping Features
+  \item
+    Disolving Features
+  \end{itemize}
+\item
+  \textbf{Data Visualization} - Customizing Symbols
+\end{itemize}
+
+\hypertarget{readings-12}{%
+\subsection*{Readings}\label{readings-12}}
+\addcontentsline{toc}{subsection}{Readings}
+
+\begin{itemize}
+\tightlist
+\item
+  Brewer: Chapter 9
+\item
+  Tutorial: Chapter 6, \emph{part}, pp.~xx-xx
+\end{itemize}
+
+\hypertarget{assignments-13}{%
+\subsection*{Assignments}\label{assignments-13}}
+\addcontentsline{toc}{subsection}{Assignments}
+
+\hypertarget{due-before-lecture-11}{%
+\subsubsection*{\texorpdfstring{Due \emph{Before} Lecture}{Due Before Lecture}}\label{due-before-lecture-11}}
+\addcontentsline{toc}{subsubsection}{Due \emph{Before} Lecture}
+
+\begin{itemize}
+\tightlist
+\item
+  \emph{From Lecture-10} - PS-04 - Managing Projections
+\item
+  \emph{From Lecture-11} - Lab-10 - Select and Aggregate Features
+\item
+  eTicket-10
+\end{itemize}
+
+\hypertarget{due-before-next-lecture-10}{%
+\subsubsection*{\texorpdfstring{Due Before \emph{Next} Lecture}{Due Before Next Lecture}}\label{due-before-next-lecture-10}}
+\addcontentsline{toc}{subsubsection}{Due Before \emph{Next} Lecture}
+
+\begin{itemize}
+\tightlist
+\item
+  \emph{From Lecture-11} - PS-05 - Select and Aggregate Features
+\item
+  \emph{From Final Project} - WP-04 - Draft Materials
+\item
+  Lab-11 - Clip and Dissolve Features
+\end{itemize}
+
+\hypertarget{lecture-13---intersect-union-and-merge-features}{%
+\section*{Lecture-13 - Intersect, Union, and Merge Features}\label{lecture-13---intersect-union-and-merge-features}}
+\addcontentsline{toc}{section}{Lecture-13 - Intersect, Union, and Merge Features}
+
+View on Course Website
+
+\hypertarget{topics-13}{%
+\subsection*{Topics}\label{topics-13}}
+\addcontentsline{toc}{subsection}{Topics}
+
+\begin{itemize}
+\tightlist
+\item
+  \textbf{Data Management} -
+
+  \begin{itemize}
+  \tightlist
+  \item
+    Intersect Features
+  \item
+    Union Features
+  \item
+    Merge Features
+  \end{itemize}
+\end{itemize}
+
+\hypertarget{readings-13}{%
+\subsection*{Readings}\label{readings-13}}
+\addcontentsline{toc}{subsection}{Readings}
+
+\begin{itemize}
+\tightlist
+\item
+  Tutorial: Chapter 6, \emph{part}, pp.~xx-xx
+\end{itemize}
+
+\hypertarget{assignments-14}{%
+\subsection*{Assignments}\label{assignments-14}}
+\addcontentsline{toc}{subsection}{Assignments}
+
+\hypertarget{due-before-lecture-12}{%
+\subsubsection*{\texorpdfstring{Due \emph{Before} Lecture}{Due Before Lecture}}\label{due-before-lecture-12}}
+\addcontentsline{toc}{subsubsection}{Due \emph{Before} Lecture}
+
+\begin{itemize}
+\tightlist
+\item
+  \emph{From Lecture-11} - PS-05 - Select and Aggregate Features
+\item
+  \emph{From Lecture-12} - Lab-11 - Clip and Dissolve Features
+\item
+  \emph{From Final Project} - WP-04 - Draft Materials
+\end{itemize}
+
+\hypertarget{due-before-next-lecture-11}{%
+\subsubsection*{\texorpdfstring{Due Before \emph{Next} Lecture}{Due Before Next Lecture}}\label{due-before-next-lecture-11}}
+\addcontentsline{toc}{subsubsection}{Due Before \emph{Next} Lecture}
+
+\begin{itemize}
+\tightlist
+\item
+  \emph{From Final Project} - WP-05 - Peer Reviews
+\item
+  Lab-12 - Intersect, Union, and Merge Features
+\end{itemize}
+
+\hypertarget{due-in-two-lectures-5}{%
+\subsubsection*{\texorpdfstring{Due in \emph{Two} Lectures}{Due in Two Lectures}}\label{due-in-two-lectures-5}}
+\addcontentsline{toc}{subsubsection}{Due in \emph{Two} Lectures}
+
+\begin{itemize}
+\tightlist
+\item
+  PS-06 - Geoprocessing Data
+\end{itemize}
+
+\hypertarget{lecture-14---digitizing-data}{%
+\section*{Lecture-14 - Digitizing Data}\label{lecture-14---digitizing-data}}
+\addcontentsline{toc}{section}{Lecture-14 - Digitizing Data}
+
+View on Course Website
+
+\hypertarget{topics-14}{%
+\subsection*{Topics}\label{topics-14}}
+\addcontentsline{toc}{subsection}{Topics}
+
+\begin{itemize}
+\tightlist
+\item
+  \textbf{GIScience} - Raster Data
+\item
+  \textbf{Data Management} - Creating Vector Data
+\end{itemize}
+
+\hypertarget{readings-14}{%
+\subsection*{Readings}\label{readings-14}}
+\addcontentsline{toc}{subsection}{Readings}
+
+\begin{itemize}
+\tightlist
+\item
+  Tutorial: Chapter 7, \emph{part}, pp.~xx-xx
+\item
+  Tutorial: Chapter 10, \emph{part}, pp.~xx-xx
+\end{itemize}
+
+\hypertarget{assignments-15}{%
+\subsection*{Assignments}\label{assignments-15}}
+\addcontentsline{toc}{subsection}{Assignments}
+
+\hypertarget{due-before-lecture-13}{%
+\subsubsection*{\texorpdfstring{Due \emph{Before} Lecture}{Due Before Lecture}}\label{due-before-lecture-13}}
+\addcontentsline{toc}{subsubsection}{Due \emph{Before} Lecture}
+
+\begin{itemize}
+\tightlist
+\item
+  \emph{From Lecture-13} - Lab-12 - Intersect, Union, and Merge Features
+\item
+  \emph{From Final Project} - WP-05 - Peer Reviews
+\end{itemize}
+
+\hypertarget{due-before-next-lecture-12}{%
+\subsubsection*{\texorpdfstring{Due Before \emph{Next} Lecture}{Due Before Next Lecture}}\label{due-before-next-lecture-12}}
+\addcontentsline{toc}{subsubsection}{Due Before \emph{Next} Lecture}
+
+\begin{itemize}
+\tightlist
+\item
+  \emph{From Lectures 12 and 13} - PS-06 - Geoprocessing Data
+\item
+  Lab-13 - Digitizing Data
+\item
+  eTicket-11
+\end{itemize}
+
+\hypertarget{lecture-15---geocoding-data}{%
+\section*{Lecture-15 - Geocoding Data}\label{lecture-15---geocoding-data}}
+\addcontentsline{toc}{section}{Lecture-15 - Geocoding Data}
+
+View on Course Website
+
+\hypertarget{topics-15}{%
+\subsection*{Topics}\label{topics-15}}
+\addcontentsline{toc}{subsection}{Topics}
+
+\begin{itemize}
+\tightlist
+\item
+  \textbf{GIScience} - Geolocating Point Data
+\item
+  \textbf{Data Management} - Geocoding Data in \texttt{R} and \texttt{ArcGIS}
+\end{itemize}
+
+\hypertarget{readings-15}{%
+\subsection*{Readings}\label{readings-15}}
+\addcontentsline{toc}{subsection}{Readings}
+
+\begin{itemize}
+\tightlist
+\item
+  Tutorial: Chapter 8, \emph{part}, pp.~xx-xx
+\end{itemize}
+
+\hypertarget{assignments-16}{%
+\subsection*{Assignments}\label{assignments-16}}
+\addcontentsline{toc}{subsection}{Assignments}
+
+\hypertarget{due-before-lecture-14}{%
+\subsubsection*{\texorpdfstring{Due \emph{Before} Lecture}{Due Before Lecture}}\label{due-before-lecture-14}}
+\addcontentsline{toc}{subsubsection}{Due \emph{Before} Lecture}
+
+\begin{itemize}
+\tightlist
+\item
+  \emph{From Lectures 12 and 13} - PS-06 - Geoprocessing Data
+\item
+  \emph{From Lecture-14} - Lab-13 - Digitizing Data
+\item
+  eTicket-11
+\end{itemize}
+
+\hypertarget{due-before-next-lecture-13}{%
+\subsubsection*{\texorpdfstring{Due Before \emph{Next} Lecture}{Due Before Next Lecture}}\label{due-before-next-lecture-13}}
+\addcontentsline{toc}{subsubsection}{Due Before \emph{Next} Lecture}
+
+\begin{itemize}
+\tightlist
+\item
+  \emph{From Final Project} - WP-06
+\item
+  Lab-14 - Geocoding Data
+\end{itemize}
+
+\hypertarget{lecture-16---basic-spatial-analyses}{%
+\section*{Lecture-16 - Basic Spatial Analyses}\label{lecture-16---basic-spatial-analyses}}
+\addcontentsline{toc}{section}{Lecture-16 - Basic Spatial Analyses}
+
+View on Course Website
+
+\hypertarget{topics-16}{%
+\subsection*{Topics}\label{topics-16}}
+\addcontentsline{toc}{subsection}{Topics}
+
+\begin{itemize}
+\tightlist
+\item
+  \textbf{GIScience} - An Introduction to Spatial Analyses
+\end{itemize}
+
+\hypertarget{readings-16}{%
+\subsection*{Readings}\label{readings-16}}
+\addcontentsline{toc}{subsection}{Readings}
+
+\begin{itemize}
+\tightlist
+\item
+  Tutorial: Chapter 9, \emph{part}, pp.~xx-xx
+\end{itemize}
+
+\hypertarget{assignments-17}{%
+\subsection*{Assignments}\label{assignments-17}}
+\addcontentsline{toc}{subsection}{Assignments}
+
+\hypertarget{due-before-lecture-15}{%
+\subsubsection*{\texorpdfstring{Due \emph{Before} Lecture}{Due Before Lecture}}\label{due-before-lecture-15}}
+\addcontentsline{toc}{subsubsection}{Due \emph{Before} Lecture}
+
+\begin{itemize}
+\tightlist
+\item
+  \emph{From Lecture-15} - Lab-14 - Geocoding Data
+\item
+  \emph{From Final Project} - WP-06
+\end{itemize}
+
+\hypertarget{due-before-next-lecture-14}{%
+\subsubsection*{\texorpdfstring{Due Before \emph{Next} Lecture}{Due Before Next Lecture}}\label{due-before-next-lecture-14}}
+\addcontentsline{toc}{subsubsection}{Due Before \emph{Next} Lecture}
+
+\begin{itemize}
+\tightlist
+\item
+  Lab-15 - Spatial Analyses
+\end{itemize}
+
+\hypertarget{lecture-17---combining-r-and-arcgis-pro-with-python}{%
+\section*{\texorpdfstring{Lecture-17 - Combining \texttt{R} and ArcGIS Pro with Python}{Lecture-17 - Combining R and ArcGIS Pro with Python}}\label{lecture-17---combining-r-and-arcgis-pro-with-python}}
+\addcontentsline{toc}{section}{Lecture-17 - Combining \texttt{R} and ArcGIS Pro with Python}
+
+View on Course Website
+
+\hypertarget{topics-17}{%
+\subsection*{Topics}\label{topics-17}}
+\addcontentsline{toc}{subsection}{Topics}
+
+\begin{itemize}
+\tightlist
+\item
+  \textbf{GIScience} - Programming for ArcGIS
+\end{itemize}
+
+\hypertarget{assignments-18}{%
+\subsection*{Assignments}\label{assignments-18}}
+\addcontentsline{toc}{subsection}{Assignments}
+
+\hypertarget{due-before-lecture-16}{%
+\subsubsection*{\texorpdfstring{Due \emph{Before} Lecture}{Due Before Lecture}}\label{due-before-lecture-16}}
+\addcontentsline{toc}{subsubsection}{Due \emph{Before} Lecture}
+
+\begin{itemize}
+\tightlist
+\item
+  \emph{From Lecture-16} - Lab-15 - Spatial Analyses
+\end{itemize}
+
+\hypertarget{due-before-next-class-meeting}{%
+\subsubsection*{\texorpdfstring{Due Before \emph{Next} Class Meeting}{Due Before Next Class Meeting}}\label{due-before-next-class-meeting}}
+\addcontentsline{toc}{subsubsection}{Due Before \emph{Next} Class Meeting}
+
+\begin{itemize}
+\tightlist
+\item
+  \emph{From Final Project} - Final Code, Docs, and Presentation
+
+  \begin{itemize}
+  \tightlist
+  \item
+    \emph{SOC 5650 only} - Final Paper
+  \end{itemize}
+\end{itemize}
+
+\hypertarget{final-presentations}{%
+\section*{Final Presentations}\label{final-presentations}}
+\addcontentsline{toc}{section}{Final Presentations}
+
+\hypertarget{topics-18}{%
+\subsection*{Topics}\label{topics-18}}
+\addcontentsline{toc}{subsection}{Topics}
+
+\begin{itemize}
+\tightlist
+\item
+  \textbf{Research Synthesis} - Final Presentations
+\end{itemize}
+
+\hypertarget{assignments-due-before-presentations}{%
+\subsection*{Assignments Due Before Presentations}\label{assignments-due-before-presentations}}
+\addcontentsline{toc}{subsection}{Assignments Due Before Presentations}
+
+\begin{itemize}
+\tightlist
+\item
+  \emph{From Final Project} - Final Code, Docs, and Presentation
+
+  \begin{itemize}
+  \tightlist
+  \item
+    \emph{SOC 5650 only} - Final Paper
+  \end{itemize}
+\end{itemize}
+
+\bibliography{book.bib,packages.bib}
+
+
+\end{document}
