@@ -87,7 +87,7 @@ knitr::kable(
 
 #### Due *Before* Lecture {-}
 
-* <a href="https://slu-soc5650.github.io/docs/course-preview/#lecture-01-entry-ticket" target="_blank">eTicket-01</a>
+* eTicket-01
 
 ## Lecture-02 - ArcGIS Pro Overview {-}
 
@@ -133,7 +133,7 @@ knitr::kable(
 #### Required {-}
 
 * Brewer: Chapters 1-2, 7-8
-* Tutorial: Chapter 2, *part*, pp. xx-xx
+* Tutorial: Chapter 2, *part*, pp. 45-62
 
 * Tufte, Edward. 1990. "Color and Information." Pp. 81-95 in *Envisioning Information*. Cheshire, CT: Graphics Press. (<a href="http://eres.slu.edu/eres/coursepage.aspx?cid=4444" target="_blank">Electronic Reserves</a>)
 * Tufte, Edward. 2001 "Data Maps." Pp. 16-27 in *The Visual Display of Quantitative Information*. Cheshire, CT: Graphics Press. (<a href="http://eres.slu.edu/eres/coursepage.aspx?cid=4444" target="_blank">Electronic Reserves</a>)
@@ -141,7 +141,9 @@ knitr::kable(
 
 #### Optional {-}
 
-* 
+* Borland, David and Russell M. Taylor II. 2007. "Rainbow color map (still) considered harmful." *IEEE computer graphics and applications* 27(2). (<a href="https://ieeexplore.ieee.org/abstract/document/4118486" target="_blank">Link</a>)
+* Brewer, Cynthia A., Alan M. MacEachren, Linda W. Pickle, and Douglas Herrmann. 1997. "Mapping mortality: Evaluating color schemes for choropleth maps." *Annals of the Association of American Geographers* 87(3):411-438. (<a href="https://onlinelibrary.wiley.com/doi/abs/10.1111/1467-8306.00061" target="_blank">Link</a>)
+* Olson, Judy M., and Cynthia A. Brewer. 1997. "An evaluation of color selections to accommodate map users with color‐vision impairments." *Annals of the Association of American Geographers* 87(1):103-134. (<a href="https://onlinelibrary.wiley.com/doi/abs/10.1111/0004-5608.00043" target="_blank">Link</a>)
 
 ### Assignments {-}
 
@@ -174,8 +176,8 @@ knitr::kable(
 * Brewer: Chapters 3, 5, and 6
 * Tufte, Edward. 2001 ``Chartjunk.'' Pp. 1007-121 in *The Visual Display of Quantitative Information*. Cheshire, CT: Graphics Press. (<a href="http://eres.slu.edu/eres/coursepage.aspx?cid=4444" target="_blank">Electronic Reserves</a>)
 * Tutorial: 
-    * Chapter 2, *part*, pp. xx-xx
-    * Chapter 3, *part*, pp. xx-xx
+    * Chapter 2, *part*, pp. 65-79
+    * Chapter 3, *part*, pp. 83-100
 
 ### Assignments {-}
 
@@ -210,10 +212,10 @@ knitr::kable(
 
 * Lovelace, Robin, Jakub Nowosad, and Jannes Muenchow. 2019. *Geocomputation with R.* New York, NY: CRC Press. Chapter 8, *part*, Sections 8.1-8.2 (<a href="https://geocompr.robinlovelace.net/adv-map.html" target="_blank">Link</a>)
 * R4DS, Analysis Development:
-    - *Print* - Preface, TBD ***or***
+    - *Print* - Preface, Part I Intro (pp. 1-2), Chapters 2, 4, and 6 ***or***
     - *Web* - Chapters 1, 2, 4, 6, and 8 (<a href="http://r4ds.had.co.nz" target="_blank">Link</a>)
 * R4DS, Data Visualization:
-    - *Print* - TBD **or**
+    - *Print* - Chapter 1, *part*, pp. 3-13 **or**
     - *Web* - Chapter 3, *part*, Sections 3.1-3.4 (<a href="http://r4ds.had.co.nz" target="_blank">Link</a>)
 
 ### Assignments {-}
@@ -254,11 +256,11 @@ knitr::kable(
 
 * Brewer: Chapter 4
 * R4DS:
-    - *Print* - TBD **or**
+    - Chapter 1, *part*, pp. 14-15 **or**
     - *Web* - Chapter 3, *part*, Section 3.5 (<a href="http://r4ds.had.co.nz" target="_blank">Link</a>)
 * Tufte, Edward. 1990. ``Small Multiples.'' Pp. 67-79 in *Envisioning Information*. Cheshire, CT: Graphics Press. (<a href="http://eres.slu.edu/eres/coursepage.aspx?cid=4444" target="_blank">Electronic Reserves</a>)
 * Tufte, Edward. 2006 ``Analytical Design.'' Pp. 125-139 in *Beautiful Evidence*. Cheshire, CT: Graphics Press. (<a href="http://eres.slu.edu/eres/coursepage.aspx?cid=4444" target="_blank">Electronic Reserves</a>)
-* Tutorial: Chapter 3, *part*, pp. xx-xx
+* Tutorial: Chapter 3, *part*, pp. 101-114
 
 #### Optional {-}
 
@@ -292,7 +294,7 @@ knitr::kable(
 ### Readings {-}
 
 * R4DS:
-    - *Print* - TBD **or**
+    - *Print* - Chapter 3, *part*, pp. 43-58 **or**
     - *Web* - Chapter 5, *part*, Sections 5.1-5.5 (<a href="http://r4ds.had.co.nz" target="_blank">Link</a>)
 
 ### Assignments {-}
@@ -330,7 +332,10 @@ knitr::kable(
 
 ### Readings {-}
 
-* Tutorial: Chapter 4, *part*, pp. xx-xx
+* R4DS:
+    - *Print* - Chapter 10, *part*, pp. 171-1782 **or**
+    - *Web* - Chapter 13, *part*, Sections 13.1-13.4 (<a href="http://r4ds.had.co.nz" target="_blank">Link</a>)
+* Tutorial: Chapter 4, *part*, Tutorials 4-1 and 4-4
 
 ### Assignments {-}
 
@@ -395,9 +400,9 @@ knitr::kable(
 
 1. Maher, Margaret. 2013. "Defining Projections and Their Parameters; Adding x,y Data; Analyzing the Shape of Buffers." Pp. 167-182 in *Lining up data in ArcGIS: A Guide to Map Projections.* Redlands, CA: ESRI Press. (<a href="http://eres.slu.edu/eres/coursepage.aspx?cid=4444" target="_blank">Electronic Reserves</a>)
 2. Maher, Margaret. 2013. "Identifying the Projected Coordinate System." Pp. 35-55 in *Lining up data in ArcGIS: A Guide to Map Projections.* Redlands, CA: ESRI Press. (<a href="http://eres.slu.edu/eres/coursepage.aspx?cid=4444" target="_blank">Electronic Reserves</a>)
-3. Tutorial: TBA
+3. Tutorial: Chapter 5, *part*, pp. 163-180
 4. R4DS:
-    - *Print* - TBD **or**
+    - *Print* - Chapters 11 and 13 **or**
     - *Web* - Chapters 14 and 16 (<a href="http://r4ds.had.co.nz" target="_blank">Link</a>)
 
 
@@ -436,9 +441,9 @@ knitr::kable(
 ### Readings {-}
 
 * R4DS:
-    - *Print* - TBD **or**
+    - *Print* - Chapter 3, *part*, pp. 59-76 **or**
     - *Web* - Chapter 5, *part*, Section 5.6 (<a href="http://r4ds.had.co.nz" target="_blank">Link</a>)
-* Tutorial: Chapter 6, *part*, pp. xx-xx
+* Tutorial: Chapter 4, *part*, Tutorial 4-5
 
 ### Assignments {-}
 
@@ -474,7 +479,7 @@ knitr::kable(
 ### Readings {-}
 
 * Brewer: Chapter 9 
-* Tutorial: Chapter 6, *part*, pp. xx-xx
+* Tutorial: Chapter 6, *part*, Tutorials 6-1 and 6-2
 
 ### Assignments {-}
 
@@ -506,7 +511,7 @@ knitr::kable(
 
 ### Readings {-}
 
-* Tutorial: Chapter 6, *part*, pp. xx-xx
+* Tutorial: Chapter 6, *part*, Tutorials 6-3 through 6-6
 
 ### Assignments {-}
 
@@ -539,8 +544,8 @@ knitr::kable(
 
 ### Readings {-}
 
-* Tutorial: Chapter 7, *part*, pp. xx-xx
-* Tutorial: Chapter 10, *part*, pp. xx-xx
+* Tutorial: Chapter 7
+* Tutorial: Chapter 10, *part*, Tutorial 10-1
 
 ### Assignments {-}
 
@@ -569,7 +574,7 @@ knitr::kable(
 
 ### Readings {-}
 
-* Tutorial: Chapter 8, *part*, pp. xx-xx
+* Tutorial: Chapter 8
 
 ### Assignments {-}
 
@@ -597,7 +602,9 @@ knitr::kable(
 
 ### Readings {-}
 
-* Tutorial: Chapter 9, *part*, pp. xx-xx
+* Tutorial: 
+    * Chapter 9, *part*, Tutorial 9-1
+    * Chapter 10, *part*, Tutorial 10-2
 
 ### Assignments {-}
 
