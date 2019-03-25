@@ -436,13 +436,12 @@ R4DS           Wickham, Hadley and Garrett Grolemund. 2016. *R for data science:
 
 #### Due Before *Next* Lecture {-}
 
-* *From Lecture-10* - PS-04 - Managing Projections
 * Lab-10 - Select and Aggregate Features
 * eTicket-10
 
 #### Due in *Two* Lectures {-}
 
-* PS-05 - Select and Aggregate Features
+* PS-04 - Select and Aggregate Features
 
 ## Lecture-12 - Clip and Dissolve Features {-}
 
@@ -473,9 +472,13 @@ R4DS           Wickham, Hadley and Garrett Grolemund. 2016. *R for data science:
 
 #### Due Before *Next* Lecture {-}
 
-* *From Lecture-11* - PS-05 - Select and Aggregate Features
+* *From Lecture-11* - PS-04 - Select and Aggregate Features
 * *From Final Project* - WP-04 - Draft Materials
 * Lab-11 - Clip and Dissolve Features
+
+#### Due in *Two* Lectures {-}
+
+* PS-05 - Clip and Dissolve Features
 
 ## Lecture-13 - Intersect, Union, and Merge Features {-}
 
@@ -499,18 +502,19 @@ R4DS           Wickham, Hadley and Garrett Grolemund. 2016. *R for data science:
 
 #### Due *Before* Lecture {-}
 
-* *From Lecture-11* - PS-05 - Select and Aggregate Features
+* *From Lecture-11* - PS-04 - Select and Aggregate Features
 * *From Lecture-12* - Lab-11 - Clip and Dissolve Features
 * *From Final Project* - WP-04 - Draft Materials
 
 #### Due Before *Next* Lecture {-}
 
+* *From Lecture-12* - PS-05 - Clip and Dissolve Features
 * *From Final Project* - WP-05 - Peer Reviews
 * Lab-12 - Intersect, Union, and Merge Features
 
 #### Due in *Two* Lectures {-}
 
-* PS-06 - Geoprocessing Data
+* PS-06 - Intersect, Union, and Merge Features
 
 ## Lecture-14 - Digitizing Data {-}
 
@@ -533,12 +537,13 @@ R4DS           Wickham, Hadley and Garrett Grolemund. 2016. *R for data science:
 
 #### Due *Before* Lecture {-}
 
+* *From Lecture-12* - PS-05 - Clip and Dissolve Features
 * *From Lecture-13* - Lab-12 - Intersect, Union, and Merge Features
 * *From Final Project* - WP-05 - Peer Reviews
 
 #### Due Before *Next* Lecture {-}
 
-* *From Lectures 12 and 13* - PS-06 - Geoprocessing Data
+* *From Lecture 13* - PS-06 - Intersect, Union, and Merge Features
 * Lab-13 - Digitizing Data
 * eTicket-11
 
@@ -562,7 +567,7 @@ R4DS           Wickham, Hadley and Garrett Grolemund. 2016. *R for data science:
 
 #### Due *Before* Lecture {-}
 
-* *From Lectures 12 and 13* - PS-06 - Geoprocessing Data
+* *From Lecture 13* - PS-06 - Intersect, Union, and Merge Features
 * *From Lecture-14* - Lab-13 - Digitizing Data
 * eTicket-11
 

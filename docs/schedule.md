@@ -60,9 +60,9 @@ Lecture   Date              Entry.Ticket   Lab      Problem.Set   Final.Project
 09        March 11^th^                     Lab-07   PS-03                             
 10        March 18^th^      eTicket-09     Lab-08                                     
 11        March 25^th^                     Lab-09                 WP-03               
-12        April 1^st^       eTicket-10     Lab-10   PS-04                             
-13        April 8^th^                      Lab-11   PS-05         WP-04 - Drafts      
-14        April 15^th^                     Lab-12                 WP-05               
+12        April 1^st^       eTicket-10     Lab-10                                     
+13        April 8^th^                      Lab-11   PS-04         WP-04 - Drafts      
+14        April 15^th^                     Lab-12   PS-05         WP-05               
 15        April 22^nd^      eTicket-11     Lab-13   PS-06                             
 16        April 29^th^                     Lab-14                 WP-06               
 17        May 6^th^         eTicket-12     Lab-15                                     
