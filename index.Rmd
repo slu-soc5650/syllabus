@@ -31,23 +31,23 @@ description: "This is the syllabus and reading list for Chris's sections of SOC 
 
 *GitHub:* `@chris-prener`
 
-*Discuss:* `@chris.prener`
+*Slack:* `@chris`
 
 *Office Hours:*
 
 -   Mondays, 7:00pm to 7:30pm in 3600 Morrissey (GeoSRI Lab)
 
--   Wednesdays, 10:00am to 12:00pm in 3600 Morrissey (GeoSRI Lab)
+-   Tuesdays, 10:00am to 12:00pm in 3600 Morrissey (GeoSRI Lab)
 
 ### Branson's Information {-}
 
-*Email:* <chris.prener@slu.edu>
+*Email:* <carter.hanford@slu.edu>
 
-*GitHub:* `@bransonf`
+*GitHub:* `@CarterHanford`
 
-*Discuss:* 
+*Slack:* `@Carter Hanford`
 
-*Office Hours:*
+*Office Hours:* TBA
 
 ## Hardcopy Syllabus {-}
 If you would like to keep a record of the syllabus, there is a `.pdf` download button (<i class="fa fa-file-pdf-o"></i>) in the top toolboar. This may be particularly useful for honors and M.A. students who plan to continue their graduate education after SLU and hope to petition out of a basic statistics requirement. This document will contain a "snapshot" of the course policies and planned schedule as of the beginning of the semester but will not be subsequently updated. See the "Preface and Warning" on page 2 of the `.pdf` for additional details.
@@ -55,7 +55,7 @@ If you would like to keep a record of the syllabus, there is a `.pdf` download b
 ## Change Log {-}
 
 ## License {-}
-Copyright © 2016-2018 [Christopher G. Prener](https://chris-prener.github.io)
+Copyright © 2016-2019 [Christopher G. Prener](https://chris-prener.github.io)
 
 <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-sa/4.0/88x31.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License</a>.
 

@@ -67,8 +67,8 @@ R4DS           Wickham, Hadley and Garrett Grolemund. 2016. *R for data science:
 
 #### Required {-}
 
-* Goodchild, Michael. 2010. "Twenty years of progress: GIScience in 2010." *Journal of Spatial Information Science* 1(1):3-20. (<a href="http://eres.slu.edu/eres/coursepage.aspx?cid=4444" target="_blank">Electronic Reserves</a>)
-* Logan, John. 2010. "Making a place for space: Spatial thinking in social science." *Annual Review of Sociology* 38:507-524. (<a href="http://eres.slu.edu/eres/coursepage.aspx?cid=4444" target="_blank">Electronic Reserves</a>)
+* Goodchild, Michael. 2010. "Twenty years of progress: GIScience in 2010." *Journal of Spatial Information Science* 1(1):3-20. (<a href="http://josis.net/index.php/josis/article/viewArticle/32" target="_blank">Link</a>)
+* Logan, John. 2010. "Making a place for space: Spatial thinking in social science." *Annual Review of Sociology* 38:507-524. (<a href="https://www.annualreviews.org/doi/abs/10.1146/annurev-soc-071811-145531" target="_blank">Link</a>)
 * R4DS:
     - *Print* - Preface ***or***
     - *Web* - Chapter 1 (<a href="http://r4ds.had.co.nz" target="_blank">Link</a>)
@@ -190,7 +190,7 @@ R4DS           Wickham, Hadley and Garrett Grolemund. 2016. *R for data science:
 
 * PS-01 - Map Production in ArcGIS Pro
 
-## Lecture-05 - Map Production in `R` {-}
+## Lecture-05 - Map Production in `R` (Part 1) {-}
 
 <div class="button"><a href="https://slu-soc5650.github.io/docs/lecture-05/" target="_blank">View on Course Website</a></div>
 
@@ -228,7 +228,7 @@ R4DS           Wickham, Hadley and Garrett Grolemund. 2016. *R for data science:
 
 * PS-02 - Map Production in `R`
 
-## Lecture-06 - More Map Production in `R` {-}
+## Lecture-06 - Map Production in `R` (Part 2) {-}
 
 <div class="button"><a href="https://slu-soc5650.github.io/docs/lecture-06/" target="_blank">View on Course Website</a></div>
 
@@ -576,7 +576,7 @@ R4DS           Wickham, Hadley and Garrett Grolemund. 2016. *R for data science:
 * *From Final Project* - WP-06
 * Lab-14 - Geocoding Data
 
-## Lecture-16 - Basic Spatial Analyses {-}
+## Lecture-16 - ArcGIS Pro Story Maps {-}
 
 <div class="button"><a href="https://slu-soc5650.github.io/docs/lecture-16/" target="_blank">View on Course Website</a></div>
 
@@ -585,13 +585,11 @@ R4DS           Wickham, Hadley and Garrett Grolemund. 2016. *R for data science:
 
 ### Topics {-}
 
-* **GIScience** - An Introduction to Spatial Analyses
+* **GIScience** - An Introduction to ArcGIS Pro Story Maps
 
 ### Readings {-}
 
-* Tutorial: 
-    * Chapter 9, *part*, Tutorial 9-1
-    * Chapter 10, *part*, Tutorial 10-2
+* TBD
 
 ### Assignments {-}
 
@@ -602,24 +600,17 @@ R4DS           Wickham, Hadley and Garrett Grolemund. 2016. *R for data science:
 
 #### Due Before *Next* Lecture {-}
 
-* Lab-15 - Spatial Analyses
+* Lab-15 - ArcGIS Pro Story Maps
 
-## Lecture-17 - Combining `R` and ArcGIS Pro with Python {-}
+## Lecture-17 - Final Project Work Session {-}
 
 <div class="button"><a href="https://slu-soc5650.github.io/docs/lecture-17/" target="_blank">View on Course Website</a></div>
 
 <br>
 <br>
 
-### Topics {-}
-
-* **GIScience** - Programming for ArcGIS 
 
 ### Assignments {-}
-
-#### Due *Before* Lecture {-}
-
-* *From Lecture-16* - Lab-15 - Spatial Analyses
 
 #### Due Before *Next* Class Meeting {-}
 

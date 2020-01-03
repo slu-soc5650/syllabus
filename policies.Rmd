@@ -62,13 +62,13 @@ Please also note that lectures and discussions cannot be recorded by any means (
 
 ## Communication
 
-Our course [discussion forums](http://discuss.slu-ssds.org) and email are my preferred methods of communication.
+Our course [Slack workspace](http://slu-soc5650.slack.com) and email are my preferred methods of communication.
 
-I will the forums during weekday business hours and will respond to messages if I am able. Likewise, I dedicate time to email responses each workday, meaning that my response time is typically within 24 hours during the workweek. Please use your SLU email account when emailing me.
+I will the check Slack during weekday business hours and will respond to messages if I am able. Likewise, I dedicate time to email responses each workday, meaning that my response time is typically within 24 hours during the workweek. Please use your SLU email account when emailing me.
 
-For both email and the forums, if you have not received a response from me after 48 hours (or by end of business on Monday if you messaged me over the weekend), please follow-up to ensure that your message did not get lost in the shuffle.
+For both email and Slack, if you have not received a response from me after 48 hours (or by end of business on Monday if you messaged me over the weekend), please follow-up to ensure that your message did not get lost in the shuffle.
 
-All messages regarding course updates, assignments, and changes to the class schedule, including cancellations, will be posted on the main [Introduction to GIS category](https://discuss.slu-ssds.org/c/intro-to-gis) on the forums. Changes to the class schedule, including cancellations, will also sent to your SLU email account. It is imperative that you check both the forums and your SLU email account regularly.
+All messages regarding course updates, assignments, and changes to the class schedule, including cancellations, will be posted on the main `#_news` channel on Slack. Changes to the class schedule, including cancellations, will also sent to your SLU email account. It is imperative that you check both the forums and your SLU email account regularly.
 
 Please also ensure that all concerns or questions about your standing in the course are directed to me immediately. Inquires from parents, SLU staff members, and others will not be honored.
 

@@ -46,7 +46,7 @@ There are three books required for this course with an optional fourth book. Eac
 
 I do not require students to buy physical copies of texts. You are free to select a means for accessing these texts that meets your budget and learning style. If eBook editions (e.g. Kindle, iBooks, `pdf`, etc.) of texts are available, they are acceptable for this course. All texts should be obtained in the edition noted above.
 
-All readings are listed on the **Reading List** and should be completed before the course meeting on the week in which they are assigned. Full text versions of most readings not found in the books assigned for the course can be obtained using the library’s [Electronic Reserves](http://eres.slu.edu/eres/coursepass.aspx?cid=4444) system. The password for the Electric Reserves will be posted on the course [discussion forums](https://discuss.slu-ssds.org) at the beginning of the semester.
+All readings are listed on the **Reading List** and should be completed before the course meeting on the week in which they are assigned. Full text versions of most readings not found in the books assigned for the course will be linked to in the Syllabus. For one or two readings, `.pdf` copies will be made available via GitHub.
 
 ## Services
 Over the course of the semester, we'll use two web-based services. Each of these will require you to create an account with a username and password. GitHub will require you to enable [two-factor authentication](https://en.wikipedia.org/wiki/Multi-factor_authentication) as well. I strongly recommend using a [password manager](https://lifehacker.com/5529133/five-best-password-managers).
@@ -55,9 +55,9 @@ Over the course of the semester, we'll use two web-based services. Each of these
 
 The majority of course content (sample code, documentation, and assignments) for this course will be made available using **[GitHub](http://www.github.com)**. GitHub is a website used by programmers, data analysts, and researchers to share computer code and projects. GitHub will also be used for assignment submission and feedback. In addition to providing us with platform for hosting course content, using GitHub will give you experience in some of the techniques that researchers use to conduct both open-source and collaborative research. GitHub is free to use but does have some premium features, which students can access for free through their [Student Developer program](https://education.github.com/pack/). As I noted above, these premium features *are not required* for this course but are worth knowing about if you decide to continue using GitHub.
 
-### Discourse
+### Slack
 
-[Discourse](http://discourse.org) is commerical forum software that we will be using as a central place to post annoucements, ask questions, and get help. Quite a few major open source platforms utilize Discourse's software, including [RStudio](http://community.rstudio.com) and [ROpenSci](http://discuss.ropensci.org), so it is worth knowing how to use their software. You will be invited to the course [discussion forums](https://discuss.slu-ssds.org), which are not publicly accessible, and are expected to check them regularly.
+[Slack](http://slack.com) is commerical chat software that we will be using as a central place to post annoucements, ask questions, and get help. Slack is quite common right now in a variety of industries, so it is worth knowing how to use their software. Please join our [course Slack organization](http://slu-soc5650.slack.com). Like GitHub, we will be using the free tier, so you should not have to worry about any paid upgrades.
 
 ## Software
 There are three principle applications we'll be using this semester in addition to the services listed previously: [ArcGIS Pro](https://pro.arcgis.com/en/pro-app/), [RStudio](https://www.rstudio.com), and [GitHub Desktop](https://desktop.github.com). Both RStudio and GitHub Desktop of these are open-source applications that can be downloaded and used without cost. All applications are available in our classroom, which you will have 24-hour access to throughout the semester. All students will need access to these tools every week, so plan to either set-up your computer accordingly or budget time to spend in the lab.
@@ -78,6 +78,9 @@ You will need to decide whether you want to install `R` and RStudio locally on a
 
 You will need another free application called [GitHub Desktop](https://desktop.github.com). This program allows you to easily copy data from GitHub onto your computer. It also makes it easy to upload files like labs and problem sets to GitHub. If you have already used Git via the command line, you can continue to do so without utilizing GitHub Desktop. 
 
+### Slack
+You can *optionally* use Slack's [desktop](https://slack.com/downloads) and mobile applications if you wish. I recommend turning off push alerts, particularly if you use the mobile application.
+
 ### Additional Software
 You will need to use some type of word processing and presentation software. We'll use some specific `R` packages to produce output in Microsoft Word and PowerPoint formats, but these can be readily used with other programs (like Apple's iWork suite) without actually having Microsoft Office installed on your computer.
 
@@ -87,6 +90,4 @@ Spatial data files tend to be large, and this course will involve tens of gigaby
 
 ## Other Materials
 
-All of the course materials are online and can be accessed through the [**course website**](https://slu-soc5650.github.io) and [**GitHub**](http://www.github.com), some of the handouts are easiest to
-use when printed. I will provide the first week's handouts printed to give you a sense of what they look like. If you would like to continue reciving hard copy handouts, there will be a way to indicate that you'd prefer them prior to our second in-person meeting for Lecture-03. If you opt-in to hard copy materials, I recommend purchasing a 1.5"
-three-ring binder along with dividers. If you choose to only recieve digital course materials, you do not need a binder. You can opt back in to reciving printed materials at any time, and I will even provide back handouts if necessary.
+All of the course materials are online and can be accessed through the [**course website**](https://slu-soc5650.github.io) and [**GitHub**](http://www.github.com), some of the handouts are easiest to use when printed. I will provide the first week's handouts printed to give you a sense of what they look like. If you would like to continue reciving hard copy handouts, there will be a way to indicate that you'd prefer them prior to our second in-person meeting for Lecture-03. If you opt-in to hard copy materials, I recommend purchasing a 1.5" three-ring binder along with dividers. If you choose to only recieve digital course materials, you do not need a binder. You can opt back in to reciving printed materials at any time, and I will even provide back handouts if necessary.
