@@ -6,8 +6,7 @@ These tips are an effort to illuminate what sociologists refer to as the "[hidde
 
 Since I give this advice out in multiple classes, the documents themselves are stored on my [personal website](https://chris-prener.github.io):
 
-1. [Doing the Little Things Right](https://chris-prener.github.io/resources/little-things/)
-2. [Zen and the Art of Data Analysis](https://chris-prener.github.io/resources/zen/)
-4. [Letters of Recommendation](https://chris-prener.github.io/resources/letters/) 
+1. [Doing the Little Things Right](https://chris-prener.github.io/resources/students/little-things/)
+2. [Letters of Recommendation](https://chris-prener.github.io/resources/students/letters/) 
 
 If there are other topics you have questions about, please let me know. These documents are a work in progress.

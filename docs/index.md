@@ -1,7 +1,7 @@
 ---
 title: "SOC 4650 & 5650: Introduction to GIS"
 author: "Christopher Prener, Ph.D."
-date: "2020-01-02"
+date: "2020-01-12"
 site: bookdown::bookdown_site
 documentclass: book
 bibliography: [book.bib, packages.bib]
@@ -35,9 +35,9 @@ description: "This is the syllabus and reading list for Chris's sections of SOC 
 
 *Office Hours:*
 
--   Mondays, 7:00pm to 7:30pm in 3600 Morrissey (GeoSRI Lab)
-
--   Tuesdays, 10:00am to 12:00pm in 3600 Morrissey (GeoSRI Lab)
+- Mondays, 7:00pm to 7:30pm in 3600 Morrissey (GeoSRI Lab)
+- Tuesdays, 9:00am to 11:00am in 1918 Morrissey (appointment only via [Calendly](https://calendly.com/chris-prener))
+- Tuesdays, 11:00am to 12:00pm in 1918 Morrissey (drop-in)
 
 ### Branson's Information {-}
 
@@ -54,8 +54,11 @@ If you would like to keep a record of the syllabus, there is a `.pdf` download b
 
 ## Change Log {-}
 
+* January 2^nd^, 2020 - Update for Spring 2020 semester
+* January 12^th^, 2020 - Update office hours and success links
+
 ## License {-}
-Copyright © 2016-2019 [Christopher G. Prener](https://chris-prener.github.io)
+Copyright © 2016-2020 [Christopher G. Prener](https://chris-prener.github.io)
 
 <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-sa/4.0/88x31.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License</a>.
 

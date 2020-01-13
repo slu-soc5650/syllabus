@@ -1,12 +1,12 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<html lang="" xml:lang="">
 <head>
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <title>1.6 Software | SOC 4650 &amp; 5650: Introduction to GIS</title>
   <meta name="description" content="This is the syllabus and reading list for Chris’s sections of SOC 4650 and 5650." />
-  <meta name="generator" content="bookdown 0.13 and GitBook 2.6.7" />
+  <meta name="generator" content="bookdown 0.17 and GitBook 2.6.7" />
 
   <meta property="og:title" content="1.6 Software | SOC 4650 &amp; 5650: Introduction to GIS" />
   <meta property="og:type" content="book" />
@@ -24,7 +24,7 @@
 <meta name="author" content="Christopher Prener, Ph.D." />
 
 
-<meta name="date" content="2020-01-02" />
+<meta name="date" content="2020-01-12" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -34,12 +34,16 @@
 <link rel="prev" href="services.html"/>
 <link rel="next" href="data-and-data-storage.html"/>
 <script src="libs/jquery-2.2.3/jquery.min.js"></script>
+<script src="libs/elevate-section-attrs-2.0/elevate-section-attrs.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-clipboard.css" rel="stylesheet" />
+
+
 
 
 
@@ -76,7 +80,7 @@
 <li class="chapter" data-level="" data-path="change-log.html"><a href="change-log.html"><i class="fa fa-check"></i>Change Log</a></li>
 <li class="chapter" data-level="" data-path="license.html"><a href="license.html"><i class="fa fa-check"></i>License</a></li>
 </ul></li>
-<li class="chapter" data-level="" data-path="part-syllabus.html"><a href="part-syllabus.html"><i class="fa fa-check"></i>(PART) Syllabus</a></li>
+<li class="part"><span><b>I Syllabus</b></span></li>
 <li class="chapter" data-level="1" data-path="course-introduction.html"><a href="course-introduction.html"><i class="fa fa-check"></i><b>1</b> Course Introduction</a>
 <ul>
 <li class="chapter" data-level="1.1" data-path="two-courses-one-goal.html"><a href="two-courses-one-goal.html"><i class="fa fa-check"></i><b>1.1</b> Two Courses, One Goal</a></li>
@@ -137,7 +141,7 @@
 <li class="chapter" data-level="4.3" data-path="extra-credit.html"><a href="extra-credit.html"><i class="fa fa-check"></i><b>4.3</b> Extra Credit</a></li>
 <li class="chapter" data-level="4.4" data-path="grading.html"><a href="grading.html"><i class="fa fa-check"></i><b>4.4</b> Grading</a></li>
 </ul></li>
-<li class="chapter" data-level="" data-path="reading-list.html"><a href="reading-list.html"><i class="fa fa-check"></i>Reading List</a></li>
+<li class="part"><span><b>II Reading List</b></span></li>
 <li class="chapter" data-level="5" data-path="course-schedule.html"><a href="course-schedule.html"><i class="fa fa-check"></i><b>5</b> Course Schedule</a>
 <ul>
 <li class="chapter" data-level="5.1" data-path="planned-online-lectures.html"><a href="planned-online-lectures.html"><i class="fa fa-check"></i><b>5.1</b> Planned Online Lectures</a></li>
@@ -281,28 +285,28 @@
 
             <section class="normal" id="section-">
 <div id="software" class="section level2" number="1.6">
-<h2 number="1.6"><span class="header-section-number">1.6</span> Software</h2>
+<h2><span class="header-section-number">1.6</span> Software</h2>
 <p>There are three principle applications we’ll be using this semester in addition to the services listed previously: <a href="https://pro.arcgis.com/en/pro-app/">ArcGIS Pro</a>, <a href="https://www.rstudio.com">RStudio</a>, and <a href="https://desktop.github.com">GitHub Desktop</a>. Both RStudio and GitHub Desktop of these are open-source applications that can be downloaded and used without cost. All applications are available in our classroom, which you will have 24-hour access to throughout the semester. All students will need access to these tools every week, so plan to either set-up your computer accordingly or budget time to spend in the lab.</p>
 <div id="arcgis-pro" class="section level3" number="1.6.1">
-<h3 number="1.6.1"><span class="header-section-number">1.6.1</span> ArcGIS Pro</h3>
+<h3><span class="header-section-number">1.6.1</span> ArcGIS Pro</h3>
 <p>The primary software platform we will use is the ArcGIS Pro suite of applications. Though it is relatively expensive, ArcGIS is the industry standard GIS software application. ArcGIS is available only for Windows. It is available in 3600 Morrissey (GeoSRI Lab) and thus purchasing it is not required for this course. For students who have Windows on their computer, I will make free student licenses available if your computer meets the <a href="http://pro.arcgis.com/en/pro-app/get-started/arcgis-pro-system-requirements.htm">system requirements</a>.</p>
 <p>If you have used ArcGIS before or have access to it, all course documents will assume that you are using the most modern release of ArcGIS Pro. Older versions of ArcGIS Desktop will not be compatible with our textbook, course materials, or assignment structure.</p>
 </div>
 <div id="r-and-rstudio" class="section level3" number="1.6.2">
-<h3 number="1.6.2"><span class="header-section-number">1.6.2</span> <code>R</code> and RStudio</h3>
+<h3><span class="header-section-number">1.6.2</span> <code>R</code> and RStudio</h3>
 <p>The primary tool we will use for data manipulation and analysis is the programming language <code>R</code>. <code>R</code> is open-source, freely available, and highly extensible analysis environment. We’ll use <a href="https://www.rstudio.com">RStudio</a> as the “front end” for our analyses. RStudio makes it easier to write <code>R</code> code and to produce well documented analyses. Like the <code>R</code> programming language itself, RStudio is freely available.</p>
 <p>You will need to decide whether you want to install <code>R</code> and RStudio locally on a computer you own or if you would rather use the desktop computers in our computer lab. Detailed instructions are available for both options on the <a href="https://slu-soc5650.github.io/docs/course-software/">course website</a>.</p>
 </div>
 <div id="github-desktop" class="section level3" number="1.6.3">
-<h3 number="1.6.3"><span class="header-section-number">1.6.3</span> GitHub Desktop</h3>
+<h3><span class="header-section-number">1.6.3</span> GitHub Desktop</h3>
 <p>You will need another free application called <a href="https://desktop.github.com">GitHub Desktop</a>. This program allows you to easily copy data from GitHub onto your computer. It also makes it easy to upload files like labs and problem sets to GitHub. If you have already used Git via the command line, you can continue to do so without utilizing GitHub Desktop.</p>
 </div>
 <div id="slack-1" class="section level3" number="1.6.4">
-<h3 number="1.6.4"><span class="header-section-number">1.6.4</span> Slack</h3>
+<h3><span class="header-section-number">1.6.4</span> Slack</h3>
 <p>You can <em>optionally</em> use Slack’s <a href="https://slack.com/downloads">desktop</a> and mobile applications if you wish. I recommend turning off push alerts, particularly if you use the mobile application.</p>
 </div>
 <div id="additional-software" class="section level3" number="1.6.5">
-<h3 number="1.6.5"><span class="header-section-number">1.6.5</span> Additional Software</h3>
+<h3><span class="header-section-number">1.6.5</span> Additional Software</h3>
 <p>You will need to use some type of word processing and presentation software. We’ll use some specific <code>R</code> packages to produce output in Microsoft Word and PowerPoint formats, but these can be readily used with other programs (like Apple’s iWork suite) without actually having Microsoft Office installed on your computer.</p>
 </div>
 </div>
@@ -317,11 +321,13 @@
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>
 <script src="libs/gitbook-2.6.7/js/lunr.js"></script>
+<script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
 <script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
 <script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
 <script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
 <script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
 <script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-clipboard.js"></script>
 <script>
 gitbook.require(["gitbook"], function(gitbook) {
 gitbook.start({
@@ -329,12 +335,12 @@ gitbook.start({
 "github": false,
 "facebook": false,
 "twitter": false,
-"google": false,
 "linkedin": false,
 "weibo": false,
 "instapaper": false,
 "vk": false,
-"all": null
+"all": null,
+"google": false
 },
 "fontsettings": {
 "theme": "white",
@@ -343,6 +349,10 @@ gitbook.start({
 },
 "edit": null,
 "history": {
+"link": null,
+"text": null
+},
+"view": {
 "link": null,
 "text": null
 },
