@@ -57,6 +57,7 @@ If you would like to keep a record of the syllabus, there is a `.pdf` download b
 * January 2^nd^, 2020 - Update for Spring 2020 semester
 * January 12^th^, 2020 - Update office hours and success links
 * January 13^th^, 2020 - Fix typo on landing page
+* January 16^th^, 2020 - Fix note icon, add Carter's office hours, add [Section 1.9](/lab-access.html) on accessing MOR 3600
 
 ## License {-}
 Copyright © 2016-2020 [Christopher G. Prener](https://chris-prener.github.io)
