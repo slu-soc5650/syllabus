@@ -1,56 +1,43 @@
-% Options for packages loaded elsewhere
-\PassOptionsToPackage{unicode}{hyperref}
+\PassOptionsToPackage{unicode=true}{hyperref} % options for packages loaded elsewhere
 \PassOptionsToPackage{hyphens}{url}
 %
-\documentclass[
-]{book}
+\documentclass[]{book}
 \usepackage{lmodern}
 \usepackage{amssymb,amsmath}
 \usepackage{ifxetex,ifluatex}
+\usepackage{fixltx2e} % provides \textsubscript
 \ifnum 0\ifxetex 1\fi\ifluatex 1\fi=0 % if pdftex
   \usepackage[T1]{fontenc}
   \usepackage[utf8]{inputenc}
-  \usepackage{textcomp} % provide euro and other symbols
-\else % if luatex or xetex
+  \usepackage{textcomp} % provides euro and other symbols
+\else % if luatex or xelatex
   \usepackage{unicode-math}
-  \defaultfontfeatures{Scale=MatchLowercase}
-  \defaultfontfeatures[\rmfamily]{Ligatures=TeX,Scale=1}
+  \defaultfontfeatures{Ligatures=TeX,Scale=MatchLowercase}
 \fi
-% Use upquote if available, for straight quotes in verbatim environments
+% use upquote if available, for straight quotes in verbatim environments
 \IfFileExists{upquote.sty}{\usepackage{upquote}}{}
-\IfFileExists{microtype.sty}{% use microtype if available
-  \usepackage[]{microtype}
-  \UseMicrotypeSet[protrusion]{basicmath} % disable protrusion for tt fonts
+% use microtype if available
+\IfFileExists{microtype.sty}{%
+\usepackage[]{microtype}
+\UseMicrotypeSet[protrusion]{basicmath} % disable protrusion for tt fonts
 }{}
-\makeatletter
-\@ifundefined{KOMAClassName}{% if non-KOMA class
-  \IfFileExists{parskip.sty}{%
-    \usepackage{parskip}
-  }{% else
-    \setlength{\parindent}{0pt}
-    \setlength{\parskip}{6pt plus 2pt minus 1pt}}
-}{% if KOMA class
-  \KOMAoptions{parskip=half}}
-\makeatother
-\usepackage{xcolor}
-\IfFileExists{xurl.sty}{\usepackage{xurl}}{} % add URL line breaks if available
-\IfFileExists{bookmark.sty}{\usepackage{bookmark}}{\usepackage{hyperref}}
+\IfFileExists{parskip.sty}{%
+\usepackage{parskip}
+}{% else
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{6pt plus 2pt minus 1pt}
+}
+\usepackage{hyperref}
 \hypersetup{
-  pdftitle={SOC 4650 \& 5650: Introduction to GIS},
-  pdfauthor={Christopher Prener, Ph.D.},
-  hidelinks,
-  pdfcreator={LaTeX via pandoc}}
-\urlstyle{same} % disable monospaced font for URLs
+            pdftitle={SOC 4650 \& 5650: Introduction to GIS},
+            pdfauthor={Christopher Prener, Ph.D.},
+            pdfborder={0 0 0},
+            breaklinks=true}
+\urlstyle{same}  % don't use monospace font for urls
 \usepackage{longtable,booktabs}
-% Correct order of tables after \paragraph or \subparagraph
-\usepackage{etoolbox}
-\makeatletter
-\patchcmd\longtable{\par}{\if@noskipsec\mbox{}\fi\par}{}{}
-\makeatother
-% Allow footnotes in longtable head/foot
-\IfFileExists{footnotehyper.sty}{\usepackage{footnotehyper}}{\usepackage{footnote}}
-\makesavenoteenv{longtable}
-\usepackage{graphicx}
+% Fix footnotes in tables (requires footnote package)
+\IfFileExists{footnote.sty}{\usepackage{footnote}\makesavenoteenv{longtable}}{}
+\usepackage{graphicx,grffile}
 \makeatletter
 \def\maxwidth{\ifdim\Gin@nat@width>\linewidth\linewidth\else\Gin@nat@width\fi}
 \def\maxheight{\ifdim\Gin@nat@height>\textheight\textheight\else\Gin@nat@height\fi}
@@ -59,14 +46,25 @@
 % margins by default, and it is still possible to overwrite the defaults
 % using explicit options in \includegraphics[width, height, ...]{}
 \setkeys{Gin}{width=\maxwidth,height=\maxheight,keepaspectratio}
-% Set default figure placement to htbp
-\makeatletter
-\def\fps@figure{htbp}
-\makeatother
-\setlength{\emergencystretch}{3em} % prevent overfull lines
+\setlength{\emergencystretch}{3em}  % prevent overfull lines
 \providecommand{\tightlist}{%
   \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
 \setcounter{secnumdepth}{5}
+% Redefines (sub)paragraphs to behave more like sections
+\ifx\paragraph\undefined\else
+\let\oldparagraph\paragraph
+\renewcommand{\paragraph}[1]{\oldparagraph{#1}\mbox{}}
+\fi
+\ifx\subparagraph\undefined\else
+\let\oldsubparagraph\subparagraph
+\renewcommand{\subparagraph}[1]{\oldsubparagraph{#1}\mbox{}}
+\fi
+
+% set default figure placement to htbp
+\makeatletter
+\def\fps@figure{htbp}
+\makeatother
+
 \usepackage{booktabs}
 \usepackage{amsthm}
 \makeatletter
@@ -152,7 +150,7 @@
 
 \title{SOC 4650 \& 5650: Introduction to GIS}
 \author{Christopher Prener, Ph.D.}
-\date{2020-01-13}
+\date{2020-01-16}
 
 \begin{document}
 \maketitle
@@ -161,7 +159,7 @@
 {\huge Preface and Warning} \\
 \end{center}
 \vspace{5mm}
-This is the hardcopy version of the \textbf{Spring 2019} syllabus.
+This is the hardcopy version of the \textbf{Spring 2020} syllabus.
 \vspace{5mm}
 \par \noindent This \texttt{.pdf} version of the course syllabus is automatically created as part of the document generation process. It is meant for students who wish to keep a hardcopy of the course policies and planned course schedule. This may be particularly useful for honors and M.A. students who plan to continue their graduate education after SLU and hope to petition out of a basic course requirement. \textbf{Since it is automatically created, it is not optimized for easy use} - readers may notice formatting inconsitencies and stray characters that are a result of the markdown to \LaTeX{} conversion process. The web version (located at \href{https://slu-soc5650.github/syllabus/}{https://slu-soc5650.github/syllabus/}) is meant to be the version of the syllabus used for everyday reference during the semester. As such, this \texttt{.pdf} version will not be updated as the semester progresses should any changes to the course schedule be necessary.
 
@@ -1225,7 +1223,7 @@ View on Course Website
 \item
   Brewer: Chapters 3, 5, and 6
 \item
-  Tufte, Edward. 2001 ``Chartjunk.'\,' Pp. 1007-121 in \emph{The Visual Display of Quantitative Information}. Cheshire, CT: Graphics Press. (Electronic Reserves)
+  Tufte, Edward. 2001 ``Chartjunk.'' Pp. 1007-121 in \emph{The Visual Display of Quantitative Information}. Cheshire, CT: Graphics Press. (Electronic Reserves)
 \item
   Tutorial:
 
@@ -2220,6 +2218,6 @@ View on Course Website
   \end{itemize}
 \end{itemize}
 
-  \bibliography{book.bib,packages.bib}
+\bibliography{book.bib,packages.bib}
 
 \end{document}

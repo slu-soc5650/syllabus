@@ -1,7 +1,7 @@
 ---
 title: "SOC 4650 & 5650: Introduction to GIS"
 author: "Christopher Prener, Ph.D."
-date: "2020-01-13"
+date: "2020-01-16"
 site: bookdown::bookdown_site
 documentclass: book
 bibliography: [book.bib, packages.bib]
