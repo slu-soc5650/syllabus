@@ -47,7 +47,7 @@ description: "This is the syllabus and reading list for Chris's sections of SOC 
 
 *Slack:* `@Carter Hanford`
 
-*Office Hours:* TBA
+*Office Hours:* Thursdays, 2:00pm to 4:00pm in 3600 Morrissey (GeoSRI Lab)
 
 ## Hardcopy Syllabus {-}
 If you would like to keep a record of the syllabus, there is a `.pdf` download button (<i class="fa fa-file-pdf-o"></i>) in the top toolboar. This may be particularly useful for honors and M.A. students who plan to continue their graduate education after SLU and hope to petition out of a basic statistics requirement. This document will contain a "snapshot" of the course policies and planned schedule as of the beginning of the semester but will not be subsequently updated. See the "Preface and Warning" on page 2 of the `.pdf` for additional details.
