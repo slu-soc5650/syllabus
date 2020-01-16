@@ -91,3 +91,10 @@ Spatial data files tend to be large, and this course will involve tens of gigaby
 ## Other Materials
 
 All of the course materials are online and can be accessed through the [**course website**](https://slu-soc5650.github.io) and [**GitHub**](http://www.github.com), some of the handouts are easiest to use when printed. I will provide the first week's handouts printed to give you a sense of what they look like. If you would like to continue reciving hard copy handouts, there will be a way to indicate that you'd prefer them prior to our second in-person meeting for Lecture-03. If you opt-in to hard copy materials, I recommend purchasing a 1.5" three-ring binder along with dividers. If you choose to only recieve digital course materials, you do not need a binder. You can opt back in to reciving printed materials at any time, and I will even provide back handouts if necessary.
+
+## Lab Access
+The classroom we meet in has a passcode that is required for entry, which has been posted in a [private repository on GitHub.com](https://github.com/slu-soc5650/passcode) for reference. All students enrolled in SOC 4650 and 5650 have 24-hour access to Morrissey Hall and our classroom for the duration of the course. As of January 16^th^, 2020, this access has been enabled. If you are interested in working in the lab outside of class hours, please be aware of the following regularly scheduled activities that occur in the GeoSRI lab:
+
+<img src="images/lab_hours.png" width="900%" />
+
+Please also be aware that there are scheduled events in the classroom on January 22^nd^, February 5^th^, February 19^th^, and March 4^th^, all from 1:00pm to 2:00pm.

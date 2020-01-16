@@ -4,44 +4,34 @@
 
 The following is a high-level schedule that details the general topic covered by each lecture.
 
-\begin{table}
 
-\caption{(\#tab:unnamed-chunk-1)SOC 4615 and 5650 Course Overview}
-\centering
-\begin{tabular}[t]{lll}
-\toprule
-Lecture & Date & Topic\\
-\midrule
- &  & **Unit 1: Visualize**\\
- & prior to January 13\textasciicircum{}th\textasciicircum{} & Course Preview\\
-01 & January 13\textasciicircum{}th\textasciicircum{} & Course Introduction\\
-02 & January 20\textasciicircum{}th\textasciicircum{} & ArcGIS Pro Overview\\
-03 & January 27\textasciicircum{}th\textasciicircum{} & Cartography 101\\
-\addlinespace
-04 & February 3\textasciicircum{}th\textasciicircum{} & Map Production in ArcGIS Pro\\
-05 & February 10\textasciicircum{}th\textasciicircum{} & Map Production in `R` (Part 1)\\
-06 & February 17\textasciicircum{}th\textasciicircum{} & Map Production in `R` (Part 2)\\
- &  & **Unit 2: Tidy**\\
-07 & February 24\textasciicircum{}th\textasciicircum{} & Data Cleaning\\
-\addlinespace
-08 & March 2\textasciicircum{}nd\textasciicircum{} & Table Joins; Data Storage\\
-09 & March 9\textasciicircum{}th\textasciicircum{} & Accessing Census Data via APIs\\
-10 & March 16\textasciicircum{}th\textasciicircum{} & Managing Projections\\
- &  & **Unit 3: Process**\\
-11 & March 23\textasciicircum{}rd\textasciicircum{} & Select and Aggregate Features\\
-\addlinespace
-12 & Marcy 30\textasciicircum{}th\textasciicircum{} & Clip and Dissolve Features\\
-13 & April 6\textasciicircum{}th\textasciicircum{} & Intersect, Union, and Merge Features\\
-14 & April 13\textasciicircum{}th\textasciicircum{} & Digitizing Data\\
-15 & April 20\textasciicircum{}th\textasciicircum{} & Geocoding Data\\
- &  & **Course Wrap-up**\\
-\addlinespace
-16 & April 27\textasciicircum{}th\textasciicircum{} & ArcGIS Pro Story Maps\\
-17 & May 4\textasciicircum{}th\textasciicircum{} & Final Project Work Session\\
- & May 11\textasciicircum{}th\textasciicircum{} & Final Presentations\\
-\bottomrule
-\end{tabular}
-\end{table}
+Table: (\#tab:unnamed-chunk-1)SOC 4615 and 5650 Course Overview
+
+Lecture   Date                      Topic                                
+--------  ------------------------  -------------------------------------
+                                    **Unit 1: Visualize**                
+          prior to January 13^th^   Course Preview                       
+01        January 13^th^            Course Introduction                  
+02        January 20^th^            ArcGIS Pro Overview                  
+03        January 27^th^            Cartography 101                      
+04        February 3^th^            Map Production in ArcGIS Pro         
+05        February 10^th^           Map Production in `R` (Part 1)       
+06        February 17^th^           Map Production in `R` (Part 2)       
+                                    **Unit 2: Tidy**                     
+07        February 24^th^           Data Cleaning                        
+08        March 2^nd^               Table Joins; Data Storage            
+09        March 9^th^               Accessing Census Data via APIs       
+10        March 16^th^              Managing Projections                 
+                                    **Unit 3: Process**                  
+11        March 23^rd^              Select and Aggregate Features        
+12        Marcy 30^th^              Clip and Dissolve Features           
+13        April 6^th^               Intersect, Union, and Merge Features 
+14        April 13^th^              Digitizing Data                      
+15        April 20^th^              Geocoding Data                       
+                                    **Course Wrap-up**                   
+16        April 27^th^              ArcGIS Pro Story Maps                
+17        May 4^th^                 Final Project Work Session           
+          May 11^th^                Final Presentations                  
 
 ## Planned Online Lectures
 
@@ -54,38 +44,29 @@ Each lecture will be broken down roughly the same way. Students are expected to 
 ## Assignment Due Dates
 All assigments listed on the following table are due *before* the lecture that they are listed under. See assignment or final project instructions for the specific deliverables to be included in each as well as submission instructions.
 
-\begin{table}
 
-\caption{(\#tab:unnamed-chunk-2)SOC 4615 and 5650 Due Dates}
-\centering
-\begin{tabular}[t]{llllll}
-\toprule
-Lecture & Date & Entry.Ticket & Lab & Problem.Set & Final.Project\\
-\midrule
-01 & January 13\textasciicircum{}th\textasciicircum{} & eTicket-01 &  &  & \\
-02 & January 20\textasciicircum{}th\textasciicircum{} & eTicket-02 &  &  & \\
-03 & January 27\textasciicircum{}th\textasciicircum{} & eTicket-03 & Lab-01 &  & \\
-04 & February 3\textasciicircum{}th\textasciicircum{} & eTicket-04 & Lab-02 &  & WP-01 - Topic\\
-05 & February 10\textasciicircum{}th\textasciicircum{} & eTicket-05 & Lab-03 &  & \\
-\addlinespace
-06 & February 17\textasciicircum{}th\textasciicircum{} & eTicket-06 & Lab-04 & PS-01 & \\
-07 & February 24\textasciicircum{}th\textasciicircum{} & eTicket-07 & Lab-05 & PS-02 & \\
-08 & March 2\textasciicircum{}nd\textasciicircum{} & eTicket-08 & Lab-06 &  & WP-02\\
-09 & March 9\textasciicircum{}th\textasciicircum{} &  & Lab-07 & PS-03 & \\
-10 & March 16\textasciicircum{}th\textasciicircum{} & eTicket-09 & Lab-08 &  & \\
-\addlinespace
-11 & March 23\textasciicircum{}rd\textasciicircum{} &  & Lab-09 &  & WP-03\\
-12 & Marcy 30\textasciicircum{}th\textasciicircum{} & eTicket-10 & Lab-10 &  & \\
-13 & April 6\textasciicircum{}th\textasciicircum{} &  & Lab-11 & PS-04 & WP-04 - Drafts\\
-14 & April 13\textasciicircum{}th\textasciicircum{} &  & Lab-12 & PS-05 & WP-05\\
-15 & April 20\textasciicircum{}th\textasciicircum{} & eTicket-11 & Lab-13 & PS-06 & \\
-\addlinespace
-16 & April 27\textasciicircum{}th\textasciicircum{} &  & Lab-14 &  & WP-06\\
-17 & May 4\textasciicircum{}th\textasciicircum{} & eTicket-12 &  &  & \\
- & May 11\textasciicircum{}th\textasciicircum{} &  &  &  & Final Presentations\\
-\bottomrule
-\end{tabular}
-\end{table}
+Table: (\#tab:unnamed-chunk-2)SOC 4615 and 5650 Due Dates
+
+Lecture   Date              Entry.Ticket   Lab      Problem.Set   Final.Project       
+--------  ----------------  -------------  -------  ------------  --------------------
+01        January 13^th^    eTicket-01                                                
+02        January 20^th^    eTicket-02                                                
+03        January 27^th^    eTicket-03     Lab-01                                     
+04        February 3^th^    eTicket-04     Lab-02                 WP-01 - Topic       
+05        February 10^th^   eTicket-05     Lab-03                                     
+06        February 17^th^   eTicket-06     Lab-04   PS-01                             
+07        February 24^th^   eTicket-07     Lab-05   PS-02                             
+08        March 2^nd^       eTicket-08     Lab-06                 WP-02               
+09        March 9^th^                      Lab-07   PS-03                             
+10        March 16^th^      eTicket-09     Lab-08                                     
+11        March 23^rd^                     Lab-09                 WP-03               
+12        Marcy 30^th^      eTicket-10     Lab-10                                     
+13        April 6^th^                      Lab-11   PS-04         WP-04 - Drafts      
+14        April 13^th^                     Lab-12   PS-05         WP-05               
+15        April 20^th^      eTicket-11     Lab-13   PS-06                             
+16        April 27^th^                     Lab-14                 WP-06               
+17        May 4^th^         eTicket-12                                                
+          May 11^th^                                              Final Presentations 
 
 ## Scheduling Notes
 

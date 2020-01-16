@@ -4,20 +4,14 @@ Select a lecture from the menu to see details about topics, readings, and assign
 
 The primary readings will be referred to with an abbreviation each time they appear in the reading list:
 
-\begin{table}
 
-\caption{(\#tab:unnamed-chunk-1)SOC 4650 and 5650 Primary Readings}
-\centering
-\begin{tabular}[t]{ll}
-\toprule
-Abbreviation & Citation\\
-\midrule
-Brewer & Brewer, Cynthia. 2015. *Designing Better Maps: A Guide for GIS users*. Redlands, CA: ESRI Press.\\
-Tutorial & Gorr, Wilpen and Kristen Kurland. 2017. *GIS Tutorial 1 for ArcGIS Pro.* Redlands, CA: ESRI Press.\\
-R4DS & Wickham, Hadley and Garrett Grolemund. 2016. *R for data science: import, tidy, transform, visualize, and model data*. Sebastopol, CA: O'Reilly Media, Inc.\\
-\bottomrule
-\end{tabular}
-\end{table}
+Table: (\#tab:unnamed-chunk-1)SOC 4650 and 5650 Primary Readings
+
+Abbreviation   Citation                                                                                                                                                    
+-------------  ------------------------------------------------------------------------------------------------------------------------------------------------------------
+Brewer         Brewer, Cynthia. 2015. *Designing Better Maps: A Guide for GIS users*. Redlands, CA: ESRI Press.                                                            
+Tutorial       Gorr, Wilpen and Kristen Kurland. 2017. *GIS Tutorial 1 for ArcGIS Pro.* Redlands, CA: ESRI Press.                                                          
+R4DS           Wickham, Hadley and Garrett Grolemund. 2016. *R for data science: import, tidy, transform, visualize, and model data*. Sebastopol, CA: O'Reilly Media, Inc. 
 
 ## Course Preview {-}
 
