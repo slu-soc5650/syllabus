@@ -6,10 +6,9 @@ Your grade for this course will consist of a number of different assignments on 
 
 ### Attendance and Participation
 
-\begin{rmdtip}
-Attendance and participation are worth \textbf{10\%} of your final
-grade.
-\end{rmdtip}
+<div class="rmdtip">
+<p>Attendance and participation are worth <strong>10%</strong> of your final grade.</p>
+</div>
 
 Both attendance and participation are critically important aspects of this class. The class participation grade will be based on (a) attendance, (b) level of engagement during lectures and labs, (c) level of engagement on Slack, and (d) the completion of other exercises including "entry" and "exit" tickets, the student information sheet, a pre-test, and an end of the semester course evaluation. 
 
@@ -19,95 +18,68 @@ I provide the final number of points earned for each half of the course. If you 
 
 ### Lab Exercises
 
-\begin{rmdtip}
-Labs are worth \textbf{24\%} of your final grade.
-\end{rmdtip}
+<div class="rmdtip">
+<p>Labs are worth <strong>28%</strong> of your final grade.</p>
+</div>
 
-Each course meeting (except the first) will include time dedicated to practicing the techniques and applying the theories described during the day's lecture. These exercises will give you an opportunity to practice skills that correspond with the first four course objectives. Instructions for the labs will be posted in the lecture repositories on [**GitHub**](https://github.com/slu-soc5650) and will be linked to from the lecture pages on the [**course website**](https://slu-soc5650.github.io/). The instructions will also detail the deliverables to be submitted to demonstrate completion of each assignment. Replication files are also provided in the lecture repositories on [**GitHub**](https://github.com/slu-soc5650).
+Each course meeting will include time dedicated to practicing the techniques and applying the theories described in the meeting's materials. These exercises will give you an opportunity to practice skills that correspond with the first four course objectives. Instructions for the labs will be posted in the lecture repositories on [**GitHub**](https://github.com/slu-soc5650) and will be linked to from the lecture pages on the [**course website**](https://slu-soc5650.github.io/). The instructions will also detail the deliverables to be submitted to demonstrate completion of each assignment. Replication files are also provided in the lecture repositories on [**GitHub**](https://github.com/slu-soc5650).
 
-There will be a total of fifteen lab exercises over the course of the semester, each of which is worth 16 points (1.6% of your final grade). Lab exercises are graded using the “check” grading system. Since replication files are posted, feedback for labs is not generally returned after the first few assignments and I will only respond with the number of points awarded if you do not earn full credit.
-
-### Problem Sets
-
-\begin{rmdtip}
-Problem sets are worth \textbf{30\%} of your final grade.
-\end{rmdtip}
-
-Problem sets will require students to draw on a variety of skills, including cleaning data, performing statistical analyses, producing plots, and reporting results. They are designed to assess your progress with the first four course objectives. Instructions for the problem sets will be posted in the lecture repositories on [**GitHub**](https://github.com/slu-soc5650) and will be linked to from the lecture pages on the [**course website**](https://slu-soc5650.github.io/). The instructions will also detail the deliverables to be submitted to demonstrate completion of each assignment. Replication files that illustrate my approach to each problem set will be posted on [**GitHub**](https://github.com/slu-soc5650) in the [`Replications`](https://github.com/slu-soc5650/Replications) repository once all students have submitted their problem sets.
-
-There will be a total of six problem sets over the course of the semester, each of which is worth 50 points (5% of your final grade). Each Problem Set will include a simple rubric describing how each problem set is evaluated. A key aspect of these assignments is not only demonstrating comfort with a particular set of GIS skills, but also demonstrating and evolving in your analysis development, programming, and cartographic skills as well. The weight given to quality of your process and code will increase as the semester progresses.
+There will be a total of fourteen lab exercises over the course of the semester, each of which is worth 2% of your final grade. Lab exercises are graded using the “check” grading system. Since replication files are posted, feedback for labs is not generally returned after the first few assignments and I will only respond with the number of points awarded if you do not earn full credit. *It is your responsibility to reach out to discuss questions or concerns you had while doing the lab.*
 
 ### Final Project
 
-\begin{rmdtip}
-The final project is worth, in total, \textbf{36\%} of your final grade.
-Depending on your section, it will be broken down into a variety of
-assignments, each of which has their own point value. See below for
-details.
-\end{rmdtip}
+<div class="rmdtip">
+<p>The final project is worth, in total, <strong>62%</strong> of your final grade. The waypoints are worth <strong>28%</strong> of your final grade, and the final deliverables are worth <strong>34%</strong> of your final grade. Deliverables vary by section; see below for details.</p>
+</div>
 
-The final project corresponds with the fourth learning outcome. It will be organized slightly differently depending on which section you are enrolled in. Specific instructions will be provided in the [**final project guide**](https://slu-soc5650.github.io/finalGuide), and updates will be posted on the [**course website's**](https://slu-soc5650.github.io/) [**final project page**](https://slu-soc5650.github.io/final-project). 
+The final project corresponds with the fourth learning outcome. It will be organized slightly differently depending on which section you are enrolled in. Specific instructions will be provided in the [**final project guide**](https://slu-soc5650.github.io/final-project). 
 
-As work progresses, there will be a number of **waypoints** where students will need to submit updates on their progress. Waypoints beyond the memo submission are as follows:
+As work progresses, there will be a number of **waypoints** where students will need to submit updates on their progress. Waypoints serve as the homework assignments for this class - this is your opportunity to show me how your skills are developing *and* make progress on your final project. They are generally due two weeks after the relevant topic is first introduced in class. The seven waypoints are as follows:
 
-1. Lecture-04 (**February 4^th^**) - select and submit their topic as an "Issue" in their individual [**GitHub**](https://github.com/slu-soc5650) assignments repository.
-2. Lecture-08 (**March 4^th^**) - progress report from each student due as a GitHub issue in each student's final project repository
-3. Lecture-11 (**March 25^th^**) - progress report from each student due as a GitHub issue in each student's final project repository
-4. Lecture-13 (**April 8^th^**) - draft materials due in each student's final project repository
-5. Lecture-14 (**April 15^th^**) - peer reviews due as a GitHub issue in partner's final project repository
-6. Lecture-16 (**April 29^th^**) - progress report from each student due as a GitHub issue in each student's final project repository 
+  1. Meeting 02 (**February 8th**) - memo submission
+  2. Meeting 06 (**March 8th**) - initial data cleaning
+  3. Meeting 07 (**March 15th**) - combining data sources
+  4. Meeting 08 (**March 22nd**) - projecting data
+  5. Meeting 10 (**April 5th**) - geoprocessing data
+  6. Meeting 13 (**April 26th**) - draft story map
+  7. Flex day (**May 10th**) - draft handout
 
-Deliverables for each waypoint are described in the [**final project guide**](https://slu-soc5650.github.io/finalGuide). All waypoints are graded using the "check" grading system. Final materials will be due on **May 13^th^** (during Finals Week), when we will hold a "research conference" in the Busch Student Center. During our conference, each student will present their research posters. Final deliverables differ by course section.
+Deliverables for each waypoint are described in the [**final project guide**](https://slu-soc5650.github.io/final-project). All waypoints are graded using the "check" grading system. Final materials will be due on **May 17th** (during Finals Week). Final deliverables differ by course section.
 
 #### SOC 4650
-If you are enrolled in SOC 4650, you will need to create a research poster that provides thematic maps of your topic.
+If you are enrolled in SOC 4650, you will need to create a story map and a handout that both feature some introductory information and thematic maps of your topic.
 
-\begin{table}
 
-\caption{(\#tab:unnamed-chunk-5)SOC 4650 Final Project Breakdown}
-\centering
-\begin{tabular}[t]{llll}
-\toprule
-Assignment & Points & Quantity & Total\\
-\midrule
-Waypoints & 15 pts & x6 & 90 pts\\
-Draft Code \& Docs & 35 pts & x1 & 35 pts\\
-Draft Poster & 35 pts & x1 & 35 pts\\
-Final Code \& Docs & 100 pts & x1 & 100 pts\\
-Final Poster & 100 pts & x1 & 100 pts\\
-\bottomrule
-\end{tabular}
-\end{table}
+Table: (\#tab:unnamed-chunk-4)SOC 4650 Final Project Breakdown
+
+|Assignment        |Points |Quantity |Total   |
+|:-----------------|:------|:--------|:-------|
+|Waypoints         |20 pts |x7       |140 pts |
+|Final Code & Docs |70 pts |x1       |70 pts  |
+|Final Storymap    |70 pts |x1       |70 pts  |
+|Final Handout     |30 pts |x1       |30 pts  |
 
 #### SOC 5650
-If you are enrolled in SOC 5650, you will also need to create a digital paper that combines the scholarly literature on your topic with interactive and static maps. This can be created using `R` (using `radix`) or ArcGIS Pro (a story map). The following additional deadlines apply:
+If you are enrolled in SOC 5650, you will also need to create a 3000-4000 word final paper written in the style of an empirical journal article. The following additional deadlines apply:
 
-1. Lecture-08 (**March 4^th^**) - annotated Bibliography with a minimum of fifteen peer reviewed sources
-2. Lecture-13 (**April 8^th^**) - a draft story map or `radix` document due in each student's final project repository
-3. Lecture-14 (**April 15^th^**) - peer reviews of the story map or `radix` document due as a GitHub issue in partner's final project repository
+1. Meeting 05 (**March 1st**) - annotated Bibliography with a minimum of fifteen peer reviewed sources
+2. Meeting 11 (**April 12th**) - draft paper due (graded as part of your participation grade)
+3. Meeting 12 (**April 19th**) - peer reviews of the draft paper and analysis development due as a GitHub issue in partner's final project repository (graded as part of your participation grade)
+4. The final paper is due **May 17th** along with the rest of the final project
 
 Grading for SOC 5650 is broken down as follows:
 
-\begin{table}
 
-\caption{(\#tab:unnamed-chunk-6)SOC 5650 Final Project Breakdown}
-\centering
-\begin{tabular}[t]{llll}
-\toprule
-Assignment & Points & Quantity & Total\\
-\midrule
-Waypoints & 10 pts & x6 & 60 pts\\
-Annotated Bibliography & 25 pts & x1 & 25 pts\\
-Draft Code \& Docs & 25 pts & x1 & 25 pts\\
-Draft Poster & 25 pts & x1 & 25 pts\\
-Draft Paper & 25 pts & x1 & 25 pts\\
-\addlinespace
-Final Code \& Docs & 60 pts & x1 & 60 pts\\
-Final Poster & 70 pts & x1 & 70 pts\\
-Final Paper & 70 pts & x1 & 70 pts\\
-\bottomrule
-\end{tabular}
-\end{table}
+Table: (\#tab:unnamed-chunk-5)SOC 5650 Final Project Breakdown
+
+|Assignment             |Points |Quantity |Total   |
+|:----------------------|:------|:--------|:-------|
+|Waypoints              |20 pts |x7       |140 pts |
+|Annotated Bibliography |25 pts |x1       |25 pts  |
+|Final Code & Docs      |40 pts |x1       |40 pts  |
+|Final Storymap         |40 pts |x1       |40 pts  |
+|Final Handout          |25 pts |x1       |25 pts  |
+|Final Paper            |40 pts |x1       |40 pts  |
 
 ## Submission and Late Work
 
@@ -121,7 +93,7 @@ The GitHub submission policy is in place because it facilitates clear, easy grad
 
 All assignment repositories are licensed under a [Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International License](https://creativecommons.org/licenses/by-nc-nd/4.0/). This license explicitly gives you copyright to all work you create for this course. The license gives Chris permission to copy your work (such as for grading) and to re-use your work later for non-commercial purposes (such as in-class examples) so long as you are given credit for it. However, your work cannot be used for monetary gain (such as in a textbook) and derivative works based on your work are prohibited.
 
-The syllabus agreement at the end of the Student Information Sheet includes an acknowledgement of this licensing arrangement. If you have questions about this, please contact Chris before submitting the form.
+The syllabus agreement at the end of the Student Information Sheet includes an acknowledgment of this licensing arrangement. If you have questions about this, please contact Chris before submitting the form.
 
 ### Late Work
 
@@ -139,62 +111,53 @@ All grades that use a “check” system (the lecture preps, labs, and some aspe
 
 I use a point system for calculating grades. The following table gives the weighting and final point totals for all assignments for this course:
 
-\begin{table}
 
-\caption{(\#tab:unnamed-chunk-7)SOC 4650 and 5650 Points Breakdown}
-\centering
-\begin{tabular}[t]{lllll}
-\toprule
-Assignment & Points & Quantity & Total & Percent\\
-\midrule
-Participation & 50 pts & x2 & 100 pts & 10\%\\
-Labs & 16 pts & x15 & 240 pts & 24\%\\
-Problem Sets & 50 pts & x6 & 300 pts & 30\%\\
-Final Project & 360 pts & x1 & 360 pts & 36\%\\
-\bottomrule
-\end{tabular}
-\end{table}
+Table: (\#tab:unnamed-chunk-6)SOC 4650 and 5650 Points Breakdown
+
+|Assignment    |Points  |Quantity |Total   |Percent |
+|:-------------|:-------|:--------|:-------|:-------|
+|Participation |25 pts  |x2       |50 pts  |10%     |
+|Labs          |10 pts  |x14      |140 pts |28%     |
+|Final Project |310 pts |x1       |310 pts |62%     |
 
 All feedback will include grades that represent number of points earned. If you want to know your percentage on a particular assignment, divide the number of points earned by the number of points possible and then multiply it by 100.
 
 Final grades will be calculated by taking the sum of all points earned and dividing it by the total number of points possible (1,000). This will be multiplied by 100 and then converted to a letter grade using the
 following table:
 
-\begin{table}
-\caption{(\#tab:unnamed-chunk-8)Course Grading Scale}
 
-\centering
-\begin{tabular}[t]{lll}
-\toprule
-GPA & Letter & Percent\\
-\midrule
-4.0 & A & 93.0\% - 100\%\\
-3.7 & A- & 90.0\% - 92.9\%\\
-3.3 & B+ & 87.0\% - 89.9\%\\
-3.0 & B & 83.0\% - 86.9\%\\
-2.7 & B- & 80.0\% - 82.9\%\\
-\bottomrule
-\end{tabular}
-\centering
-\begin{tabular}[t]{lll}
-\toprule
-GPA & Letter & Percent\\
-\midrule
-2.3 & C+ & 77.0\% - 79.9\%\\
-2.0 & C & 73.0\% - 76.9\%\\
-1.7 & C- & 70.0\% - 72.9\%\\
-1.0 & D & 63.0\% - 69.9\%\\
-0.0 & F & < 63.0\%\\
-\bottomrule
-\end{tabular}
-\end{table}
+<table class="kable_wrapper">
+<caption>(\#tab:unnamed-chunk-7)Course Grading Scale</caption>
+<tbody>
+  <tr>
+   <td> 
+
+|GPA |Letter |Percent       |
+|:---|:------|:-------------|
+|4.0 |A      |93.0% - 100%  |
+|3.7 |A-     |90.0% - 92.9% |
+|3.3 |B+     |87.0% - 89.9% |
+|3.0 |B      |83.0% - 86.9% |
+|2.7 |B-     |80.0% - 82.9% |
+
+ </td>
+   <td> 
+
+|GPA |Letter |Percent       |
+|:---|:------|:-------------|
+|2.3 |C+     |77.0% - 79.9% |
+|2.0 |C      |73.0% - 76.9% |
+|1.7 |C-     |70.0% - 72.9% |
+|1.0 |D      |63.0% - 69.9% |
+|0.0 |F      |< 63.0%       |
+
+ </td>
+  </tr>
+</tbody>
+</table>
 
 Borderline grades (i.e. a grade within half a percentage point of the next highest letter grade) *will* be rounded up before final grade submission at the end of the semester. A grade of 89.6% would therefore be submitted to SLU as an "A-" while a grade of 89.4% would be submitted to SLU as a "B+". The final grade report will include both the original letter grade and the rounded letter grade if applicable.
 
-\begin{rmdwarning}
-No chances will be given for revisions of poor grades. Incomplete grades
-will be given upon request only if you have a ``C'' average and have
-completed at least two-thirds of the assignments. You should note that
-incomplete grades must be rectified by the specified deadline or they
-convert to an ``F''.
-\end{rmdwarning}
+<div class="rmdwarning">
+<p>No chances will be given for revisions of poor grades. Incomplete grades will be given upon request only if you have a “C” average and have completed at least two-thirds of the assignments. You should note that incomplete grades must be rectified by the specified deadline or they convert to an “F”.</p>
+</div>

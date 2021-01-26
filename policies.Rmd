@@ -46,7 +46,7 @@ All students should also familiarize themselves with [Saint Louis University’s
 
 Instances of abusive, harassing, or otherwise unacceptable behavior should be reported either directly to the instructor or to the University Administration. Consistent with the above policies, I will forward all reports of inappropriate conduct to the Title IX Coordinator’s office or to the Office of Diversity and Affirmative Action. Please be aware that University policies may require me to forward information about the identity of any students connected to the disclosure.
 
-Please also be aware that communications over various online services, including (but not limited to) Discourse forums, GitHub, and Google Apps, are covered by this policy.
+Please also be aware that communications over various online services, including (but not limited to) Blackboard forums and GitHub, are covered by this policy.
 
 ## Attendance and Participation
 
@@ -54,7 +54,7 @@ Attendance and participation are important components of this course since we on
 
 A penalty will not be applied to your first unexcused absence or late arrival. Any absences or late arrivals beyond the first will result in no credit (for an absences) or only partial credit (for a late arrival) being earned for that day's participation grade.
 
-Making up missed classes are your responsibility. I do post slide decks on the course website, but my slides are intended only to serve as references. I also provide recordings of lectures using Panopto, but these may be incomplete or may not capture key aspects of lectures (such as lecture slides projected from my laptop).
+Making up missed classes are your responsibility. I do post slide decks on the course website, but my slides are intended only to serve as references. I also provide recordings of lectures using Panopto, but these may be incomplete or may not capture key aspects of lectures (such as things that come up during the lab sessions).
 
 The academic literature (see [this recent article](https://link.springer.com/article/10.1007/s10734-018-0275-9) for a nice overview) suggests that the impact of lecture capture tools like Panopto is mixed at best. Students tend to rate their experience with lecture capture far more positively than faculty do. Students who continue to attend class regularly and use lecture recordings as part of an *active* approach to studying and filling in specific areas of their notes may benefit from recordings. Students who use recordings as a replacement for attending class do not benefit from the recordings.
 
@@ -62,13 +62,13 @@ Please also note that lectures and discussions cannot be recorded by any means (
 
 ## Communication
 
-Our course [Slack workspace](http://slu-soc5650.slack.com) and email are my preferred methods of communication.
+Our course Blackboard message board and email are my preferred methods of communication.
 
-I will the check Slack during weekday business hours and will respond to messages if I am able. Likewise, I dedicate time to email responses each workday, meaning that my response time is typically within 24 hours during the workweek. Please use your SLU email account when emailing me.
+I will the check Blackboard during weekday business hours and will respond to messages if I am able. Likewise, I dedicate time to email responses each workday, meaning that my response time is typically within 24 hours during the workweek. Please use your SLU email account when emailing me.
 
-For both email and Slack, if you have not received a response from me after 48 hours (or by end of business on Monday if you messaged me over the weekend), please follow-up to ensure that your message did not get lost in the shuffle.
+For both email and Blackboard, if you have not received a response from me after 48 hours (or by end of business on Monday if you messaged me over the weekend), please follow-up to ensure that your message did not get lost in the shuffle.
 
-All messages regarding course updates, assignments, and changes to the class schedule, including cancellations, will be posted on the main `#_news` channel on Slack. Changes to the class schedule, including cancellations, will also sent to your SLU email account. It is imperative that you check both the forums and your SLU email account regularly.
+All messages regarding course updates, assignments, and changes to the class schedule, including cancellations, will be posted on the main Annoucements page on Blackboard. Changes to the class schedule, including cancellations, will also sent to your SLU email account. It is imperative that you check both the forums and your SLU email account regularly.
 
 Please also ensure that all concerns or questions about your standing in the course are directed to me immediately. Inquires from parents, SLU staff members, and others will not be honored.
 
