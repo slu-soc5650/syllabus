@@ -2,20 +2,24 @@
 
 Select a module from the menu to see details about topics, readings, and assignments. Additional notes and links to course materials are available through Blackboard, which has dedicated folders for each module and Meeting.
 
-<div class="rmdwarning">
-<p>I am in the midst of making significant revisions to this class from prior years because of the modifications teaching it remotely entails. The remainder of the reading list will be available during the week of February 1st.</p>
-</div>
+\begin{rmdwarning}
+I am in the midst of making significant revisions to this class from
+prior years because of the modifications teaching it remotely entails.
+The remainder of the reading list will be available during the week of
+February 1st.
+\end{rmdwarning}
 
 ## Module 1 - Course Introduction {-}
 
 ### Meeting 01 - Monday, February 1 - Course Introduction {-}
 
 * **Before Class:**
-  * Complete the Course Onboarding tasks (Link)
+  * Complete the Course Onboarding tasks (see Blackboard - Module 1 > Course Onboarding)
   * Complete the Meeting 01 preparatory readings, videos, and entry ticket 
-    * Coral, Lilian. 2016. "City of Los Angeles GeoHub." Presented at the ESRI User Conference, San Diego, CA. (<a href="https://slu-soc5050.github.io/docs/meeting-01/#open-data-and-gis-in-los-angeles" target="_blank">Link</a>)
-    * Parker, Hilary. 2017. "Opinionated analysis development." Presented at rstudio::conf, Orlando, FL. (<a href="https://slu-soc5050.github.io/docs/meeting-01/#analysis-development" target="_blank">Link</a>)
+    * Coral, Lilian. 2016. "City of Los Angeles GeoHub." Presented at the ESRI User Conference, San Diego, CA. (<a href="https://slu-soc5650.github.io/docs/meeting_01/#open-data-and-gis-in-los-angeles" target="_blank">Link</a>)
+    * Parker, Hilary. 2017. "Opinionated analysis development." Presented at rstudio::conf, Orlando, FL. (<a href="https://slu-soc5650.github.io/docs/meeting_01/#analysis-development" target="_blank">Link</a>)
     * Healy, Kieran. 2018. "Introduction." In *The plain person's guide to plain text*. (<a href="http://plain-text.co/index.html" target="_blank">Link</a>) 
+    * Entry Ticket 01 (<a href = "https://docs.google.com/forms/d/e/1FAIpQLSfI66TDRFH6xsj7getQZ3UXo8d7JeiMaCNH0WOhJZcXcevx7g/viewform?usp=sf_link" target = "_blank">Link</a>)
 
 * **After Class:** 
   * Complete Lab 01 - A Simple Interactive Map (Link)
