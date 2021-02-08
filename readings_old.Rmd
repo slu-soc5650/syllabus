@@ -81,7 +81,7 @@ knitr::kable(
 
 #### *Optional* {-}
 
-* Wilson, Greg, Jennifer Bryan, Karen Cranston, Justin Kitzes, Lex Nederbragt, and Tracy Teal. 2017. "Good enough practices in scientific computing." *PLoS Computational Niology* 13(6):e1005510. (<a href="http://eres.slu.edu/eres/coursepage.aspx?cid=4444" target="_blank">Electronic Reserves</a>)
+* Wilson, Greg, Jennifer Bryan, Karen Cranston, Justin Kitzes, Lex Nederbragt, and Tracy Teal. 2017. "Good enough practices in scientific computing." *PLoS Computational Biology* 13(6):e1005510. (<a href="http://eres.slu.edu/eres/coursepage.aspx?cid=4444" target="_blank">Electronic Reserves</a>)
 
 ### Assignments {-}
 

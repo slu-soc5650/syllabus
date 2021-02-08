@@ -22,8 +22,8 @@ February 1st.
     * Entry Ticket 01 (<a href = "https://docs.google.com/forms/d/e/1FAIpQLSfI66TDRFH6xsj7getQZ3UXo8d7JeiMaCNH0WOhJZcXcevx7g/viewform?usp=sf_link" target = "_blank">Link</a>)
 
 * **After Class:** 
-  * Complete Lab 01 - A Simple Interactive Map (Link)
-  * Read through the Final Project instructions and draft your initial memo (Link)
+  * Complete Lab 01 - A Simple Interactive Map
+  * Read through the Final Project instructions and draft your initial memo
   
 * **Optional Additional Readings:**
   * Goodchild, Michael. 2010. "Twenty years of progress: GIScience in 2010." *Journal of Spatial Information Science* 1(1):3-20. (<a href="http://josis.net/index.php/josis/article/viewArticle/32" target="_blank">Link</a>)
@@ -31,4 +31,39 @@ February 1st.
   * Parker Hilary. 2017. "Opinionated analysis development." *PeerJ Preprints* 5:e3210v1. (<a href="https://doi.org/10.7287/peerj.preprints.3210v1" target="_blank">Link</a>) 
   * Thieme, Nick. 2018. "R generation." *Significance* 15(4):14-19. (<a href="http://ezp.slu.edu/login?url=https://rss.onlinelibrary.wiley.com/doi/10.1111/j.1740-9713.2018.01169.x" target="_blank">Link</a>) 
   
-  ---
+---
+  
+### Meeting 02 - Monday, February 8 - Map Production Basics
+
+* **Before Class:**
+  * Complete Lab-01 from last week
+  * Complete the Meeting 02 preparatory videos and entry ticket (via Blackboard)
+    * Prep Video A - Analysis Development
+    * Prep Video B - Cartography Basics
+    * Submit final project memo ([Link](https://slu-soc5650.github.io/final-project/topic-data-selection.html))
+    * Entry Ticket 02
+
+* **After Class:**
+  * Complete Lab-02
+  * Follow-up with Chris in your Final Project repo about any outstanding memo questions
+
+* **Optional Additional Readings:**
+  * Wickham, Hadley. "Workflow: Projects." *R for Data Science*. ([Link](https://r4ds.had.co.nz/workflow-projects.html))
+  * Wilson, Greg, Jennifer Bryan, Karen Cranston, Justin Kitzes, Lex Nederbragt, and Tracy Teal. 2017. "Good enough practices in scientific computing." *PLoS Computational Biology* 13(6):e1005510. ([Link](https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1005510))
+
+---
+
+### Meeting 03 - Monday, February 15 - Cartography 101
+
+* **Before Class:**
+  * Complete Lab-02 from last week
+  * Complete the Meeting 02 preparatory videos, readings, and entry ticket (via Blackboard)
+    * Prep Video A - Visual Contrast
+    * Prep Video B - Working with Color (1)
+    * Prep Video C - Working with Color (2)
+    * Brewer, *Designing Better Maps*, Chapters 7 and 8
+    * Entry Ticket 03
+ 
+ * **After Class:**
+  * Complete Lab-03
+  
