@@ -30,7 +30,7 @@ I am in the midst of making significant revisions to this class from prior years
   
 ---
   
-### Meeting 02 - Monday, February 8 - Map Production Basics
+### Meeting 02 - Monday, February 8 - Map Production Basics {-}
 
 * **Before Class:**
   * Complete Lab-01 from last week
@@ -50,11 +50,11 @@ I am in the midst of making significant revisions to this class from prior years
 
 ---
 
-### Meeting 03 - Monday, February 15 - Cartography 101
+### Meeting 03 - Monday, February 15 - Cartography 101 {-}
 
 * **Before Class:**
   * Complete Lab-02 from last week
-  * Complete the Meeting 02 preparatory videos, readings, and entry ticket (via Blackboard)
+  * Complete the Meeting 03 preparatory videos, readings, and entry ticket (via Blackboard)
     * Prep Video A - Visual Contrast
     * Prep Video B - Working with Color (1)
     * Prep Video C - Working with Color (2)
@@ -64,3 +64,176 @@ I am in the midst of making significant revisions to this class from prior years
  * **After Class:**
   * Complete Lab-03
   
+## Module 2 - Data Cleaning {-}
+
+### Meeting 04 - Monday, February 22 - Data Cleaning Basics {-}
+
+* **Before Class:**
+  * **_From prior meetings:_**
+    * Complete Lab-03 from last week
+  * **_For this meeting:_**
+    * Prep Video A - Verbs for Data Cleaning (1) (Blackboard)
+    * Prep Video B - Verbs for Data Cleaning (2) (Blackboard)
+    * Brewer, *Designing Better Maps*, Chapter 1, pp 1-6
+    * Entry Ticket 04 (Blackboard)
+  
+ * **After Class:**
+   * Complete Lab-04 (GitHub)
+   * Final Project WP-02 - Data Cleaning (due in two meetings)
+
+---
+
+### Meeting 05 - Monday, March 1 - Combining Data Sources {-}
+
+* **Before Class:**
+  * **_From prior meetings:_**
+    * Complete Lab-04 from last week
+  * **_For this meeting:_**
+    * Prep Video A - Table Joins (Blackboard)
+    * Prep Video B - Accessing Census Geometric Data (Blackboard)
+    * Prep Video C - Accessing Census Tabular Data (Blackboard)
+    * Brewer, *Designing Better Maps*, Chapter 1, pp 6-16 
+    * Entry Ticket 05 (Blackboard)
+ 
+ * **After Class:**
+   * Complete Lab-05 (GitHub)
+   * Final Project WP-02 - Data Cleaning
+   * Final Project WP-03 - Combining Data Sources (due in two weeks) 
+   * Final Project Annotated Bibliography (due next week; SOC 5650 students only)
+
+## Module 3 - Geoprocessing {-}
+
+### Meeting 06 - Monday, March 8 - Working with Map Projections {-}
+
+* **Before Class:**
+  * **_From prior meetings:_**
+    * Complete Lab-05 from last week
+    * Complete Final Project WP-02 and (if in SOC 5650) the Annotated Bibliography
+  * **_For this meeting:_**
+    * Prep Video A - Projections (1) (Blackboard)
+    * Prep Video B - Projections (2) (Blackboard)
+    * Brewer, *Designing Better Maps*, Chapter 1, pp 16-20
+    * Entry Ticket 06 (Blackboard)
+* **After Class:**
+   * Complete Lab-06 (GitHub)
+   * Final Project WP-03 - Combining Data Sources
+   * Final Project WP-04 - Data Cleaning (due in two meetings)
+
+---
+
+### Meeting 07 - Monday, March 15 - Intersect, Select, and Aggregate {-}
+
+* **Before Class:**
+  * **_From prior meetings:_**
+    * Complete Lab-06 from last week
+    * Complete Final Project WP-03
+  * **_For this meeting:_**
+    * Prep Video A - Intersect (Blackboard)
+    * Prep Video B - Select (Blackboard)
+    * Prep Video C - Aggregate (Blackboard)
+    * Brewer, *Designing Better Maps*, Chapter 2
+    * Entry Ticket 07 (Blackboard)
+* **After Class:**
+   * Complete Lab-07 (GitHub)
+   * Final Project WP-04 - Data Cleaning
+   
+---
+
+### Meeting 08 - Monday, March 22 - Union, Dissolve, and Merge {-}
+
+* **Before Class:**
+  * **_From prior meetings:_**
+    * Complete Lab-07 from last week
+    * Complete Final Project WP-04
+  * **_For this meeting:_**
+    * Prep Video A - Union (Blackboard)
+    * Prep Video B - Dissolve (Blackboard)
+    * Prep Video C - Merge (Blackboard)
+    * Brewer, *Designing Better Maps*, Chapter 3
+    * Entry Ticket 08 (Blackboard)
+* **After Class:**
+   * Complete Lab-08 (GitHub)
+   * Final Project WP-05 - Geoprocessing (due in two weeks)
+
+## Module 4 - Map Products with ArcGIS {-}
+
+### Meeting 09 - Monday, March 29 - ArcGIS Online {-}
+
+* **Before Class:**
+  * **_From prior meetings:_**
+    * Complete Lab-08 from last week (GitHub)
+  * **_For this meeting:_**
+    * Prep Video A - Overview of ArcGIS Online (Blackboard)
+    * Brewer, *Designing Better Maps*, Chapter 4
+    * Entry Ticket 09 (Blackboard)
+* **After Class:**
+   * Complete Lab-09 (GitHub)
+   * Final Project WP-05 - Geoprocessing
+
+---
+
+### Meeting 10 - Monday, April 5 - Story Maps, Part 1 {-}
+
+* **Before Class:**
+  * **_From prior meetings:_**
+    * Complete Lab-09 from last week (GitHub)
+    * Final Project WP-05
+  * **_For this meeting:_**
+      * Prep Video A - Overview of ArcGIS Storymaps (Blackboard)
+      * Brewer, *Designing Better Maps*, Chapter 5
+      * Entry Ticket 10 (Blackboard)
+* **After Class:**
+   * Complete Lab-10 (GitHub)
+   * Final Project Draft Paper (SOC 5650 students only)
+
+---
+
+### Meeting 11 - Monday, April 12 - Story Maps, Part 2 {-}
+
+* **Before Class:**
+  * **_From prior meetings:_**
+    * Complete Lab-10 from last week (GitHub)
+    * Final Project Draft Paper (SOC 5650 students only)
+  * **_For this meeting:_**
+      * Prep Video A - ArcGIS Storymap Details (Blackboard)
+      * Brewer, *Designing Better Maps*, Chapter 6
+      * Entry Ticket 11 (Blackboard)
+* **After Class:**
+   * Complete Lab-11 (GitHub)
+   * Final Project Peer Review (SOC 5650 students only)
+   * Final Project WP-06 - Draft Story Map (due in two weeks)
+
+## Module 5 - Map Products with R {-}
+
+### Meeting 12 - Monday, April 19 - Web Mapping with leaflet {-}
+
+* **Before Class:**
+  * **_From prior meetings:_**
+    * Complete Lab-11 from last week (GitHub)
+    * Final Project Peer Review (SOC 5650 students only)
+  * **_For this meeting:_**
+      * Prep Video A - Leaflet Review
+      * Prep Video B - Concatenating Strings
+      * Brewer, *Designing Better Maps*, Chapter 9
+      * Entry Ticket 12 (Blackboard)
+* **After Class:**
+   * Complete Lab-12 (GitHub)
+   * Final Project WP-06 - Draft Story Map
+
+---
+
+### Meeting 13 - Monday, April 26 - Static Map Lyouts with tmap {-}
+
+* **Before Class:**
+  * **_From prior meetings:_**
+    * Complete Lab-12 from last week (GitHub)
+    * Final Project WP-06
+  * **_For this meeting:_**
+      * Prep Video A - tmap Elements
+      * Entry Ticket 13 (Blackboard)
+* **After Class:**
+   * Complete Lab-14 (GitHub)
+
+---
+
+### Meeting 14 - Monday, May 3 - TBD {-}
