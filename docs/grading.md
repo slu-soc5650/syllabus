@@ -6,10 +6,9 @@ Your grade for this course will consist of a number of different assignments on 
 
 ### Attendance and Participation
 
-\begin{rmdtip}
-Attendance and participation are worth \textbf{10\%} of your final
-grade.
-\end{rmdtip}
+<div class="rmdtip">
+<p>Attendance and participation are worth <strong>10%</strong> of your final grade.</p>
+</div>
 
 Both attendance and participation are critically important aspects of this class. The class participation grade will be based on (a) attendance, (b) level of engagement during lectures and labs, (c) level of engagement on Slack, and (d) the completion of other exercises including "entry" and "exit" tickets, the student information sheet, a pre-test, and an end of the semester course evaluation. 
 
@@ -19,9 +18,9 @@ I provide the final number of points earned for each half of the course. If you 
 
 ### Lab Exercises
 
-\begin{rmdtip}
-Labs are worth \textbf{28\%} of your final grade.
-\end{rmdtip}
+<div class="rmdtip">
+<p>Labs are worth <strong>28%</strong> of your final grade.</p>
+</div>
 
 Each course meeting will include time dedicated to practicing the techniques and applying the theories described in the meeting's materials. These exercises will give you an opportunity to practice skills that correspond with the first four course objectives. Instructions for the labs will be posted in the lecture repositories on [**GitHub**](https://github.com/slu-soc5650) and will be linked to from the lecture pages on the [**course website**](https://slu-soc5650.github.io/). The instructions will also detail the deliverables to be submitted to demonstrate completion of each assignment. Replication files are also provided in the lecture repositories on [**GitHub**](https://github.com/slu-soc5650).
 
@@ -29,12 +28,9 @@ There will be a total of fourteen lab exercises over the course of the semester,
 
 ### Final Project
 
-\begin{rmdtip}
-The final project is worth, in total, \textbf{62\%} of your final grade.
-The waypoints are worth \textbf{28\%} of your final grade, and the final
-deliverables are worth \textbf{34\%} of your final grade. Deliverables
-vary by section; see below for details.
-\end{rmdtip}
+<div class="rmdtip">
+<p>The final project is worth, in total, <strong>62%</strong> of your final grade. The waypoints are worth <strong>28%</strong> of your final grade, and the final deliverables are worth <strong>34%</strong> of your final grade. Deliverables vary by section; see below for details.</p>
+</div>
 
 The final project corresponds with the fourth learning outcome. It will be organized slightly differently depending on which section you are enrolled in. Specific instructions will be provided in the [**final project guide**](https://slu-soc5650.github.io/final-project). 
 
@@ -53,21 +49,15 @@ Deliverables for each waypoint are described in the [**final project guide**](ht
 #### SOC 4650
 If you are enrolled in SOC 4650, you will need to create a story map and a handout that both feature some introductory information and thematic maps of your topic.
 
-\begin{table}
 
-\caption{(\#tab:unnamed-chunk-4)SOC 4650 Final Project Breakdown}
-\centering
-\begin{tabular}[t]{llll}
-\toprule
-Assignment & Points & Quantity & Total\\
-\midrule
-Waypoints & 20 pts & x7 & 140 pts\\
-Final Code \& Docs & 70 pts & x1 & 70 pts\\
-Final Storymap & 70 pts & x1 & 70 pts\\
-Final Handout & 30 pts & x1 & 30 pts\\
-\bottomrule
-\end{tabular}
-\end{table}
+Table: (\#tab:unnamed-chunk-4)SOC 4650 Final Project Breakdown
+
+|Assignment        |Points |Quantity |Total   |
+|:-----------------|:------|:--------|:-------|
+|Waypoints         |20 pts |x7       |140 pts |
+|Final Code & Docs |70 pts |x1       |70 pts  |
+|Final Storymap    |70 pts |x1       |70 pts  |
+|Final Handout     |30 pts |x1       |30 pts  |
 
 #### SOC 5650
 If you are enrolled in SOC 5650, you will also need to create a 3000-4000 word final paper written in the style of an empirical journal article. The following additional deadlines apply:
@@ -79,24 +69,17 @@ If you are enrolled in SOC 5650, you will also need to create a 3000-4000 word f
 
 Grading for SOC 5650 is broken down as follows:
 
-\begin{table}
 
-\caption{(\#tab:unnamed-chunk-5)SOC 5650 Final Project Breakdown}
-\centering
-\begin{tabular}[t]{llll}
-\toprule
-Assignment & Points & Quantity & Total\\
-\midrule
-Waypoints & 20 pts & x7 & 140 pts\\
-Annotated Bibliography & 25 pts & x1 & 25 pts\\
-Final Code \& Docs & 40 pts & x1 & 40 pts\\
-Final Storymap & 40 pts & x1 & 40 pts\\
-Final Handout & 25 pts & x1 & 25 pts\\
-\addlinespace
-Final Paper & 40 pts & x1 & 40 pts\\
-\bottomrule
-\end{tabular}
-\end{table}
+Table: (\#tab:unnamed-chunk-5)SOC 5650 Final Project Breakdown
+
+|Assignment             |Points |Quantity |Total   |
+|:----------------------|:------|:--------|:-------|
+|Waypoints              |20 pts |x7       |140 pts |
+|Annotated Bibliography |25 pts |x1       |25 pts  |
+|Final Code & Docs      |40 pts |x1       |40 pts  |
+|Final Storymap         |40 pts |x1       |40 pts  |
+|Final Handout          |25 pts |x1       |25 pts  |
+|Final Paper            |40 pts |x1       |40 pts  |
 
 ## Submission and Late Work
 
@@ -128,61 +111,53 @@ All grades that use a “check” system (the lecture preps, labs, and some aspe
 
 I use a point system for calculating grades. The following table gives the weighting and final point totals for all assignments for this course:
 
-\begin{table}
 
-\caption{(\#tab:unnamed-chunk-6)SOC 4650 and 5650 Points Breakdown}
-\centering
-\begin{tabular}[t]{lllll}
-\toprule
-Assignment & Points & Quantity & Total & Percent\\
-\midrule
-Participation & 25 pts & x2 & 50 pts & 10\%\\
-Labs & 10 pts & x14 & 140 pts & 28\%\\
-Final Project & 310 pts & x1 & 310 pts & 62\%\\
-\bottomrule
-\end{tabular}
-\end{table}
+Table: (\#tab:unnamed-chunk-6)SOC 4650 and 5650 Points Breakdown
+
+|Assignment    |Points  |Quantity |Total   |Percent |
+|:-------------|:-------|:--------|:-------|:-------|
+|Participation |25 pts  |x2       |50 pts  |10%     |
+|Labs          |10 pts  |x14      |140 pts |28%     |
+|Final Project |310 pts |x1       |310 pts |62%     |
 
 All feedback will include grades that represent number of points earned. If you want to know your percentage on a particular assignment, divide the number of points earned by the number of points possible and then multiply it by 100.
 
 Final grades will be calculated by taking the sum of all points earned and dividing it by the total number of points possible (1,000). This will be multiplied by 100 and then converted to a letter grade using the
 following table:
 
-\begin{table}
-\caption{(\#tab:unnamed-chunk-7)Course Grading Scale}
 
-\centering
-\begin{tabular}[t]{lll}
-\toprule
-GPA & Letter & Percent\\
-\midrule
-4.0 & A & 93.0\% - 100\%\\
-3.7 & A- & 90.0\% - 92.9\%\\
-3.3 & B+ & 87.0\% - 89.9\%\\
-3.0 & B & 83.0\% - 86.9\%\\
-2.7 & B- & 80.0\% - 82.9\%\\
-\bottomrule
-\end{tabular}
-\centering
-\begin{tabular}[t]{lll}
-\toprule
-GPA & Letter & Percent\\
-\midrule
-2.3 & C+ & 77.0\% - 79.9\%\\
-2.0 & C & 73.0\% - 76.9\%\\
-1.7 & C- & 70.0\% - 72.9\%\\
-1.0 & D & 63.0\% - 69.9\%\\
-0.0 & F & < 63.0\%\\
-\bottomrule
-\end{tabular}
-\end{table}
+<table class="kable_wrapper">
+<caption>(\#tab:unnamed-chunk-7)Course Grading Scale</caption>
+<tbody>
+  <tr>
+   <td> 
+
+|GPA |Letter |Percent       |
+|:---|:------|:-------------|
+|4.0 |A      |93.0% - 100%  |
+|3.7 |A-     |90.0% - 92.9% |
+|3.3 |B+     |87.0% - 89.9% |
+|3.0 |B      |83.0% - 86.9% |
+|2.7 |B-     |80.0% - 82.9% |
+
+ </td>
+   <td> 
+
+|GPA |Letter |Percent       |
+|:---|:------|:-------------|
+|2.3 |C+     |77.0% - 79.9% |
+|2.0 |C      |73.0% - 76.9% |
+|1.7 |C-     |70.0% - 72.9% |
+|1.0 |D      |63.0% - 69.9% |
+|0.0 |F      |< 63.0%       |
+
+ </td>
+  </tr>
+</tbody>
+</table>
 
 Borderline grades (i.e. a grade within half a percentage point of the next highest letter grade) *will* be rounded up before final grade submission at the end of the semester. A grade of 89.6% would therefore be submitted to SLU as an "A-" while a grade of 89.4% would be submitted to SLU as a "B+". The final grade report will include both the original letter grade and the rounded letter grade if applicable.
 
-\begin{rmdwarning}
-No chances will be given for revisions of poor grades. Incomplete grades
-will be given upon request only if you have a ``C'' average and have
-completed at least two-thirds of the assignments. You should note that
-incomplete grades must be rectified by the specified deadline or they
-convert to an ``F''.
-\end{rmdwarning}
+<div class="rmdwarning">
+<p>No chances will be given for revisions of poor grades. Incomplete grades will be given upon request only if you have a “C” average and have completed at least two-thirds of the assignments. You should note that incomplete grades must be rectified by the specified deadline or they convert to an “F”.</p>
+</div>

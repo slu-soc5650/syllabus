@@ -72,8 +72,10 @@ I am in the midst of making significant revisions to this class from prior years
   * **_From prior meetings:_**
     * Complete Lab-03 from last week
   * **_For this meeting:_**
-    * Prep Video A - Verbs for Data Cleaning (1) (Blackboard)
-    * Prep Video B - Verbs for Data Cleaning (2) (Blackboard)
+    * Prep Video A - Types of Data and Levels of Measurement (Blackboard)
+    * Prep Video B - Tidy Data (Blackboard)
+    * Prep Video C - Verbs for Data Cleaning (1) (Blackboard)
+    * Prep Video D - Verbs for Data Cleaning (2) (Blackboard)
     * Brewer, *Designing Better Maps*, Chapter 1, pp 1-6
     * Entry Ticket 04 (Blackboard)
   

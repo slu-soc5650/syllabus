@@ -2,12 +2,9 @@
 
 Select a module from the menu to see details about topics, readings, and assignments. Additional notes and links to course materials are available through Blackboard, which has dedicated folders for each module and Meeting.
 
-\begin{rmdwarning}
-I am in the midst of making significant revisions to this class from
-prior years because of the modifications teaching it remotely entails.
-The remainder of the reading list will be available during the week of
-February 1st.
-\end{rmdwarning}
+<div class="rmdwarning">
+<p>I am in the midst of making significant revisions to this class from prior years because of the modifications teaching it remotely entails. The remainder of the reading list will be available during the week of February 1st.</p>
+</div>
 
 ## Module 1 - Course Introduction {-}
 
@@ -75,8 +72,10 @@ February 1st.
   * **_From prior meetings:_**
     * Complete Lab-03 from last week
   * **_For this meeting:_**
-    * Prep Video A - Verbs for Data Cleaning (1) (Blackboard)
-    * Prep Video B - Verbs for Data Cleaning (2) (Blackboard)
+    * Prep Video A - Types of Data and Levels of Measurement (Blackboard)
+    * Prep Video B - Tidy Data (Blackboard)
+    * Prep Video C - Verbs for Data Cleaning (1) (Blackboard)
+    * Prep Video D - Verbs for Data Cleaning (2) (Blackboard)
     * Brewer, *Designing Better Maps*, Chapter 1, pp 1-6
     * Entry Ticket 04 (Blackboard)
   

@@ -1,7 +1,7 @@
 ---
 title: "SOC 4650 & 5650: Introduction to GIS"
 author: "Christopher Prener, Ph.D."
-date: "2021-02-16"
+date: "2021-02-19"
 site: bookdown::bookdown_site
 documentclass: book
 bibliography: [book.bib, packages.bib]
@@ -25,11 +25,9 @@ description: "This is the syllabus and reading list for Chris's sections of SOC 
 
 ### Chris’s Information {-}
 
-\begin{rmdwarning}
-Please note that I am not on-campus this semester due to the continuing
-COVID-19 pandemic. All course meetings, office hours, and individual
-student meetings will occur virtually via Zoom.
-\end{rmdwarning}
+<div class="rmdwarning">
+<p>Please note that I am not on-campus this semester due to the continuing COVID-19 pandemic. All course meetings, office hours, and individual student meetings will occur virtually via Zoom.</p>
+</div>
 
 *Office:* 1918 Morrissey Hall
 
