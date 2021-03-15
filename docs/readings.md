@@ -2,9 +2,12 @@
 
 Select a module from the menu to see details about topics, readings, and assignments. Additional notes and links to course materials are available through Blackboard, which has dedicated folders for each module and Meeting.
 
-<div class="rmdwarning">
-<p>I am in the midst of making significant revisions to this class from prior years because of the modifications teaching it remotely entails. The remainder of the reading list will be available during the week of February 1st.</p>
-</div>
+\begin{rmdwarning}
+I am in the midst of making significant revisions to this class from
+prior years because of the modifications teaching it remotely entails.
+The remainder of the reading list will be available during the week of
+February 1st.
+\end{rmdwarning}
 
 ## Module 1 - Course Introduction {-}
 
@@ -119,7 +122,7 @@ Select a module from the menu to see details about topics, readings, and assignm
 * **After Class:**
    * Complete Lab-06 (GitHub)
    * Final Project WP-03 - Combining Data Sources
-   * Final Project WP-04 - Data Cleaning (due in two meetings)
+   * Final Project WP-04 - Projecting Data (due in two meetings)
 
 ---
 
@@ -137,7 +140,7 @@ Select a module from the menu to see details about topics, readings, and assignm
     * Entry Ticket 07 (Blackboard)
 * **After Class:**
    * Complete Lab-07 (GitHub)
-   * Final Project WP-04 - Data Cleaning
+   * Final Project WP-04 - Projecting Data
    
 ---
 

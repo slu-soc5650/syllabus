@@ -4,14 +4,13 @@
 %
 \documentclass[
 ]{book}
+\usepackage{amsmath,amssymb}
 \usepackage{lmodern}
-\usepackage{amsmath}
 \usepackage{ifxetex,ifluatex}
 \ifnum 0\ifxetex 1\fi\ifluatex 1\fi=0 % if pdftex
   \usepackage[T1]{fontenc}
   \usepackage[utf8]{inputenc}
   \usepackage{textcomp} % provide euro and other symbols
-  \usepackage{amssymb}
 \else % if luatex or xetex
   \usepackage{unicode-math}
   \defaultfontfeatures{Scale=MatchLowercase}
@@ -42,7 +41,7 @@
   hidelinks,
   pdfcreator={LaTeX via pandoc}}
 \urlstyle{same} % disable monospaced font for URLs
-\usepackage{longtable,booktabs}
+\usepackage{longtable,booktabs,array}
 \usepackage{calc} % for calculating minipage widths
 % Correct order of tables after \paragraph or \subparagraph
 \usepackage{etoolbox}
@@ -157,7 +156,7 @@
 
 \title{SOC 4650 \& 5650: Introduction to GIS}
 \author{Christopher Prener, Ph.D.}
-\date{2021-02-16}
+\date{2021-03-15}
 
 \begin{document}
 \maketitle
@@ -983,9 +982,13 @@ February 1st.
     \begin{itemize}
     \tightlist
     \item
-      Prep Video A - Verbs for Data Cleaning (1) (Blackboard)
+      Prep Video A - Types of Data and Levels of Measurement (Blackboard)
     \item
-      Prep Video B - Verbs for Data Cleaning (2) (Blackboard)
+      Prep Video B - Tidy Data (Blackboard)
+    \item
+      Prep Video C - Verbs for Data Cleaning (1) (Blackboard)
+    \item
+      Prep Video D - Verbs for Data Cleaning (2) (Blackboard)
     \item
       Brewer, \emph{Designing Better Maps}, Chapter 1, pp 1-6
     \item
@@ -1108,7 +1111,7 @@ February 1st.
   \item
     Final Project WP-03 - Combining Data Sources
   \item
-    Final Project WP-04 - Data Cleaning (due in two meetings)
+    Final Project WP-04 - Projecting Data (due in two meetings)
   \end{itemize}
 \end{itemize}
 
@@ -1160,7 +1163,7 @@ February 1st.
   \item
     Complete Lab-07 (GitHub)
   \item
-    Final Project WP-04 - Data Cleaning
+    Final Project WP-04 - Projecting Data
   \end{itemize}
 \end{itemize}
 

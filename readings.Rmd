@@ -119,7 +119,7 @@ I am in the midst of making significant revisions to this class from prior years
 * **After Class:**
    * Complete Lab-06 (GitHub)
    * Final Project WP-03 - Combining Data Sources
-   * Final Project WP-04 - Data Cleaning (due in two meetings)
+   * Final Project WP-04 - Projecting Data (due in two meetings)
 
 ---
 
@@ -137,7 +137,7 @@ I am in the midst of making significant revisions to this class from prior years
     * Entry Ticket 07 (Blackboard)
 * **After Class:**
    * Complete Lab-07 (GitHub)
-   * Final Project WP-04 - Data Cleaning
+   * Final Project WP-04 - Projecting Data
    
 ---
 
