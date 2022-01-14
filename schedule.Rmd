@@ -1,38 +1,51 @@
 # (PART) Reading List {-}
 
+```{r, echo=FALSE, message=FALSE}
+schedule_tbl <- readr::read_csv("schedule.csv", 
+                                col_types = readr::cols(
+                                  module = readr::col_character(),
+                                  date = readr::col_character(),
+                                  start = readr::col_logical()
+  ))
+schedule_tbl <- dplyr::mutate(schedule_tbl, date = lubridate::mdy(date))
+schedule_tbl <- dplyr::mutate(schedule_tbl, month = lubridate::month(date))
+schedule_tbl <- dplyr::mutate(schedule_tbl, month = month.name[month])
+schedule_tbl <- dplyr::mutate(schedule_tbl, day = lubridate::day(date))
+schedule_tbl <- dplyr::mutate(schedule_tbl, dow = weekdays(date, abbreviate = FALSE))
+schedule_tbl <- dplyr::mutate(schedule_tbl, label = paste0(dow, ", ", month, " ", day))
+```
+
 # Course Schedule
 
 The following is a high-level schedule that details the general topic covered by each lecture.
 
 ```{r, echo=FALSE}
 schedule <- data.frame(
-  Module = c("1", "1", "1", "1", "2", "2", "2",
-             "3", "3", "3", "3", "4", "4", "4", "4",
-             "5", "5", "5", "5"),
-  Meeting = c("", "01", "02", "03", "", "04", "05",
-              "", "06", "07", "08", "", "09", "10", "11",
-              "", "12", "13", "14"),
+  Module = c("**1**", "", "", "", "**2**", "", "",
+             "**3**", "", "", "", "**4**", "", "", "",
+             "", ""),
+  Meeting = c("", "1-1", "1-2", "1-3", "", "2-1", "2-2",
+              "", "3-1", "3-2", "3-3", "", "4-1", "4-2", "4-3",
+              "4-4", "4-5"),
   Date = c("", 
-           "February 1st",
-           "February 8th",
-           "February 15th",
+           schedule_tbl$label[1],
+           schedule_tbl$label[2],
+           schedule_tbl$label[3],
            "",
-           "February 22nd",
-           "March 1st",
+           schedule_tbl$label[4],
+           schedule_tbl$label[5],
            "",
-           "March 8th",
-           "March 15th",
-           "March 22nd",
+           schedule_tbl$label[6],
+           schedule_tbl$label[7],
+           schedule_tbl$label[8],
            "",
-           "March 29th",
-           "April 5th",
-           "April 12th",
-           "",
-           "April 19th",
-           "April 26th",
-           "May 3rd"
+           schedule_tbl$label[9],
+           schedule_tbl$label[10],
+           schedule_tbl$label[11],
+           schedule_tbl$label[12],
+           schedule_tbl$label[13]
            ),
-  Title = c("**Course Introduction**",
+  Title = c("**Getting Started**",
             "Course Introduction",
             "Map Production Basics",
             "Cartography 101",
@@ -43,26 +56,26 @@ schedule <- data.frame(
             "Working with Map Projections",
             "Intersect, Select, and Aggregate",
             "Union, Dissolve, and Merge",
-            "**Map Products with ArcGIS**",
+            "**Map Products**",
             "ArcGIS Online",
             "Story Maps, Part 1",
             "Story Maps, Part 2",
-            "**Map Products with R**",
-            "Web Mapping with leaflet",
-            "Static Map Layouts with tmap",
-            "Handouts with RMarkdown"
+            "Print Maps, Part 1",
+            "Print Maps, Part 2"
             ),
   stringsAsFactors = FALSE
 )
 
 knitr::kable(
   schedule, booktabs = TRUE,
-  caption = "SOC 4650 and 5650 Course Overview"
+  caption = "SOC 4650/5650 Course Overview"
 )
 ```
 
 ### Scheduling Notes
 
-The course schedule may change as it depends on the progress of the class and the <a href = "https://slu-soc5650.github.io/covid19" target = "_blank">challenges we are confronted by this semester</a>. The web version of this document will be updated to reflect any alterations, but the .pdf version will remain unaltered.
+The course schedule may change as it depends on the progress of the class and the challenges we are confronted by this semester. The web version of this document will be updated to reflect any alterations, but the `.pdf` version will remain unaltered.
 
-No class activities are scheduled for **May 10th**. This is a “flex day,” which I have left without a scheduled plan to accommodate changes due to COVID-19. If we have to reschedule class days, this date will be used before we begin to remove content from the course plan. I will provide updates on my plans for both of these days as the semester progresses.
+This semester, we will not have class on **March 15th** and **April 18th**  because they fall on University breaks. Additionally, no class activities are scheduled for **May 9th**. This is a **"flex day,"** which I have left without a scheduled plan to accommodate changes due to COVID-19. If we have to reschedule class days, this date will be used before we begin to remove content from the course plan. I will provide updates on my plans for this day as the semester progresses.
+
+Additionally, evening classes are often held on the Monday after Easter, which falls on **April 18th** this year. If we have already used the flex day, I may elect to hold class that evening.

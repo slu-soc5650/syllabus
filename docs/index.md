@@ -1,7 +1,7 @@
 ---
 title: "SOC 4650 & 5650: Introduction to GIS"
 author: "Christopher Prener, Ph.D."
-date: "2021-03-15"
+date: "2022-01-14"
 site: bookdown::bookdown_site
 documentclass: book
 bibliography: [book.bib, packages.bib]
@@ -17,7 +17,7 @@ description: "This is the syllabus and reading list for Chris's sections of SOC 
 
 *When:* Mondays, 4:15pm CST to 7:00pm CST
 
-*Where:*  Zoom (see <a href = "https://blackboard.slu.edu" target = "_blank">Blackboard</a> for the link and password)
+*Where:*  3600 Morrissey
 
 ### Course Website {-}
 
@@ -37,19 +37,19 @@ student meetings will occur virtually via Zoom.
 
 *GitHub:* `@chris-prener`
 
-**Office Hours, Appointment Only:** Wednesdays, 9:00 AM CST to 10:00 AM CST; <a href = "https://calendly.com/chris-prener" target = "_blank">sign-up via Calendly</a> to receive personalized calendar and Zoom invitations (SLU log-in required)
+**Office Hours, Appointment Only:** Wednesdays, 9:00 AM CST to 10:30 AM CST; <a href = "https://calendly.com/chris-prener" target = "_blank">sign-up via Calendly</a> to receive personalized calendar and Zoom invitations (SLU log-in required)
 
-**Office Hours, Drop-in:** Wednesdays, 10:00 AM CST to 10:45 AM CST via <a href = "https://slu.zoom.us/j/95067739532" target = "_blank">Zoom</a> (SLU log-in required; you will be admitted to a waiting room)
+**Office Hours, Drop-in:** Mondays after class (in-person)
 
 ## Hardcopy Syllabus {-}
 If you would like to keep a record of the syllabus, there is a `.pdf` download button (<i class="fa fa-file-pdf-o"></i>) in the top toolboar. This may be particularly useful for honors and M.A. students who plan to continue their graduate education after SLU and hope to petition out of a basic statistics requirement. This document will contain a "snapshot" of the course policies and planned schedule as of the beginning of the semester but will not be subsequently updated. See the "Preface and Warning" on page 2 of the `.pdf` for additional details.
 
 ## Change Log {-}
 
-* January 27, 2021 - Update for Spring 2021 semester
+* January 13, 2022 - Update for Spring 2022 semester
 
 ## License {-}
-Copyright © 2016-2021 [Christopher G. Prener](https://chris-prener.github.io)
+Copyright © 2016-2022 [Christopher G. Prener](https://chris-prener.github.io)
 
 <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-sa/4.0/88x31.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License</a>.
 

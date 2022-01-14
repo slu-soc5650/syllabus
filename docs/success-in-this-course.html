@@ -6,7 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <title>Section 3 Success in this Course | SOC 4650 &amp; 5650: Introduction to GIS</title>
   <meta name="description" content="This is the syllabus and reading list for Chris’s sections of SOC 4650 and 5650." />
-  <meta name="generator" content="bookdown 0.21 and GitBook 2.6.7" />
+  <meta name="generator" content="bookdown 0.24 and GitBook 2.6.7" />
 
   <meta property="og:title" content="Section 3 Success in this Course | SOC 4650 &amp; 5650: Introduction to GIS" />
   <meta property="og:type" content="book" />
@@ -24,7 +24,7 @@
 <meta name="author" content="Christopher Prener, Ph.D." />
 
 
-<meta name="date" content="2021-03-15" />
+<meta name="date" content="2022-01-14" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -33,8 +33,9 @@
   
 <link rel="prev" href="academic-honesty.html"/>
 <link rel="next" href="assignments-and-grading.html"/>
-<script src="libs/header-attrs-2.7/header-attrs.js"></script>
-<script src="libs/jquery-2.2.3/jquery.min.js"></script>
+<script src="libs/header-attrs-2.11/header-attrs.js"></script>
+<script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
@@ -50,6 +51,8 @@
 
 
 
+<link href="libs/anchor-sections-1.0.1/anchor-sections.css" rel="stylesheet" />
+<script src="libs/anchor-sections-1.0.1/anchor-sections.js"></script>
 
 
 
@@ -67,7 +70,7 @@
       <nav role="navigation">
 
 <ul class="summary">
-<li><strong><a href="https://slu-soc5650.github.io/syllabus/">SOC 4650 and SOC 5650 Syllabus</a></strong></li>
+<li><strong><a href="https://slu-soc5650.github.io/syllabus/">SOC 4650/5650 Syllabus</a></strong></li>
 
 <li class="divider"></li>
 <li class="chapter" data-level="" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i>Basics</a>
@@ -89,15 +92,16 @@
 <li class="chapter" data-level="1.5" data-path="computers-data-and-data-storage.html"><a href="computers-data-and-data-storage.html"><i class="fa fa-check"></i><b>1.5</b> Computers, Data, and Data Storage</a></li>
 <li class="chapter" data-level="1.6" data-path="services.html"><a href="services.html"><i class="fa fa-check"></i><b>1.6</b> Services</a>
 <ul>
-<li class="chapter" data-level="1.6.1" data-path="services.html"><a href="services.html#blackboard"><i class="fa fa-check"></i><b>1.6.1</b> Blackboard</a></li>
+<li class="chapter" data-level="1.6.1" data-path="services.html"><a href="services.html#canvas"><i class="fa fa-check"></i><b>1.6.1</b> Canvas</a></li>
 <li class="chapter" data-level="1.6.2" data-path="services.html"><a href="services.html#zoom"><i class="fa fa-check"></i><b>1.6.2</b> Zoom</a></li>
 <li class="chapter" data-level="1.6.3" data-path="services.html"><a href="services.html#github"><i class="fa fa-check"></i><b>1.6.3</b> GitHub</a></li>
 <li class="chapter" data-level="1.6.4" data-path="services.html"><a href="services.html#arcgis-online"><i class="fa fa-check"></i><b>1.6.4</b> ArcGIS Online</a></li>
 </ul></li>
 <li class="chapter" data-level="1.7" data-path="software.html"><a href="software.html"><i class="fa fa-check"></i><b>1.7</b> Software</a>
 <ul>
-<li class="chapter" data-level="1.7.1" data-path="software.html"><a href="software.html#r-and-rstudio"><i class="fa fa-check"></i><b>1.7.1</b> <code>R</code> and RStudio</a></li>
-<li class="chapter" data-level="1.7.2" data-path="software.html"><a href="software.html#github-desktop"><i class="fa fa-check"></i><b>1.7.2</b> GitHub Desktop</a></li>
+<li class="chapter" data-level="1.7.1" data-path="software.html"><a href="software.html#arcgis-pro"><i class="fa fa-check"></i><b>1.7.1</b> ArcGIS Pro</a></li>
+<li class="chapter" data-level="1.7.2" data-path="software.html"><a href="software.html#r-and-rstudio"><i class="fa fa-check"></i><b>1.7.2</b> <code>R</code> and RStudio</a></li>
+<li class="chapter" data-level="1.7.3" data-path="software.html"><a href="software.html#github-desktop"><i class="fa fa-check"></i><b>1.7.3</b> GitHub Desktop</a></li>
 </ul></li>
 </ul></li>
 <li class="chapter" data-level="2" data-path="course-policies.html"><a href="course-policies.html"><i class="fa fa-check"></i><b>2</b> Course Policies</a>
@@ -144,34 +148,34 @@
 </ul></li>
 <li class="chapter" data-level="6" data-path="meeting-schedule.html"><a href="meeting-schedule.html"><i class="fa fa-check"></i><b>6</b> Meeting Schedule</a>
 <ul>
-<li class="chapter" data-level="" data-path="module-1-course-introduction.html"><a href="module-1-course-introduction.html"><i class="fa fa-check"></i>Module 1 - Course Introduction</a>
+<li class="chapter" data-level="" data-path="module-1---course-introduction.html"><a href="module-1---course-introduction.html"><i class="fa fa-check"></i>Module 1 - Course Introduction</a>
 <ul>
-<li class="chapter" data-level="" data-path="module-1-course-introduction.html"><a href="module-1-course-introduction.html#meeting-01---monday-february-1---course-introduction"><i class="fa fa-check"></i>Meeting 01 - Monday, February 1 - Course Introduction</a></li>
-<li class="chapter" data-level="" data-path="module-1-course-introduction.html"><a href="module-1-course-introduction.html#meeting-02---monday-february-8---map-production-basics"><i class="fa fa-check"></i>Meeting 02 - Monday, February 8 - Map Production Basics</a></li>
-<li class="chapter" data-level="" data-path="module-1-course-introduction.html"><a href="module-1-course-introduction.html#meeting-03---monday-february-15---cartography-101"><i class="fa fa-check"></i>Meeting 03 - Monday, February 15 - Cartography 101</a></li>
+<li class="chapter" data-level="" data-path="module-1---course-introduction.html"><a href="module-1---course-introduction.html#meeting-01---monday-february-1---course-introduction"><i class="fa fa-check"></i>Meeting 01 - Monday, February 1 - Course Introduction</a></li>
+<li class="chapter" data-level="" data-path="module-1---course-introduction.html"><a href="module-1---course-introduction.html#meeting-02---monday-february-8---map-production-basics"><i class="fa fa-check"></i>Meeting 02 - Monday, February 8 - Map Production Basics</a></li>
+<li class="chapter" data-level="" data-path="module-1---course-introduction.html"><a href="module-1---course-introduction.html#meeting-03---monday-february-15---cartography-101"><i class="fa fa-check"></i>Meeting 03 - Monday, February 15 - Cartography 101</a></li>
 </ul></li>
-<li class="chapter" data-level="" data-path="module-2-data-cleaning.html"><a href="module-2-data-cleaning.html"><i class="fa fa-check"></i>Module 2 - Data Cleaning</a>
+<li class="chapter" data-level="" data-path="module-2---data-cleaning.html"><a href="module-2---data-cleaning.html"><i class="fa fa-check"></i>Module 2 - Data Cleaning</a>
 <ul>
-<li class="chapter" data-level="" data-path="module-2-data-cleaning.html"><a href="module-2-data-cleaning.html#meeting-04---monday-february-22---data-cleaning-basics"><i class="fa fa-check"></i>Meeting 04 - Monday, February 22 - Data Cleaning Basics</a></li>
-<li class="chapter" data-level="" data-path="module-2-data-cleaning.html"><a href="module-2-data-cleaning.html#meeting-05---monday-march-1---combining-data-sources"><i class="fa fa-check"></i>Meeting 05 - Monday, March 1 - Combining Data Sources</a></li>
+<li class="chapter" data-level="" data-path="module-2---data-cleaning.html"><a href="module-2---data-cleaning.html#meeting-04---monday-february-22---data-cleaning-basics"><i class="fa fa-check"></i>Meeting 04 - Monday, February 22 - Data Cleaning Basics</a></li>
+<li class="chapter" data-level="" data-path="module-2---data-cleaning.html"><a href="module-2---data-cleaning.html#meeting-05---monday-march-1---combining-data-sources"><i class="fa fa-check"></i>Meeting 05 - Monday, March 1 - Combining Data Sources</a></li>
 </ul></li>
-<li class="chapter" data-level="" data-path="module-3-geoprocessing.html"><a href="module-3-geoprocessing.html"><i class="fa fa-check"></i>Module 3 - Geoprocessing</a>
+<li class="chapter" data-level="" data-path="module-3---geoprocessing.html"><a href="module-3---geoprocessing.html"><i class="fa fa-check"></i>Module 3 - Geoprocessing</a>
 <ul>
-<li class="chapter" data-level="" data-path="module-3-geoprocessing.html"><a href="module-3-geoprocessing.html#meeting-06---monday-march-8---working-with-map-projections"><i class="fa fa-check"></i>Meeting 06 - Monday, March 8 - Working with Map Projections</a></li>
-<li class="chapter" data-level="" data-path="module-3-geoprocessing.html"><a href="module-3-geoprocessing.html#meeting-07---monday-march-15---intersect-select-and-aggregate"><i class="fa fa-check"></i>Meeting 07 - Monday, March 15 - Intersect, Select, and Aggregate</a></li>
-<li class="chapter" data-level="" data-path="module-3-geoprocessing.html"><a href="module-3-geoprocessing.html#meeting-08---monday-march-22---union-dissolve-and-merge"><i class="fa fa-check"></i>Meeting 08 - Monday, March 22 - Union, Dissolve, and Merge</a></li>
+<li class="chapter" data-level="" data-path="module-3---geoprocessing.html"><a href="module-3---geoprocessing.html#meeting-06---monday-march-8---working-with-map-projections"><i class="fa fa-check"></i>Meeting 06 - Monday, March 8 - Working with Map Projections</a></li>
+<li class="chapter" data-level="" data-path="module-3---geoprocessing.html"><a href="module-3---geoprocessing.html#meeting-07---monday-march-15---intersect-select-and-aggregate"><i class="fa fa-check"></i>Meeting 07 - Monday, March 15 - Intersect, Select, and Aggregate</a></li>
+<li class="chapter" data-level="" data-path="module-3---geoprocessing.html"><a href="module-3---geoprocessing.html#meeting-08---monday-march-22---union-dissolve-and-merge"><i class="fa fa-check"></i>Meeting 08 - Monday, March 22 - Union, Dissolve, and Merge</a></li>
 </ul></li>
-<li class="chapter" data-level="" data-path="module-4-map-products-with-arcgis.html"><a href="module-4-map-products-with-arcgis.html"><i class="fa fa-check"></i>Module 4 - Map Products with ArcGIS</a>
+<li class="chapter" data-level="" data-path="module-4---map-products-with-arcgis.html"><a href="module-4---map-products-with-arcgis.html"><i class="fa fa-check"></i>Module 4 - Map Products with ArcGIS</a>
 <ul>
-<li class="chapter" data-level="" data-path="module-4-map-products-with-arcgis.html"><a href="module-4-map-products-with-arcgis.html#meeting-09---monday-march-29---arcgis-online"><i class="fa fa-check"></i>Meeting 09 - Monday, March 29 - ArcGIS Online</a></li>
-<li class="chapter" data-level="" data-path="module-4-map-products-with-arcgis.html"><a href="module-4-map-products-with-arcgis.html#meeting-10---monday-april-5---story-maps-part-1"><i class="fa fa-check"></i>Meeting 10 - Monday, April 5 - Story Maps, Part 1</a></li>
-<li class="chapter" data-level="" data-path="module-4-map-products-with-arcgis.html"><a href="module-4-map-products-with-arcgis.html#meeting-11---monday-april-12---story-maps-part-2"><i class="fa fa-check"></i>Meeting 11 - Monday, April 12 - Story Maps, Part 2</a></li>
+<li class="chapter" data-level="" data-path="module-4---map-products-with-arcgis.html"><a href="module-4---map-products-with-arcgis.html#meeting-09---monday-march-29---arcgis-online"><i class="fa fa-check"></i>Meeting 09 - Monday, March 29 - ArcGIS Online</a></li>
+<li class="chapter" data-level="" data-path="module-4---map-products-with-arcgis.html"><a href="module-4---map-products-with-arcgis.html#meeting-10---monday-april-5---story-maps-part-1"><i class="fa fa-check"></i>Meeting 10 - Monday, April 5 - Story Maps, Part 1</a></li>
+<li class="chapter" data-level="" data-path="module-4---map-products-with-arcgis.html"><a href="module-4---map-products-with-arcgis.html#meeting-11---monday-april-12---story-maps-part-2"><i class="fa fa-check"></i>Meeting 11 - Monday, April 12 - Story Maps, Part 2</a></li>
 </ul></li>
-<li class="chapter" data-level="" data-path="module-5-map-products-with-r.html"><a href="module-5-map-products-with-r.html"><i class="fa fa-check"></i>Module 5 - Map Products with R</a>
+<li class="chapter" data-level="" data-path="module-5---map-products-with-r.html"><a href="module-5---map-products-with-r.html"><i class="fa fa-check"></i>Module 5 - Map Products with R</a>
 <ul>
-<li class="chapter" data-level="" data-path="module-5-map-products-with-r.html"><a href="module-5-map-products-with-r.html#meeting-12---monday-april-19---web-mapping-with-leaflet"><i class="fa fa-check"></i>Meeting 12 - Monday, April 19 - Web Mapping with leaflet</a></li>
-<li class="chapter" data-level="" data-path="module-5-map-products-with-r.html"><a href="module-5-map-products-with-r.html#meeting-13---monday-april-26---static-map-lyouts-with-tmap"><i class="fa fa-check"></i>Meeting 13 - Monday, April 26 - Static Map Lyouts with tmap</a></li>
-<li class="chapter" data-level="" data-path="module-5-map-products-with-r.html"><a href="module-5-map-products-with-r.html#meeting-14---monday-may-3---tbd"><i class="fa fa-check"></i>Meeting 14 - Monday, May 3 - TBD</a></li>
+<li class="chapter" data-level="" data-path="module-5---map-products-with-r.html"><a href="module-5---map-products-with-r.html#meeting-12---monday-april-19---web-mapping-with-leaflet"><i class="fa fa-check"></i>Meeting 12 - Monday, April 19 - Web Mapping with leaflet</a></li>
+<li class="chapter" data-level="" data-path="module-5---map-products-with-r.html"><a href="module-5---map-products-with-r.html#meeting-13---monday-april-26---static-map-lyouts-with-tmap"><i class="fa fa-check"></i>Meeting 13 - Monday, April 26 - Static Map Lyouts with tmap</a></li>
+<li class="chapter" data-level="" data-path="module-5---map-products-with-r.html"><a href="module-5---map-products-with-r.html#meeting-14---monday-may-3---tbd"><i class="fa fa-check"></i>Meeting 14 - Monday, May 3 - TBD</a></li>
 </ul></li>
 </ul></li>
 <li class="divider"></li>
@@ -216,7 +220,6 @@
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>
-<script src="libs/gitbook-2.6.7/js/lunr.js"></script>
 <script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
 <script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
 <script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
@@ -235,6 +238,7 @@ gitbook.start({
 "weibo": false,
 "instapaper": false,
 "vk": false,
+"whatsapp": false,
 "all": null,
 "google": false
 },
@@ -253,6 +257,10 @@ gitbook.start({
 "text": null
 },
 "download": ["Intro_to_GIS_Syllabus.pdf"],
+"search": {
+"engine": "fuse",
+"options": null
+},
 "toc": {
 "collapse": "section"
 }

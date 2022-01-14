@@ -1,5 +1,7 @@
 # Assignments and Grading
-This section provides general details on the different types of assignments for this course. It also contains policies for submitting work, receiving feedback, and late work.
+This section provides general details on the different types of assignments for this course. It also contains policies for submitting work, receiving feedback, and late work. A summary schedule with all due dates is available as part of the [Course Schedule](course-schedule.html).
+
+
 
 ## Assignments
 Your grade for this course will consist of a number of different assignments on which points may be earned. Each category of assignment is described below.
@@ -7,93 +9,91 @@ Your grade for this course will consist of a number of different assignments on 
 ### Attendance and Participation
 
 \begin{rmdtip}
-Attendance and participation are worth \textbf{10\%} of your final
-grade.
+Attendance and participation are worth 50 points, or \textbf{10\%} of
+your final grade.
 \end{rmdtip}
 
-Both attendance and participation are critically important aspects of this class. The class participation grade will be based on (a) attendance, (b) level of engagement during lectures and labs, (c) level of engagement on Slack, and (d) the completion of other exercises including "entry" and "exit" tickets, the student information sheet, a pre-test, and an end of the semester course evaluation. 
+As discussed above, both attendance and participation are important aspects of this class. The class participation grade will be based on (a) attendance, (b) level of engagement during lectures and labs, (c) level of engagement on Canvas, and (d) the completion of other exercises including "entry" and "exit" tickets, the student information sheet, a pre-test, and an end of the semester course evaluation. 
 
-Each of these elements is assigned a point value and assessed using a scale that awards full, partial, or no credit. Your participation grade will be split, with 50 points (5% of your final grade) for the first half of the semester (through Lecture-08) and another 50 points (5%) for the second half. Since the number of points awarded for participation are variable, the total number of points earned for each half will be converted to a 0 to 50 scale. 
+Each of these elements is assigned a point value and assessed using a scale that awards full, partial, or no credit (see [Grading](grading.html)). Not attending class or completing an "entry" or "exit" ticket will result in no credit being earned for that element on a given day. Disengagement during class may result in partial or no credit being earned. Late arrivals will result in only partial credit earned for that element on a given day.
 
-I provide the final number of points earned for each half of the course. If you would like a more detailed breakdown of your participation grade, please reach out and I will provide one.
+Your participation grade will be split, with 25 points each for Part 1 (through Spring Break) and Part 2 (from Spring Break onward). Since the number of points awarded for participation are variable, the total number of points earned for each half will be **weighted** so that it is converted to a final score that matches the points available for that part of the course. I provide the final number of points earned for each part of the course. If you would like a more detailed breakdown of your participation grade and/or attendance record, please reach out and I will happily provide one.
 
 ### Lab Exercises
 
 \begin{rmdtip}
-Labs are worth \textbf{28\%} of your final grade.
+Labs are worth 140 points, or \textbf{28\%} of your final grade.
 \end{rmdtip}
 
 Each course meeting will include time dedicated to practicing the techniques and applying the theories described in the meeting's materials. These exercises will give you an opportunity to practice skills that correspond with the first four course objectives. Instructions for the labs will be posted in the lecture repositories on [**GitHub**](https://github.com/slu-soc5650) and will be linked to from the lecture pages on the [**course website**](https://slu-soc5650.github.io/). The instructions will also detail the deliverables to be submitted to demonstrate completion of each assignment. Replication files are also provided in the lecture repositories on [**GitHub**](https://github.com/slu-soc5650).
 
-There will be a total of fourteen lab exercises over the course of the semester, each of which is worth 2% of your final grade. Lab exercises are graded using the “check” grading system. Since replication files are posted, feedback for labs is not generally returned after the first few assignments and I will only respond with the number of points awarded if you do not earn full credit. *It is your responsibility to reach out to discuss questions or concerns you had while doing the lab.*
+There will be a total of fourteen lab exercises over the course of the semester, each of which is worth 2% of your final grade. Lab exercises are graded using the "check" grading system. Since replication files are posted, feedback for labs is not generally returned after the first few assignments and I will only respond with the number of points awarded if you do not earn full credit. *It is your responsibility to reach out to discuss questions or concerns you had while doing the lab.*
 
 ### Final Project
 
 \begin{rmdtip}
-The final project is worth, in total, \textbf{62\%} of your final grade.
-The waypoints are worth \textbf{28\%} of your final grade, and the final
-deliverables are worth \textbf{34\%} of your final grade. Deliverables
-vary by section; see below for details.
+The final project is worth 310 points, or \textbf{62\%} of your final
+grade. The waypoints are worth \textbf{24\%} of your final grade, and
+the final deliverables are worth \textbf{38\%} of your final grade.
+Deliverables vary by section; see below for details.
 \end{rmdtip}
 
 The final project corresponds with the fourth learning outcome. It will be organized slightly differently depending on which section you are enrolled in. Specific instructions will be provided in the [**final project guide**](https://slu-soc5650.github.io/final-project). 
 
-As work progresses, there will be a number of **waypoints** where students will need to submit updates on their progress. Waypoints serve as the homework assignments for this class - this is your opportunity to show me how your skills are developing *and* make progress on your final project. They are generally due two weeks after the relevant topic is first introduced in class. The seven waypoints are as follows:
+As work progresses, there will be a number of **waypoints** where students will need to submit updates on their progress. Waypoints serve as the homework assignments for this class - this is your opportunity to show me how your skills are developing *and* make progress on your final project. They are generally due two weeks after the relevant topic is first introduced in class. The six waypoints are as follows:
 
-  1. Meeting 02 (**February 8th**) - memo submission
-  2. Meeting 06 (**March 8th**) - initial data cleaning
-  3. Meeting 07 (**March 15th**) - combining data sources
-  4. Meeting 08 (**March 22nd**) - projecting data
-  5. Meeting 10 (**April 5th**) - geoprocessing data
-  6. Meeting 13 (**April 26th**) - draft story map
-  7. Flex day (**May 10th**) - draft handout
+  1. WP-1 - **Monday, January 31** - memo submission
+  2. WP-2 - **Monday, February 28** - initial data cleaning
+  3. WP-3 - **Monday, March 7** - combining data sources
+  4. WP-4 - **Monday, March 21** - projecting data
+  5. WP-5 - **Monday, April 4** - geoprocessing data
+  6. WP-6 - **Monday, April 25** - draft story map
 
-Deliverables for each waypoint are described in the [**final project guide**](https://slu-soc5650.github.io/final-project). All waypoints are graded using the "check" grading system. Final materials will be due on **May 17th** (during Finals Week). Final deliverables differ by course section.
+Deliverables for each waypoint are described in the [**final project guide**](https://slu-soc5650.github.io/final-project). All waypoints are graded using the "check" grading system. Final materials will be due on **Monday, May 16** (during Finals Week). Final deliverables differ by course section.
 
 #### SOC 4650
-If you are enrolled in SOC 4650, you will need to create a story map and a handout that both feature some introductory information and thematic maps of your topic.
+If you are enrolled in SOC 4650, you will need to create a story map that features some introductory information, media, and thematic maps about your topic.
 
 \begin{table}
 
-\caption{(\#tab:unnamed-chunk-4)SOC 4650 Final Project Breakdown}
+\caption{(\#tab:unnamed-chunk-5)SOC 4650 Final Project Breakdown}
 \centering
 \begin{tabular}[t]{llll}
 \toprule
 Assignment & Points & Quantity & Total\\
 \midrule
-Waypoints & 20 pts & x7 & 140 pts\\
-Final Code \& Docs & 70 pts & x1 & 70 pts\\
-Final Storymap & 70 pts & x1 & 70 pts\\
-Final Handout & 30 pts & x1 & 30 pts\\
+Waypoints & 20 pts & x6 & 120 pts\\
+Final Code \& Docs & 80 pts & x1 & 80 pts\\
+Final Storymap & 110 pts & x1 & 110 pts\\
 \bottomrule
 \end{tabular}
 \end{table}
 
 #### SOC 5650
-If you are enrolled in SOC 5650, you will also need to create a 3000-4000 word final paper written in the style of an empirical journal article. The following additional deadlines apply:
+If you are enrolled in SOC 5650, you will need to create a story map that features some introductory information, media, and thematic maps about your topic. In addition, you will need to write a 3000-4000 word final paper written in the style of an empirical journal article. The following additional deadlines apply:
 
-1. Meeting 05 (**March 1st**) - annotated Bibliography with a minimum of fifteen peer reviewed sources
-2. Meeting 11 (**April 12th**) - draft paper due (graded as part of your participation grade)
-3. Meeting 12 (**April 19th**) - peer reviews of the draft paper and analysis development due as a GitHub issue in partner's final project repository (graded as part of your participation grade)
-4. The final paper is due **May 17th** along with the rest of the final project
+1. WP-G1 - **Monday, February 21** - annotated Bibliography with a minimum of fifteen peer reviewed sources
+2. WP-G2 - **Monday, April 11** - draft paper due
+3. WP-G3 - **Wednesday, April 20** - peer reviews of the draft paper and analysis development due as a GitHub issue in partner's final project repository (graded as part of your draft paper grade)
+4. The final paper is due **Monday, May 16** along with the rest of the final project.
 
 Grading for SOC 5650 is broken down as follows:
 
 \begin{table}
 
-\caption{(\#tab:unnamed-chunk-5)SOC 5650 Final Project Breakdown}
+\caption{(\#tab:unnamed-chunk-6)SOC 5650 Final Project Breakdown}
 \centering
 \begin{tabular}[t]{llll}
 \toprule
 Assignment & Points & Quantity & Total\\
 \midrule
-Waypoints & 20 pts & x7 & 140 pts\\
-Annotated Bibliography & 25 pts & x1 & 25 pts\\
+Waypoints & 20 pts & x6 & 120 pts\\
+Annotated Bibliography & 20 pts & x1 & 20 pts\\
+Draft Paper & 20 pts & x1 & 20 pts\\
 Final Code \& Docs & 40 pts & x1 & 40 pts\\
-Final Storymap & 40 pts & x1 & 40 pts\\
-Final Handout & 25 pts & x1 & 25 pts\\
+Final Storymap & 55 pts & x1 & 55 pts\\
 \addlinespace
-Final Paper & 40 pts & x1 & 40 pts\\
+Final Paper & 55 pts & x1 & 55 pts\\
 \bottomrule
 \end{tabular}
 \end{table}
@@ -114,7 +114,9 @@ The syllabus agreement at the end of the Student Information Sheet includes an a
 
 ### Late Work
 
-Once the class begins, any assignments submitted will be treated as late. Assignments handed in within 24-hours of the beginning of class will have 15% deducted from the grade. I will deduct 15% per day for the next two 24-hour periods that assignments are late. After 72 hours, I will not accept late work. If you cannot attend class because of personal illness, a family issue, jury duty, an athletic match, or a religious observance, you must contact me beforehand to discuss alternate submission of work.
+Once the class begins, any assignments submitted will be treated as late. Assignments handed in within 24-hours of the beginning of class will have 15% deducted from the grade. I will deduct 15% per day for the next two 24-hour periods that assignments are late. After 72 hours, I accept late work at half credit. It is imperative that you avoid missing assignments. They build upon each other, and students can easily find themselves weeks behind on coursework in this class.
+
+If you cannot attend class because of personal illness, a family issue, jury duty, an athletic match, or a religious observance, you must contact me beforehand to discuss alternate submission of work.
 
 ## Extra Credit
 
@@ -130,7 +132,7 @@ I use a point system for calculating grades. The following table gives the weigh
 
 \begin{table}
 
-\caption{(\#tab:unnamed-chunk-6)SOC 4650 and 5650 Points Breakdown}
+\caption{(\#tab:unnamed-chunk-7)SOC 4650 and 5650 Points Breakdown}
 \centering
 \begin{tabular}[t]{lllll}
 \toprule
@@ -149,7 +151,7 @@ Final grades will be calculated by taking the sum of all points earned and divid
 following table:
 
 \begin{table}
-\caption{(\#tab:unnamed-chunk-7)Course Grading Scale}
+\caption{(\#tab:unnamed-chunk-8)Course Grading Scale}
 
 \centering
 \begin{tabular}[t]{lll}

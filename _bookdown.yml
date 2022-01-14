@@ -11,7 +11,6 @@ rmd_files: [
   
   "intro.Rmd",
   "policies.Rmd",
-  "success.Rmd",
   "grading.Rmd",
   
   "schedule.Rmd",

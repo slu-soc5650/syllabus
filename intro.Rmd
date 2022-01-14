@@ -20,9 +20,9 @@ This course has five intertwined objectives. After completing the course, studen
 
 1.  *Geographic information science*: Describe the concepts that form the foundation of GISc work.
 
-2.  *Data management*: Perform basic data cleaning and geoprocessing tasks using `R`.
+2.  *Data management*: Perform basic data cleaning and geoprocessing tasks using `R` and ArcGIS Pro.
 
-3.  *Data visualization*: Create and present visualizations of spatial data using `R` and ArcGIS Online.
+3.  *Data visualization*: Create and present visualizations of spatial data using `R`, ArcGIS Pro, and ArcGIS Online.
 
 4.  *Analysis development*: Apply techniques that make GISc work more reproducible, accurate, and collaborative using GitHub, `R`, Markdown, and other tools.
 
@@ -36,10 +36,12 @@ In addition to these documents, regular updates will be provided on the [**cours
 
 ## Readings
 
-There are one books required for this course with an optional second book. Each book has been selected to correspond with one or more of the course objectives. The books are:
+There are two books required for this course with an optional tjird book. Each book has been selected to correspond with one or more of the course objectives. The books are:
 
 1. Brewer, Cynthia. 2015. *Designing Better Maps: A Guide for GIS users*. Redlands, CA: ESRI Press.
-    * This book is *required* and can be purchased in the bookstore or online
+    * This book is *required* and can be purchased in the bookstore or online; I recommend *buying* it you forsee making GIS a big part of your life moving forward, otherwise I strongly recommend *renting* it.
+2. Gorr, Wilpen and Kristen Kurland. 2017. *GIS Tutorial 1 for ArcGIS Pro*. Redlands, CA: ESRI Press.
+    * This book is *required* and can be purchased in the bookstore or online; I strongly recommend *renting* it.
 2. Wickham, Hadley and Garrett Grolemund. 2017. *R for Data Science*. O’Reily Media: Sebastopol, CA.
     * This book is *optional* and can be purchased in the bookstore, online, or accessed for free [as a webbook](http://r4ds.had.co.nz). Because it is optional, I recommend using the free version.
 
@@ -54,25 +56,26 @@ Since we are meeting virtually, you must have access to a computer that you have
 ## Services
 Over the course of the semester, we'll use two web-based services. Each of these will require you to create an account with a username and password. GitHub will require you to enable [two-factor authentication](https://en.wikipedia.org/wiki/Multi-factor_authentication) as well. I strongly recommend using a [password manager](https://lifehacker.com/5529133/five-best-password-managers).
 
-### Blackboard
-SLU is requiring courses to use <a href = "https://blackboard.slu.edu" target = "_blank">Blackboard</a> during the pandemic. I'll be sharing lecture recordings here along with links to other resources (under "Course Materials"), posting grades, and using the message board function for answering questions between classes. You can access Blackboard using your mySLU username and password.
+### Canvas
+<a href = "https://canvas.slu.edu" target = "_blank">**Canvas**</a> will be used for a few different tasks, including for sending out announcements, a class message board for questions, and for sharing grades with you all.
 
 ### Zoom
-We'll be meeting weekly through Zoom. You must use Zoom with your SLU account (as opposed to a personal account you may have), and can access Zoom via mySLU. Meeting information is available on Blackboard.
+We may use <a href = "https://zoom.us" target = "_blank">**Zoom**</a> for some course meetings this semester. You must use Zoom with your SLU account (as opposed to a personal account you may have), and can access Zoom via mySLU. Meeting information is available on Canvas, as are tips for using Zoom successfully.
 
 ### GitHub
-The majority of course content (sample code, documentation, and assignments) for this course will be made available using **[GitHub](http://www.github.com)**. GitHub is a website used by programmers, data analysts, and researchers to share computer code and projects. GitHub will also be used for assignment submission and feedback. In addition to providing us with platform for hosting course content, using GitHub will give you experience in some of the techniques that researchers use to conduct both open-source and collaborative research. GitHub is free to use but does have some premium features, which students can access for free through their [Student Developer program](https://education.github.com/pack/). As I noted above, these premium features *are not required* for this course but are worth knowing about if you decide to continue using GitHub.
+The majority of course content (sample code, documentation, and assignments) for this course will be made available using <a href = "http://www.github.com" target = "_blank">**GitHub**</a>. GitHub is a website used by programmers, data analysts, and researchers to share computer code and projects. GitHub will also be used for assignment submission and feedback. In addition to providing us with platform for hosting course content, using GitHub will give you experience in some of the techniques that researchers use to conduct both open-source and collaborative research. GitHub is free to use but does have some premium features, which students can access for free through their [Student Developer program](https://education.github.com/pack/). As I noted above, these premium features *are not required* for this course but are worth knowing about if you decide to continue using GitHub.
 
 ### ArcGIS Online
-In addition to using the software described below, we'll spend some time using ArcGIS Online. As we approach the fourth module of the course, I will create usernames and temporary passwords for each of you. More details will be provided as we progress through the semester!
+In addition to using the software described below, we'll spend some time using ArcGIS Online. This is web-based GIS platform that facilitates interactive mapping and the StoryMap tools you will be using for your final project. It can be used on both macOS and Windows computers, and I will facilitate free access to the platform. *Please do not purchase access to ArcGIS Online!*
 
 ## Software
-There are two key applications we'll be using this semester in addition to the services listed previously: [RStudio](https://www.rstudio.com) and [GitHub Desktop](https://desktop.github.com). Both RStudio and GitHub Desktop of these are open-source applications that can be downloaded and used without cost. 
+There are three key applications we'll be using this semester in addition to the services listed previously: ArcGIS Pro, [RStudio](https://www.rstudio.com) and [GitHub Desktop](https://desktop.github.com). Both RStudio and GitHub Desktop are open-source applications that can be downloaded and used without cost.
+
+### ArcGIS Pro
+The primary tool we will use for mapping and geoprocessing is ArcGIS Pro. This is only available for Windows computers, and is available in our lab. If you have a Windows computer and would like to install it locally, I can help facilitate free access to this software. Otherwise, you will need to plan to spend some time in the lab each week that we are using ArcGIS Pro for assignments. *Please do not purchase access to ArcGIS Pro!*
 
 ### `R` and RStudio
-
-The primary tool we will use for data manipulation and analysis is the programming language `R`. `R` is open-source, freely available, and highly extensible analysis environment. We’ll use [RStudio](https://www.rstudio.com) as the "front end" for our analyses. RStudio makes it easier to write `R` code and to produce well documented analyses. Like the `R` programming language itself, RStudio is freely available. 
+The primary tool we will use for data manipulation and preparation is the programming language `R`. `R` is open-source, freely available, and highly extensible analysis environment. We’ll use [RStudio](https://www.rstudio.com) as the "front end" for our analyses. RStudio makes it easier to write `R` code and to produce well documented analyses. Like the `R` programming language itself, RStudio is freely available. 
 
 ### GitHub Desktop
-
 You will need another free application called [GitHub Desktop](https://desktop.github.com). This program allows you to easily copy data from GitHub onto your computer. It also makes it easy to upload files like labs and problem sets to GitHub. If you have already used Git via the command line, you can continue to do so without utilizing GitHub Desktop. 

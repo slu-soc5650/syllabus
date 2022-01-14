@@ -156,7 +156,7 @@
 
 \title{SOC 4650 \& 5650: Introduction to GIS}
 \author{Christopher Prener, Ph.D.}
-\date{2021-03-15}
+\date{2022-01-14}
 
 \begin{document}
 \maketitle
@@ -165,7 +165,7 @@
 {\huge Preface and Warning} \\
 \end{center}
 \vspace{5mm}
-This is the hardcopy version of the \textbf{Spring 2020} syllabus.
+This is the hardcopy version of the \textbf{Spring 2022} syllabus.
 \vspace{5mm}
 \par \noindent This \texttt{.pdf} version of the course syllabus is automatically created as part of the document generation process. It is meant for students who wish to keep a hardcopy of the course policies and planned course schedule. This may be particularly useful for honors and M.A. students who plan to continue their graduate education after SLU and hope to petition out of a basic course requirement. \textbf{Since it is automatically created, it is not optimized for easy use} - readers may notice formatting inconsitencies and stray characters that are a result of the markdown to \LaTeX{} conversion process. The web version (located at \href{https://slu-soc5650.github/syllabus/}{https://slu-soc5650.github/syllabus/}) is meant to be the version of the syllabus used for everyday reference during the semester. As such, this \texttt{.pdf} version will not be updated as the semester progresses should any changes to the course schedule be necessary.
 
@@ -179,7 +179,7 @@ This is the hardcopy version of the \textbf{Spring 2020} syllabus.
 
 \emph{When:} Mondays, 4:15pm CST to 7:00pm CST
 
-\emph{Where:} Zoom (see Blackboard for the link and password)
+\emph{Where:} 3600 Morrissey
 
 \hypertarget{course-website}{%
 \subsection*{Course Website}\label{course-website}}
@@ -203,9 +203,9 @@ student meetings will occur virtually via Zoom.
 
 \emph{GitHub:} \texttt{@chris-prener}
 
-\textbf{Office Hours, Appointment Only:} Wednesdays, 9:00 AM CST to 10:00 AM CST; sign-up via Calendly to receive personalized calendar and Zoom invitations (SLU log-in required)
+\textbf{Office Hours, Appointment Only:} Wednesdays, 9:00 AM CST to 10:30 AM CST; sign-up via Calendly to receive personalized calendar and Zoom invitations (SLU log-in required)
 
-\textbf{Office Hours, Drop-in:} Wednesdays, 10:00 AM CST to 10:45 AM CST via Zoom (SLU log-in required; you will be admitted to a waiting room)
+\textbf{Office Hours, Drop-in:} Mondays after class (in-person)
 
 \hypertarget{hardcopy-syllabus}{%
 \section*{Hardcopy Syllabus}\label{hardcopy-syllabus}}
@@ -220,14 +220,14 @@ If you would like to keep a record of the syllabus, there is a \texttt{.pdf} dow
 \begin{itemize}
 \tightlist
 \item
-  January 27, 2021 - Update for Spring 2021 semester
+  January 13, 2022 - Update for Spring 2022 semester
 \end{itemize}
 
 \hypertarget{license}{%
 \section*{License}\label{license}}
 \addcontentsline{toc}{section}{License}
 
-Copyright © 2016-2021 \href{https://chris-prener.github.io}{Christopher G. Prener}
+Copyright © 2016-2022 \href{https://chris-prener.github.io}{Christopher G. Prener}
 
 This work is licensed under a Creative Commons Attribution-ShareAlike 4.0 International License.
 
@@ -262,9 +262,9 @@ This course has five intertwined objectives. After completing the course, studen
 \item
   \emph{Geographic information science}: Describe the concepts that form the foundation of GISc work.
 \item
-  \emph{Data management}: Perform basic data cleaning and geoprocessing tasks using \texttt{R}.
+  \emph{Data management}: Perform basic data cleaning and geoprocessing tasks using \texttt{R} and ArcGIS Pro.
 \item
-  \emph{Data visualization}: Create and present visualizations of spatial data using \texttt{R} and ArcGIS Online.
+  \emph{Data visualization}: Create and present visualizations of spatial data using \texttt{R}, ArcGIS Pro, and ArcGIS Online.
 \item
   \emph{Analysis development}: Apply techniques that make GISc work more reproducible, accurate, and collaborative using GitHub, \texttt{R}, Markdown, and other tools.
 \item
@@ -281,7 +281,7 @@ In addition to these documents, regular updates will be provided on the \href{ht
 \hypertarget{readings}{%
 \section{Readings}\label{readings}}
 
-There are one books required for this course with an optional second book. Each book has been selected to correspond with one or more of the course objectives. The books are:
+There are two books required for this course with an optional tjird book. Each book has been selected to correspond with one or more of the course objectives. The books are:
 
 \begin{enumerate}
 \def\labelenumi{\arabic{enumi}.}
@@ -292,7 +292,15 @@ There are one books required for this course with an optional second book. Each 
   \begin{itemize}
   \tightlist
   \item
-    This book is \emph{required} and can be purchased in the bookstore or online
+    This book is \emph{required} and can be purchased in the bookstore or online; I recommend \emph{buying} it you forsee making GIS a big part of your life moving forward, otherwise I strongly recommend \emph{renting} it.
+  \end{itemize}
+\item
+  Gorr, Wilpen and Kristen Kurland. 2017. \emph{GIS Tutorial 1 for ArcGIS Pro}. Redlands, CA: ESRI Press.
+
+  \begin{itemize}
+  \tightlist
+  \item
+    This book is \emph{required} and can be purchased in the bookstore or online; I strongly recommend \emph{renting} it.
   \end{itemize}
 \item
   Wickham, Hadley and Garrett Grolemund. 2017. \emph{R for Data Science}. O'Reily Media: Sebastopol, CA.
@@ -318,35 +326,40 @@ Since we are meeting virtually, you must have access to a computer that you have
 
 Over the course of the semester, we'll use two web-based services. Each of these will require you to create an account with a username and password. GitHub will require you to enable \href{https://en.wikipedia.org/wiki/Multi-factor_authentication}{two-factor authentication} as well. I strongly recommend using a \href{https://lifehacker.com/5529133/five-best-password-managers}{password manager}.
 
-\hypertarget{blackboard}{%
-\subsection{Blackboard}\label{blackboard}}
+\hypertarget{canvas}{%
+\subsection{Canvas}\label{canvas}}
 
-SLU is requiring courses to use Blackboard during the pandemic. I'll be sharing lecture recordings here along with links to other resources (under ``Course Materials''), posting grades, and using the message board function for answering questions between classes. You can access Blackboard using your mySLU username and password.
+\textbf{Canvas} will be used for a few different tasks, including for sending out announcements, a class message board for questions, and for sharing grades with you all.
 
 \hypertarget{zoom}{%
 \subsection{Zoom}\label{zoom}}
 
-We'll be meeting weekly through Zoom. You must use Zoom with your SLU account (as opposed to a personal account you may have), and can access Zoom via mySLU. Meeting information is available on Blackboard.
+We may use \textbf{Zoom} for some course meetings this semester. You must use Zoom with your SLU account (as opposed to a personal account you may have), and can access Zoom via mySLU. Meeting information is available on Canvas, as are tips for using Zoom successfully.
 
 \hypertarget{github}{%
 \subsection{GitHub}\label{github}}
 
-The majority of course content (sample code, documentation, and assignments) for this course will be made available using \textbf{\href{http://www.github.com}{GitHub}}. GitHub is a website used by programmers, data analysts, and researchers to share computer code and projects. GitHub will also be used for assignment submission and feedback. In addition to providing us with platform for hosting course content, using GitHub will give you experience in some of the techniques that researchers use to conduct both open-source and collaborative research. GitHub is free to use but does have some premium features, which students can access for free through their \href{https://education.github.com/pack/}{Student Developer program}. As I noted above, these premium features \emph{are not required} for this course but are worth knowing about if you decide to continue using GitHub.
+The majority of course content (sample code, documentation, and assignments) for this course will be made available using \textbf{GitHub}. GitHub is a website used by programmers, data analysts, and researchers to share computer code and projects. GitHub will also be used for assignment submission and feedback. In addition to providing us with platform for hosting course content, using GitHub will give you experience in some of the techniques that researchers use to conduct both open-source and collaborative research. GitHub is free to use but does have some premium features, which students can access for free through their \href{https://education.github.com/pack/}{Student Developer program}. As I noted above, these premium features \emph{are not required} for this course but are worth knowing about if you decide to continue using GitHub.
 
 \hypertarget{arcgis-online}{%
 \subsection{ArcGIS Online}\label{arcgis-online}}
 
-In addition to using the software described below, we'll spend some time using ArcGIS Online. As we approach the fourth module of the course, I will create usernames and temporary passwords for each of you. More details will be provided as we progress through the semester!
+In addition to using the software described below, we'll spend some time using ArcGIS Online. This is web-based GIS platform that facilitates interactive mapping and the StoryMap tools you will be using for your final project. It can be used on both macOS and Windows computers, and I will facilitate free access to the platform. \emph{Please do not purchase access to ArcGIS Online!}
 
 \hypertarget{software}{%
 \section{Software}\label{software}}
 
-There are two key applications we'll be using this semester in addition to the services listed previously: \href{https://www.rstudio.com}{RStudio} and \href{https://desktop.github.com}{GitHub Desktop}. Both RStudio and GitHub Desktop of these are open-source applications that can be downloaded and used without cost.
+There are three key applications we'll be using this semester in addition to the services listed previously: ArcGIS Pro, \href{https://www.rstudio.com}{RStudio} and \href{https://desktop.github.com}{GitHub Desktop}. Both RStudio and GitHub Desktop are open-source applications that can be downloaded and used without cost.
+
+\hypertarget{arcgis-pro}{%
+\subsection{ArcGIS Pro}\label{arcgis-pro}}
+
+The primary tool we will use for mapping and geoprocessing is ArcGIS Pro. This is only available for Windows computers, and is available in our lab. If you have a Windows computer and would like to install it locally, I can help facilitate free access to this software. Otherwise, you will need to plan to spend some time in the lab each week that we are using ArcGIS Pro for assignments. \emph{Please do not purchase access to ArcGIS Pro!}
 
 \hypertarget{r-and-rstudio}{%
 \subsection{\texorpdfstring{\texttt{R} and RStudio}{R and RStudio}}\label{r-and-rstudio}}
 
-The primary tool we will use for data manipulation and analysis is the programming language \texttt{R}. \texttt{R} is open-source, freely available, and highly extensible analysis environment. We'll use \href{https://www.rstudio.com}{RStudio} as the ``front end'' for our analyses. RStudio makes it easier to write \texttt{R} code and to produce well documented analyses. Like the \texttt{R} programming language itself, RStudio is freely available.
+The primary tool we will use for data manipulation and preparation is the programming language \texttt{R}. \texttt{R} is open-source, freely available, and highly extensible analysis environment. We'll use \href{https://www.rstudio.com}{RStudio} as the ``front end'' for our analyses. RStudio makes it easier to write \texttt{R} code and to produce well documented analyses. Like the \texttt{R} programming language itself, RStudio is freely available.
 
 \hypertarget{github-desktop}{%
 \subsection{GitHub Desktop}\label{github-desktop}}
@@ -373,6 +386,8 @@ My priority is that class periods are productive learning experiences for all st
   Be respectful of your fellow classmates. Do not interrupt when someone is speaking, monopolize the conversation, or belittle the ideas or opinions of others.
 \item
   Complete the assigned readings for each class in advance, and come prepared with discussion points and questions.
+\item
+  Follow my best practices for using Zoom and Canvas (see Canvas for more details).
 \end{enumerate}
 
 The following sections contain additional details about specific course policies related to attendance, participation, electronic device use, student support, academic honesty, and Title IX.
@@ -406,49 +421,191 @@ The degree to which students are positively engaged with our class along these l
 \hypertarget{harrassment-and-title-ix}{%
 \subsection{Harrassment and Title IX}\label{harrassment-and-title-ix}}
 
-While I have every expectation that each member of the Saint Louis University community is capable and able to treat community members with dignity and respect, I fully recognize that there may be instances where students fall short of that expectation. Students should generally be aware that:
+While I have every expectation that each member of the Saint Louis University community is capable and willing to create a positive coursework experience, I fully recognize that there may be instances where students fall short of that expectation. Students should generally be aware that:
 
 \begin{quote}
 Saint Louis University prohibits harassment because of sex, race, color, religion, national origin, ancestry, disability, age, sexual orientation, marital status, military status, veteran status, gender expression/identity, genetic information, pregnancy, or any other characteristics protected by law.
 \end{quote}
 
-All students should also familiarize themselves with \href{http://www.slu.edu/general-counsel-home/office-of-institutional-equity-and-diversity}{Saint Louis University's polices} on bias, discrimination, harassment, and sexual misconduct. In particular, they should be aware of policies on \href{https://www.slu.edu/general-counsel/institutional-equity-diversity/pdfs/harassment-policy.pdf}{harassment} and \href{https://www.slu.edu/about/safety/sexual-assault-resources.php}{sexual misconduct}:
+All students should also familiarize themselves with \href{http://www.slu.edu/general-counsel/institutional-equity-diversity/}{Saint Louis University's polices} on bias, discrimination, harassment, and sexual misconduct. In particular, they should be aware of policies on \href{http://www.slu.edu/general-counsel/institutional-equity-diversity/harassment.php}{harassment} and \href{https://www.slu.edu/about/safety/sexual-assault-resources.php}{sexual misconduct}:
 
 \begin{quote}
-Saint Louis University and its faculty are committed to supporting our students and seeking an environment that is free of bias, discrimination, and harassment. If you have encountered any form of sexual misconduct (e.g.~sexual assault, sexual harassment, stalking, domestic or dating violence), we encourage you to report this to the University. If you speak with a faculty member about an incident of misconduct, that faculty member must notify SLU's Title IX Coordinator, Anna R. Kratky (DuBourg Hall, Room 36; \href{mailto:anna.kratky@slu.edu}{\nolinkurl{anna.kratky@slu.edu}}); 314-977-3886) and share the basic facts of your experience with her. The Title IX coordinator will then be available to assist you in understanding all of your options and in connecting you with all possible resources on and off campus.
+Saint Louis University and its faculty are committed to supporting our students and seeking an environment that is free of bias, discrimination, and harassment. If you have encountered any form of sexual harassment, including sexual assault, stalking, domestic or dating violence, we encourage you to report this to the University. If you speak with a faculty member about an incident that involves a Title IX matter, that faculty member must notify SLU's Title IX Coordinator and share the basic facts of your experience. This is true even if you ask the faculty member not to disclose the incident. The Title IX Coordinator will then be available to assist you in understanding all of your options and in connecting you with all possible resources on and off campus.
 \end{quote}
 
 \begin{quote}
-If you wish to speak with a confidential source, you may contact the counselors at the University Counseling Center at 314-977-TALK.
+Anna Kratky is the Title IX Coordinator at Saint Louis University (DuBourg Hall, Room 36; \href{mailto:anna.kratky@slu.edu}{\nolinkurl{anna.kratky@slu.edu}}; 314-977-3886). If you wish to speak with a confidential source, you may contact the counselors at the University Counseling Center at 314-977-TALK or make an anonymous report through SLU's Integrity Hotline by calling 1-877-525-5669 or online at \url{https://www.lighthouse-services.com/_StandardCustomURL/LHILandingPage.asp}. To view SLU's policies, and for resources, please visit the following web addresses: \url{https://www.slu.edu/here4you} and \url{https://www.slu.edu/general-counsel}.
 \end{quote}
 
 Instances of abusive, harassing, or otherwise unacceptable behavior should be reported either directly to the instructor or to the University Administration. Consistent with the above policies, I will forward all reports of inappropriate conduct to the Title IX Coordinator's office or to the Office of Diversity and Affirmative Action. Please be aware that University policies may require me to forward information about the identity of any students connected to the disclosure.
 
-Please also be aware that communications over various online services, including (but not limited to) Blackboard forums and GitHub, are covered by this policy.
+Please also be aware that communications over various online services, including (but not limited to) Canvas, Zoom, and GitHub, are covered by this policy.
+
+\hypertarget{covid-19}{%
+\section{COVID-19}\label{covid-19}}
+
+I think acknowledging that we are all starting from varying places of exhaustion, stress, and anxiety is critical. Please, first and foremost, focus on what matters most and practice self care. Please follow SLU's guidance both for your own health and for maintaining community. If you are living on-campus, please follow all of SLU's policies for social distancing and mask wearing. These are critical for our collective safety.
+
+Again, my biggest priority this semester is your health and well-being. Please reach out if you want to talk about strategies for managing our ``new normal,'' if you find yourself struggling, or just need someone to vent to. Alternatively, you can reach out to either the University Counseling Center at 314-977-TALK or Campus Ministry at 314-977-2425 or \href{mailto:campusministry@slu.edu}{\nolinkurl{campusministry@slu.edu}}.
+
+\hypertarget{planning-for-disruptions}{%
+\subsection{Planning for Disruptions}\label{planning-for-disruptions}}
+
+While we are starting the semester with all of you in St.~Louis, and I am certainly rooting for a semester where you all are able to remain on-campus through Thanksgiving Break, we should recognize that there may be disruptions. For some of you, you may find yourselves quarantined because of an exposure to someone infected with COVID-19. You may become sick yourselves. Changes both on-campus and in the greater St.~Louis community may mean changes to how SLU operates and even whether or not you can continue to remain on-campus.
+
+Given that these are not abstract concerns, everything laid out here represents a best case scenario for the semester. We may find ourselves needing to change some course policies, reading and assignment schedules, and even teaching modalities based on the challenges we are confronted with this semester. I ask for your patience and your flexibility if and when we do need to make these changes. For my part, I will do my best to stay in touch with you and communicate clearly how these changes will impact our course.
+
+One way that I am proactively preparing for disruptions is to add a \textbf{``flex day''} to the syllabus. I do not have any content planned for \textbf{May 9th}. If there is a widespread disruption, such as the need for many of you to move off campus, I will use this flex day as a buffer so that we can adjust our course schedule without changing the basic structure of the course. If we approach that day and it appears that we will not need to use it, I will announce alternate plans for the meeting.
+
+Additionally, evening classes are often held on the Monday after Easter, which falls on \textbf{April 18th} this year. If we have already used the flex day, I may elect to hold class that evening.
+
+Another way that I am proactively preparing for disruptions is to have meeting recordings from prior semesters available. In the event that I cannot teach due to illness, I may share recordings from prior semesters in-place of having in-person meetings.
+
+\textbf{You should therefore treat all of the course dates and content as provisional.} This is my plan as of January 12th, and I may modify it further as we progress through the the semester. If I become sick or a member of my family becomes ill, modifications will likely be required. If another faculty member has to take over teaching my class, there may be changes to course content, teaching modality, and assignments. I will do my best to keep everyone updated in a timely fashion. Please check your email and Canvas regularly. I appreciate everyone's willingness to roll with the many punches we are all facing right now. Remember, we are in this together.
+
+\hypertarget{face-masks}{%
+\subsection{Face Masks}\label{face-masks}}
+
+Throughout the COVID-19 pandemic, key safeguards like face masks have allowed SLU to safely maintain in-person learning. If public health conditions and local, state, and federal restrictions demand it, the University may require that all members of our campus community wear face masks indoors.
+
+\textbf{Therefore, any time a University-level face mask requirement is in effect, face masks will be required in this class.} This expectation will apply to all students and instructors, unless a medical condition warrants an exemption from the face mask requirement (see below).
+
+\textbf{When a University-wide face mask requirement is in effect,} the following will apply:
+
+\begin{itemize}
+\tightlist
+\item
+  Students who attempt to enter a classroom without wearing masks will be asked by the instructor to put on their masks prior to entry. Students who remove their masks during a class session will be asked by the instructor to resume wearing their masks.
+\item
+  Students and instructors may remove their masks briefly to take a sip of water but should replace masks immediately. The consumption of food will not be permitted.
+\item
+  Students who do not comply with the expectation that they wear a mask in accordance with the University-wide face mask requirement may be subject to disciplinary actions per the rules, regulations, and policies of Saint Louis University, including but not limited to those outlined in the Student Handbook. Non-compliance with this policy may result in disciplinary action, up to and including any of the following:
+
+  \begin{itemize}
+  \tightlist
+  \item
+    dismissal from the course(s)
+  \item
+    removal from campus housing (if applicable)
+  \item
+    dismissal from the University
+  \end{itemize}
+\item
+  To immediately protect the health and well-being of all students, instructors, and staff, instructors reserve the right to cancel or terminate any class session at which any student fails to comply with a University-wide face mask requirement.
+\end{itemize}
+
+\textbf{When a University-wide face mask requirement is in effect,} students and instructors may choose to wear a face mask or not, as they prefer for their own individual comfort level.
+
+\begin{rmdwarning}
+We do not know when the City of St.~Louis will roll back their mask
+mandate, or what SLU will do after that in terms of mask policies. Even
+if the mask mandate on-campus is rescinded, I will continue to mask in
+class to keep my family healthy. If the mask mandate does get rescinded,
+I'll ask for your cooperation and continued masking during class!
+\end{rmdwarning}
+
+\hypertarget{ada-accomodations-for-face-mask-requirements}{%
+\subsubsection{ADA Accomodations for Face Mask Requirements}\label{ada-accomodations-for-face-mask-requirements}}
+
+Saint Louis University is committed to maintaining an inclusive and accessible environment. Individuals who are unable to wear a face mask due to medical reasons should contact the Office of Disability Services (students) or Human Resources (instructors) to initiate the accommodation process identified in the University's \href{https://www.slu.edu/human-resources/pdfs/policies/americans-disabilities-act-policy.pdf}{ADA Policy}. Inquiries or concerns may also be directed to the \href{https://www.slu.edu/general-counsel/institutional-equity-diversity/index.php}{Office of Institutional Equity and Diversity}. Notification to instructors of SLU-approved ADA accommodations should be made in writing prior to the first class session in any term (or as soon thereafter as possible).
+
+\hypertarget{attendance-policies}{%
+\subsection{Attendance Policies}\label{attendance-policies}}
+
+The health and well-being of SLU's students, staff, and faculty are critical concerns, as is the quality of our learning environments. Accordingly, the following University policy statements on in-person class attendance are designed to preserve and advance the collective health and well-being of our institutional constituencies and to create the conditions in which all students have the opportunity to learn and successfully complete their courses.
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  Students who exhibit \href{https://www.cdc.gov/coronavirus/2019-ncov/symptoms-testing/symptoms.html}{any potential COVID-19 symptoms} (those that cannot be attributed to some other medical condition the students are known to have, such as allergies, asthma, etc.) shall absent themselves from any in-person class attendance or in-person participation in any class-related activity until they have been evaluated by a qualified medical official. Students should contact the \href{https://www.slu.edu/life-at-slu/student-health/index.php}{University Student Health Center} for immediate assistance.
+\item
+  Students (whether exhibiting any of potential COVID-19 symptoms or not, and regardless of how they feel) who are under either an isolation or quarantine directive issued by a qualified health official must absent themselves from all in-person course activities per the stipulations of the isolation or quarantine directive.
+\item
+  Students are responsible for notifying their instructor of an absence as far in advance as possible; when advance notification is not possible, students are responsible for notifying each instructor as soon after the absence as possible. Consistent with the \href{https://catalog.slu.edu/academic-policies/academic-policies-procedures/attendance/}{University Attendance Policy}, students also are responsible for all material covered in class and must work with the instructor to complete any required work. In situations where students must be absent for an extended period of time due to COVID-19 isolation or quarantine, they also must work with the instructor to determine the best way to maintain progress in the course as they are able based on their health situation.
+\item
+  Consistent with the \href{https://catalog.slu.edu/academic-policies/academic-policies-procedures/attendance/}{University Attendance Policy}, students may be asked to provide medical documentation when a medical condition impacts a student's ability to attend and/or participate in class for an extended period of time.
+\item
+  As a temporary amendment to the current \href{https://catalog.slu.edu/academic-policies/academic-policies-procedures/attendance/}{University Attendance Policy}, all absences due to illness or an isolation/quarantine directive issued by a qualified health official, or due to an adverse reaction to a COVID-19 vaccine, shall be considered ``Authorized'' absences.
+\end{enumerate}
+
+\hypertarget{zoom-policies}{%
+\subsection{Zoom Policies}\label{zoom-policies}}
+
+\begin{rmdwarning}
+This section of the syllabus will only apply if we switch to having
+class remotely.
+\end{rmdwarning}
+
+If we have to meet via Zoom, there will be several additional policies to note:
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  Attending via Zoom is required. There is not an alternative means for completing this course. \emph{If you have a concern about technology, internet access, or other barriers to regularly attending class via Zoom, please let me know as soon as possible.}
+
+  \begin{itemize}
+  \tightlist
+  \item
+    If there is a need for some or all of you to change from learning on-campus to learning from home or another location, we will work together to identify strategies for you to successfully complete the course.
+  \end{itemize}
+\item
+  Do not share Zoom details, including login information, links, and passwords, with anyone outside of this course.
+\item
+  Using your camera is \emph{strongly encouraged} during group discussions, but is not otherwise required.
+\item
+  Please keep your microphone muted unless you are actively speaking.
+\end{enumerate}
+
+The Course Docs contain some additional tips for using Zoom. Please review them closely.
 
 \hypertarget{attendance-and-participation}{%
 \section{Attendance and Participation}\label{attendance-and-participation}}
 
-Attendance and participation are important components of this course since we only meet once a week. Students are expected to attend all class sessions; missing even one class can create a significant roadblock for many students. If you cannot attend class or arrive on time because of a personal illness, a family issue, jury duty, an athletic match, or a religious observance, you must contact me \textbf{beforehand} to let me know. I may ask for more information, such as a note from a physician, a travel letter from Athletics, or other documentation for absences.
+\hypertarget{general-attendance-policy}{%
+\subsection{General Attendance Policy}\label{general-attendance-policy}}
 
-A penalty will not be applied to your first unexcused absence or late arrival. Any absences or late arrivals beyond the first will result in no credit (for an absences) or only partial credit (for a late arrival) being earned for that day's participation grade.
+Attendance and participation are critical components of this course. Your expected to attend all class sessions and to arrive before the beginning of class. That said, it is important to recognize that our normal attendance policies are not well suited to a pandemic. If you cannot attend class or arrive on time because of a personal illness, a family issue, jury duty, an athletic match, or a religious observance, you must contact me \textbf{beforehand} to let me know if at all possible. I define family issues broadly - if your family or friends become sick or are being affected by COVID-19 in other ways, please know that I want you to keep your focus on what is most important.
+
+I may ask for more information, such as a note from a health care provider, a travel letter from Athletics, or other documentation for absences. I will not be asking for health care provider documentation for acute illnesses or injuries, though, since if you're sick but not \emph{very} sick, the last thing most you will want to do is go to a doctor just to get a note. I am proceeding with a spirit of trust in all of you, and ask you reciprocate that with me. If you need to modify assignment due dates, please let me know prior to those deadlines.
+
+\hypertarget{missed-classes}{%
+\subsection{Missed Classes}\label{missed-classes}}
+
+My priority with attendance is to identify students who may be struggling or in need of additional support. However, because attending class is crucial, I do factor attendance into your overall participation grade. In order to give you some flexibility, I do not apply any penalties to your first unexcused absence. Any unexcused absences beyond those two will result in no credit (for an absences). Regular late arrivals may result in partial credit being earned for that day's participation grade.
 
 Making up missed classes are your responsibility. I do post slide decks on the course website, but my slides are intended only to serve as references. I also provide recordings of lectures using Panopto, but these may be incomplete or may not capture key aspects of lectures (such as things that come up during the lab sessions).
 
-The academic literature (see \href{https://link.springer.com/article/10.1007/s10734-018-0275-9}{this recent article} for a nice overview) suggests that the impact of lecture capture tools like Panopto is mixed at best. Students tend to rate their experience with lecture capture far more positively than faculty do. Students who continue to attend class regularly and use lecture recordings as part of an \emph{active} approach to studying and filling in specific areas of their notes may benefit from recordings. Students who use recordings as a replacement for attending class do not benefit from the recordings.
+The academic literature (see \href{https://link.springer.com/article/10.1007/s10734-018-0275-9}{this recent article} for a nice overview) suggests that the impact of lecture capture tools like Panopto is mixed at best. Students tend to rate their experience with lecture capture far more positively than faculty do. Students who continue to attend class regularly and use lecture recordings as part of an \emph{active} approach to studying and filling in specific areas of their notes may benefit from recordings. Students who use recordings as a replacement for attending class do not benefit from the recordings. Please also note that lectures and discussions cannot be recorded by any means (e.g.~audio or video recordings, or photographs) without my permission.
 
-Please also note that lectures and discussions cannot be recorded by any means (e.g.~audio or video recordings, or photographs) without my permission.
+Please see the University's attendance policy for additional details.
+
+\begin{rmdwarning}
+Meeting recordings will capture whatever is happening on my screen,
+which may include sharing your name and whatever is actively shown via
+your webcam. \emph{If this presents a privacy concern for you, please
+let me know as soon as possible.}
+\end{rmdwarning}
 
 \hypertarget{communication}{%
 \section{Communication}\label{communication}}
 
-Our course Blackboard message board and email are my preferred methods of communication.
+The best ways to get in touch with me are email, texting, or calling:
 
-I will the check Blackboard during weekday business hours and will respond to messages if I am able. Likewise, I dedicate time to email responses each workday, meaning that my response time is typically within 24 hours during the workweek. Please use your SLU email account when emailing me.
+\begin{itemize}
+\tightlist
+\item
+  Email - \href{mailto:chris.prener@slu.edu}{\nolinkurl{chris.prener@slu.edu}}
+\item
+  Text or call - 314-884-0386 (Google Voice)
+\end{itemize}
 
-For both email and Blackboard, if you have not received a response from me after 48 hours (or by end of business on Monday if you messaged me over the weekend), please follow-up to ensure that your message did not get lost in the shuffle.
+Email is my preferred method of communication. I dedicate time to email responses each workday, meaning that my response time is typically within 24 hours during the workweek. If you have not received a response from me after 48 hours (or by end of business on Monday if you emailed me over the weekend), please feel free to follow-up with me.
 
-All messages regarding course updates, assignments, and changes to the class schedule, including cancellations, will be posted on the main Annoucements page on Blackboard. Changes to the class schedule, including cancellations, will also sent to your SLU email account. It is imperative that you check both the forums and your SLU email account regularly.
+Please use your SLU email account when emailing me. All messages regarding course updates, assignments, and changes to the class schedule including cancellations will be sent to your SLU email account. It is therefore imperative that you check your SLU email account regularly.
+
+I don't have an office land-line anymore, but I do have a Google Voice number that students can use to text or call me. If you do call or text, please let me know who you are and what section you are in! I'll respond to calls or texts during the workweek, just like with email.
 
 Please also ensure that all concerns or questions about your standing in the course are directed to me immediately. Inquires from parents, SLU staff members, and others will not be honored.
 
@@ -469,22 +626,32 @@ I therefore ask students to be conscious of how they are using their devices, th
 
 If you have difficulty affording groceries or accessing sufficient food to eat every day, or lack a safe and stable place to live, you are urged to contact the \href{https://www.slu.edu/student-development/dean-of-students/index.php}{Dean of Students} for support. Likewise if you have concerns about your mental or physical health needs, or lack access to health care services you require, you should contact either the \href{https://www.slu.edu/student-development/dean-of-students/index.php}{Dean of Students}, \href{https://www.slu.edu/life-at-slu/student-health/index.php}{Student Health Services}, or the \href{https://www.slu.edu/life-at-slu/university-counseling/index.php}{University Counseling Center}.\footnote{This language is adopted from text written by \href{https://medium.com/@saragoldrickrab/basic-needs-security-and-the-syllabus-d24cc7afe8c9}{Dr.~Sarah Goldrick-Rab}.}
 
-If you feel comfortable doing so, please discuss any concerns you might have with me. Doing so is particularly important if believe your performance in this course might be affected. I will do my best to work with you to come up with a plan for successfully completing the course and, if need be, work with you to identify on-campus resources. I will treat all discussions with discretion, though please be aware that certain situations, including disclosures of \href{/compassionate-coursework.html}{sexual misconduct} or self harm, must be reported by faculty to the appropriate University office.
+If you feel comfortable doing so, please discuss any concerns you might have with me. Doing so is particularly important if believe your performance in this course might be affected. I will do my best to work with you to come up with a plan for successfully completing the course and, if need be, work with you to identify on-campus resources. I will treat all discussions with discretion, though please be aware that certain situations, including disclosures of \href{/syllabus/harassment-and-title-ix.html}{sexual misconduct} or self harm, must be reported by faculty to the appropriate University office.
 
 \hypertarget{academic-accommodations}{%
 \subsection{Academic Accommodations}\label{academic-accommodations}}
 
-If you meet the eligibility requirements for academic accommodations through the \href{https://www.slu.edu/life-at-slu/student-success-center/disability-services/index.php}{Office of Disability Services} (located within the Student Success Center) \emph{and you wish to use them for this class}, you should arrange to discuss your needs with me after the first class. All discussions of this nature are treated confidentially, and I will make every effort to work with you to come up with a plan for successfully completing the course requirements. Please note that I will not provide accommodations to students who are not working with Disability Services, and that I cannot retroactively alter assignments or grades if they have already been completed.
+If you meet the eligibility requirements for academic accommodations through the \href{https://www.slu.edu/life-at-slu/student-success-center/disability-services/index.php}{Office of Disability Services} (located within the Student Success Center) \emph{and you wish to use them for this class}, you should arrange to discuss your needs with me after the first class. All discussions of this nature are treated confidentially, and I will make every effort to work with you to come up with a plan for successfully completing the course requirements.
+
+Please note that I will not provide accommodations to students who are not working with Disability Services, and that I cannot retroactively alter assignments or grades if they have already been completed. This follows the University policies on disability accommodations:
+
+\begin{quote}
+Students with a documented disability who wish to request academic accommodations must formally register their disability with the University. Once successfully registered, students also must notify their course instructor that they wish to use their approved accommodations in the course.
+\end{quote}
+
+\begin{quote}
+Please contact Disability Services to schedule an appointment to discuss accommodation requests and eligibility requirements. Most students on the St.~Louis campus will contact Disability Services, located in the Student Success Center and available by email at \href{mailto:Disability_services@slu.edu}{\nolinkurl{Disability\_services@slu.edu}} or by phone at 314-977-3484. Once approved, information about a student's eligibility for academic accommodations will be shared with course instructors by email from Disability Services and within the instructor's official course roster. Students who do not have a documented disability but who think they may have one also are encouraged to contact to Disability Services. Confidentiality will be observed in all inquiries.
+\end{quote}
 
 \hypertarget{writing-services}{%
 \subsection{Writing Services}\label{writing-services}}
 
 I also encourage you to take advantage of the \href{https://www.slu.edu/life-at-slu/student-success-center/academic-support/university-writing-services/index.php}{University Writing Services (UWS) program}. Getting feedback benefits writers at all skill levels and the quality of your writing will be reflected in assignment grades. The UWS has trained writing consultants who can help you improve the quality of your written work. UWS's consultants are available to address everything from brainstorming and developing ideas to crafting strong sentences and documenting sources.
 
-\hypertarget{student-athletes}{%
-\subsection{Student-athletes}\label{student-athletes}}
+\hypertarget{student-success-coaching}{%
+\subsection{Student Success Coaching}\label{student-success-coaching}}
 
-If you are a student-athlete who is in-season, you should discuss your game schedule with me after the first class and share your travel letter with me as soon as you have a copy. You are reminded that games and tournaments are not excuses for failing to complete assignments, and that NCAA rules prohibit student-athletes from missing classes for practice. Low grades that jeopardize eligibility must be addressed immediately by you, not by a coach or academic coordinator.
+Academic coaches are staff members who can assist with study skills, time management, test and note taking, goal setting, and motivations. They can also help deal with navigating homesickness, making connections on campus, and being successful in online/remote coursework. Coaches will work with you on a weekly basis to develop the skills that are most important to you. For more information, please contact Emily Tuttle.
 
 \hypertarget{academic-honesty}{%
 \section{Academic Honesty}\label{academic-honesty}}
@@ -497,32 +664,14 @@ Academic integrity is honest, truthful and responsible conduct in all academic e
 
 Any work that is taken from another student, copied from printed material, or copied the internet without proper citation is expressly prohibited. Note that this includes all computer code, narrative text, and documentation written for class assignments - each student is expected to author and de-bug their notebooks and accompanying files.
 
-All relevant assignments should include in-text citations and references formatted using the \href{https://owl.english.purdue.edu/owl/resource/583/1/}{American Sociological Association (ASA)} style guidelines. Any student who is found to have been academically dishonest in their work risks failing both the assignment and this course.
+All relevant assignments should include in-text citations and references formatted using an accepted citation format.
 
-\hypertarget{success-in-this-course}{%
-\chapter{Success in this Course}\label{success-in-this-course}}
-
-Students often ask me how to do well in various aspects of the course, and so this section features my \emph{suggestions} for a successful semester. \emph{These observations are provided with no warranty} - following them does not guarantee any particular outcome. You could do everything in here and still do poorly in the course, and conversely you could ignore much of what is in discussed in the links below and still do well. However, \emph{most} of the students who are successful in this course will follow \emph{most} of these ideas consistently.
-
-These tips are an effort to illuminate what sociologists refer to as the ``\href{https://books.google.com/books?hl=en\&lr=\&id=5r-TAgAAQBAJ\&oi=fnd\&pg=PP1\&dq=hidden+curriculum\#v=onepage\&q=hidden\%20curriculum\&f=false}{hidden curriculum}'' of higher education - there are things you need to do to be successful, but they are often unstated or not clearly communicated.
-
-Since I give this advice out in multiple classes, the documents themselves are stored on my \href{https://chris-prener.github.io}{personal website}:
-
-\begin{enumerate}
-\def\labelenumi{\arabic{enumi}.}
-\tightlist
-\item
-  \href{https://chris-prener.github.io/resources/students/little-things/}{Doing the Little Things Right}
-\item
-  \href{https://chris-prener.github.io/resources/students/letters/}{Letters of Recommendation}
-\end{enumerate}
-
-If there are other topics you have questions about, please let me know. These documents are a work in progress.
+Any student who is found to have been academically dishonest in their work risks failing both the assignment and this course.
 
 \hypertarget{assignments-and-grading}{%
 \chapter{Assignments and Grading}\label{assignments-and-grading}}
 
-This section provides general details on the different types of assignments for this course. It also contains policies for submitting work, receiving feedback, and late work.
+This section provides general details on the different types of assignments for this course. It also contains policies for submitting work, receiving feedback, and late work. A summary schedule with all due dates is available as part of the \href{course-schedule.html}{Course Schedule}.
 
 \hypertarget{assignments}{%
 \section{Assignments}\label{assignments}}
@@ -533,21 +682,21 @@ Your grade for this course will consist of a number of different assignments on 
 \subsection{Attendance and Participation}\label{attendance-and-participation-1}}
 
 \begin{rmdtip}
-Attendance and participation are worth \textbf{10\%} of your final
-grade.
+Attendance and participation are worth 50 points, or \textbf{10\%} of
+your final grade.
 \end{rmdtip}
 
-Both attendance and participation are critically important aspects of this class. The class participation grade will be based on (a) attendance, (b) level of engagement during lectures and labs, (c) level of engagement on Slack, and (d) the completion of other exercises including ``entry'' and ``exit'' tickets, the student information sheet, a pre-test, and an end of the semester course evaluation.
+As discussed above, both attendance and participation are important aspects of this class. The class participation grade will be based on (a) attendance, (b) level of engagement during lectures and labs, (c) level of engagement on Canvas, and (d) the completion of other exercises including ``entry'' and ``exit'' tickets, the student information sheet, a pre-test, and an end of the semester course evaluation.
 
-Each of these elements is assigned a point value and assessed using a scale that awards full, partial, or no credit. Your participation grade will be split, with 50 points (5\% of your final grade) for the first half of the semester (through Lecture-08) and another 50 points (5\%) for the second half. Since the number of points awarded for participation are variable, the total number of points earned for each half will be converted to a 0 to 50 scale.
+Each of these elements is assigned a point value and assessed using a scale that awards full, partial, or no credit (see \href{grading.html}{Grading}). Not attending class or completing an ``entry'' or ``exit'' ticket will result in no credit being earned for that element on a given day. Disengagement during class may result in partial or no credit being earned. Late arrivals will result in only partial credit earned for that element on a given day.
 
-I provide the final number of points earned for each half of the course. If you would like a more detailed breakdown of your participation grade, please reach out and I will provide one.
+Your participation grade will be split, with 25 points each for Part 1 (through Spring Break) and Part 2 (from Spring Break onward). Since the number of points awarded for participation are variable, the total number of points earned for each half will be \textbf{weighted} so that it is converted to a final score that matches the points available for that part of the course. I provide the final number of points earned for each part of the course. If you would like a more detailed breakdown of your participation grade and/or attendance record, please reach out and I will happily provide one.
 
 \hypertarget{lab-exercises}{%
 \subsection{Lab Exercises}\label{lab-exercises}}
 
 \begin{rmdtip}
-Labs are worth \textbf{28\%} of your final grade.
+Labs are worth 140 points, or \textbf{28\%} of your final grade.
 \end{rmdtip}
 
 Each course meeting will include time dedicated to practicing the techniques and applying the theories described in the meeting's materials. These exercises will give you an opportunity to practice skills that correspond with the first four course objectives. Instructions for the labs will be posted in the lecture repositories on \href{https://github.com/slu-soc5650}{\textbf{GitHub}} and will be linked to from the lecture pages on the \href{https://slu-soc5650.github.io/}{\textbf{course website}}. The instructions will also detail the deliverables to be submitted to demonstrate completion of each assignment. Replication files are also provided in the lecture repositories on \href{https://github.com/slu-soc5650}{\textbf{GitHub}}.
@@ -558,54 +707,51 @@ There will be a total of fourteen lab exercises over the course of the semester,
 \subsection{Final Project}\label{final-project}}
 
 \begin{rmdtip}
-The final project is worth, in total, \textbf{62\%} of your final grade.
-The waypoints are worth \textbf{28\%} of your final grade, and the final
-deliverables are worth \textbf{34\%} of your final grade. Deliverables
-vary by section; see below for details.
+The final project is worth 310 points, or \textbf{62\%} of your final
+grade. The waypoints are worth \textbf{24\%} of your final grade, and
+the final deliverables are worth \textbf{38\%} of your final grade.
+Deliverables vary by section; see below for details.
 \end{rmdtip}
 
 The final project corresponds with the fourth learning outcome. It will be organized slightly differently depending on which section you are enrolled in. Specific instructions will be provided in the \href{https://slu-soc5650.github.io/final-project}{\textbf{final project guide}}.
 
-As work progresses, there will be a number of \textbf{waypoints} where students will need to submit updates on their progress. Waypoints serve as the homework assignments for this class - this is your opportunity to show me how your skills are developing \emph{and} make progress on your final project. They are generally due two weeks after the relevant topic is first introduced in class. The seven waypoints are as follows:
+As work progresses, there will be a number of \textbf{waypoints} where students will need to submit updates on their progress. Waypoints serve as the homework assignments for this class - this is your opportunity to show me how your skills are developing \emph{and} make progress on your final project. They are generally due two weeks after the relevant topic is first introduced in class. The six waypoints are as follows:
 
 \begin{enumerate}
 \def\labelenumi{\arabic{enumi}.}
 \tightlist
 \item
-  Meeting 02 (\textbf{February 8th}) - memo submission
+  WP-1 - \textbf{Monday, January 31} - memo submission
 \item
-  Meeting 06 (\textbf{March 8th}) - initial data cleaning
+  WP-2 - \textbf{Monday, February 28} - initial data cleaning
 \item
-  Meeting 07 (\textbf{March 15th}) - combining data sources
+  WP-3 - \textbf{Monday, March 7} - combining data sources
 \item
-  Meeting 08 (\textbf{March 22nd}) - projecting data
+  WP-4 - \textbf{Monday, March 21} - projecting data
 \item
-  Meeting 10 (\textbf{April 5th}) - geoprocessing data
+  WP-5 - \textbf{Monday, April 4} - geoprocessing data
 \item
-  Meeting 13 (\textbf{April 26th}) - draft story map
-\item
-  Flex day (\textbf{May 10th}) - draft handout
+  WP-6 - \textbf{Monday, April 25} - draft story map
 \end{enumerate}
 
-Deliverables for each waypoint are described in the \href{https://slu-soc5650.github.io/final-project}{\textbf{final project guide}}. All waypoints are graded using the ``check'' grading system. Final materials will be due on \textbf{May 17th} (during Finals Week). Final deliverables differ by course section.
+Deliverables for each waypoint are described in the \href{https://slu-soc5650.github.io/final-project}{\textbf{final project guide}}. All waypoints are graded using the ``check'' grading system. Final materials will be due on \textbf{Monday, May 16} (during Finals Week). Final deliverables differ by course section.
 
 \hypertarget{soc-4650}{%
 \subsubsection{SOC 4650}\label{soc-4650}}
 
-If you are enrolled in SOC 4650, you will need to create a story map and a handout that both feature some introductory information and thematic maps of your topic.
+If you are enrolled in SOC 4650, you will need to create a story map that features some introductory information, media, and thematic maps about your topic.
 
 \begin{table}
 
-\caption{\label{tab:unnamed-chunk-4}SOC 4650 Final Project Breakdown}
+\caption{\label{tab:unnamed-chunk-5}SOC 4650 Final Project Breakdown}
 \centering
 \begin{tabular}[t]{llll}
 \toprule
 Assignment & Points & Quantity & Total\\
 \midrule
-Waypoints & 20 pts & x7 & 140 pts\\
-Final Code \& Docs & 70 pts & x1 & 70 pts\\
-Final Storymap & 70 pts & x1 & 70 pts\\
-Final Handout & 30 pts & x1 & 30 pts\\
+Waypoints & 20 pts & x6 & 120 pts\\
+Final Code \& Docs & 80 pts & x1 & 80 pts\\
+Final Storymap & 110 pts & x1 & 110 pts\\
 \bottomrule
 \end{tabular}
 \end{table}
@@ -613,38 +759,38 @@ Final Handout & 30 pts & x1 & 30 pts\\
 \hypertarget{soc-5650}{%
 \subsubsection{SOC 5650}\label{soc-5650}}
 
-If you are enrolled in SOC 5650, you will also need to create a 3000-4000 word final paper written in the style of an empirical journal article. The following additional deadlines apply:
+If you are enrolled in SOC 5650, you will need to create a story map that features some introductory information, media, and thematic maps about your topic. In addition, you will need to write a 3000-4000 word final paper written in the style of an empirical journal article. The following additional deadlines apply:
 
 \begin{enumerate}
 \def\labelenumi{\arabic{enumi}.}
 \tightlist
 \item
-  Meeting 05 (\textbf{March 1st}) - annotated Bibliography with a minimum of fifteen peer reviewed sources
+  WP-G1 - \textbf{Monday, February 21} - annotated Bibliography with a minimum of fifteen peer reviewed sources
 \item
-  Meeting 11 (\textbf{April 12th}) - draft paper due (graded as part of your participation grade)
+  WP-G2 - \textbf{Monday, April 11} - draft paper due
 \item
-  Meeting 12 (\textbf{April 19th}) - peer reviews of the draft paper and analysis development due as a GitHub issue in partner's final project repository (graded as part of your participation grade)
+  WP-G3 - \textbf{Wednesday, April 20} - peer reviews of the draft paper and analysis development due as a GitHub issue in partner's final project repository (graded as part of your draft paper grade)
 \item
-  The final paper is due \textbf{May 17th} along with the rest of the final project
+  The final paper is due \textbf{Monday, May 16} along with the rest of the final project.
 \end{enumerate}
 
 Grading for SOC 5650 is broken down as follows:
 
 \begin{table}
 
-\caption{\label{tab:unnamed-chunk-5}SOC 5650 Final Project Breakdown}
+\caption{\label{tab:unnamed-chunk-6}SOC 5650 Final Project Breakdown}
 \centering
 \begin{tabular}[t]{llll}
 \toprule
 Assignment & Points & Quantity & Total\\
 \midrule
-Waypoints & 20 pts & x7 & 140 pts\\
-Annotated Bibliography & 25 pts & x1 & 25 pts\\
+Waypoints & 20 pts & x6 & 120 pts\\
+Annotated Bibliography & 20 pts & x1 & 20 pts\\
+Draft Paper & 20 pts & x1 & 20 pts\\
 Final Code \& Docs & 40 pts & x1 & 40 pts\\
-Final Storymap & 40 pts & x1 & 40 pts\\
-Final Handout & 25 pts & x1 & 25 pts\\
+Final Storymap & 55 pts & x1 & 55 pts\\
 \addlinespace
-Final Paper & 40 pts & x1 & 40 pts\\
+Final Paper & 55 pts & x1 & 55 pts\\
 \bottomrule
 \end{tabular}
 \end{table}
@@ -669,7 +815,9 @@ The syllabus agreement at the end of the Student Information Sheet includes an a
 \hypertarget{late-work}{%
 \subsection{Late Work}\label{late-work}}
 
-Once the class begins, any assignments submitted will be treated as late. Assignments handed in within 24-hours of the beginning of class will have 15\% deducted from the grade. I will deduct 15\% per day for the next two 24-hour periods that assignments are late. After 72 hours, I will not accept late work. If you cannot attend class because of personal illness, a family issue, jury duty, an athletic match, or a religious observance, you must contact me beforehand to discuss alternate submission of work.
+Once the class begins, any assignments submitted will be treated as late. Assignments handed in within 24-hours of the beginning of class will have 15\% deducted from the grade. I will deduct 15\% per day for the next two 24-hour periods that assignments are late. After 72 hours, I accept late work at half credit. It is imperative that you avoid missing assignments. They build upon each other, and students can easily find themselves weeks behind on coursework in this class.
+
+If you cannot attend class because of personal illness, a family issue, jury duty, an athletic match, or a religious observance, you must contact me beforehand to discuss alternate submission of work.
 
 \hypertarget{extra-credit}{%
 \section{Extra Credit}\label{extra-credit}}
@@ -687,7 +835,7 @@ I use a point system for calculating grades. The following table gives the weigh
 
 \begin{table}
 
-\caption{\label{tab:unnamed-chunk-6}SOC 4650 and 5650 Points Breakdown}
+\caption{\label{tab:unnamed-chunk-7}SOC 4650 and 5650 Points Breakdown}
 \centering
 \begin{tabular}[t]{lllll}
 \toprule
@@ -706,7 +854,7 @@ Final grades will be calculated by taking the sum of all points earned and divid
 following table:
 
 \begin{table}
-\caption{\label{tab:unnamed-chunk-7}Course Grading Scale}
+\caption{\label{tab:unnamed-chunk-8}Course Grading Scale}
 
 \centering
 \begin{tabular}[t]{lll}
@@ -754,34 +902,32 @@ The following is a high-level schedule that details the general topic covered by
 
 \begin{table}
 
-\caption{\label{tab:unnamed-chunk-1}SOC 4650 and 5650 Course Overview}
+\caption{\label{tab:unnamed-chunk-2}SOC 4650/5650 Course Overview}
 \centering
 \begin{tabular}[t]{llll}
 \toprule
 Module & Meeting & Date & Title\\
 \midrule
-1 &  &  & **Course Introduction**\\
-1 & 01 & February 1st & Course Introduction\\
-1 & 02 & February 8th & Map Production Basics\\
-1 & 03 & February 15th & Cartography 101\\
-2 &  &  & **Data Cleaning**\\
+**1** &  &  & **Getting Started**\\
+ & 1-1 & Monday, January 24 & Course Introduction\\
+ & 1-2 & Monday, January 31 & Map Production Basics\\
+ & 1-3 & Monday, February 7 & Cartography 101\\
+**2** &  &  & **Data Cleaning**\\
 \addlinespace
-2 & 04 & February 22nd & Data Cleaning Basics\\
-2 & 05 & March 1st & Combining Data Sources\\
-3 &  &  & **Geoprocessing**\\
-3 & 06 & March 8th & Working with Map Projections\\
-3 & 07 & March 15th & Intersect, Select, and Aggregate\\
+ & 2-1 & Monday, February 14 & Data Cleaning Basics\\
+ & 2-2 & Monday, February 21 & Combining Data Sources\\
+**3** &  &  & **Geoprocessing**\\
+ & 3-1 & Monday, February 28 & Working with Map Projections\\
+ & 3-2 & Monday, March 7 & Intersect, Select, and Aggregate\\
 \addlinespace
-3 & 08 & March 22nd & Union, Dissolve, and Merge\\
-4 &  &  & **Map Products with ArcGIS**\\
-4 & 09 & March 29th & ArcGIS Online\\
-4 & 10 & April 5th & Story Maps, Part 1\\
-4 & 11 & April 12th & Story Maps, Part 2\\
+ & 3-3 & Monday, March 21 & Union, Dissolve, and Merge\\
+**4** &  &  & **Map Products**\\
+ & 4-1 & Monday, March 28 & ArcGIS Online\\
+ & 4-2 & Monday, April 4 & Story Maps, Part 1\\
+ & 4-3 & Monday, April 11 & Story Maps, Part 2\\
 \addlinespace
-5 &  &  & **Map Products with R**\\
-5 & 12 & April 19th & Web Mapping with leaflet\\
-5 & 13 & April 26th & Static Map Layouts with tmap\\
-5 & 14 & May 3rd & Handouts with RMarkdown\\
+ & 4-4 & Monday, April 25 & Print Maps, Part 1\\
+ & 4-5 & Monday, May 2 & Print Maps, Part 2\\
 \bottomrule
 \end{tabular}
 \end{table}
@@ -789,29 +935,24 @@ Module & Meeting & Date & Title\\
 \hypertarget{scheduling-notes}{%
 \subsection{Scheduling Notes}\label{scheduling-notes}}
 
-The course schedule may change as it depends on the progress of the class and the challenges we are confronted by this semester. The web version of this document will be updated to reflect any alterations, but the .pdf version will remain unaltered.
+The course schedule may change as it depends on the progress of the class and the challenges we are confronted by this semester. The web version of this document will be updated to reflect any alterations, but the \texttt{.pdf} version will remain unaltered.
 
-No class activities are scheduled for \textbf{May 10th}. This is a ``flex day,'' which I have left without a scheduled plan to accommodate changes due to COVID-19. If we have to reschedule class days, this date will be used before we begin to remove content from the course plan. I will provide updates on my plans for both of these days as the semester progresses.
+This semester, we will not have class on \textbf{March 15th} and \textbf{April 18th} because they fall on University breaks. Additionally, no class activities are scheduled for \textbf{May 9th}. This is a \textbf{``flex day,''} which I have left without a scheduled plan to accommodate changes due to COVID-19. If we have to reschedule class days, this date will be used before we begin to remove content from the course plan. I will provide updates on my plans for this day as the semester progresses.
+
+Additionally, evening classes are often held on the Monday after Easter, which falls on \textbf{April 18th} this year. If we have already used the flex day, I may elect to hold class that evening.
 
 \hypertarget{meeting-schedule}{%
 \chapter{Meeting Schedule}\label{meeting-schedule}}
 
-Select a module from the menu to see details about topics, readings, and assignments. Additional notes and links to course materials are available through Blackboard, which has dedicated folders for each module and Meeting.
+Select a module from the menu to see details about topics, readings, and assignments. Additional notes and links to course materials are available through Canvas, which has dedicated folders for each module and Meeting.
 
-\begin{rmdwarning}
-I am in the midst of making significant revisions to this class from
-prior years because of the modifications teaching it remotely entails.
-The remainder of the reading list will be available during the week of
-February 1st.
-\end{rmdwarning}
+\hypertarget{module-1---getting-started}{%
+\section*{Module 1 - Getting Started}\label{module-1---getting-started}}
+\addcontentsline{toc}{section}{Module 1 - Getting Started}
 
-\hypertarget{module-1---course-introduction}{%
-\section*{Module 1 - Course Introduction}\label{module-1---course-introduction}}
-\addcontentsline{toc}{section}{Module 1 - Course Introduction}
-
-\hypertarget{meeting-01---monday-february-1---course-introduction}{%
-\subsection*{Meeting 01 - Monday, February 1 - Course Introduction}\label{meeting-01---monday-february-1---course-introduction}}
-\addcontentsline{toc}{subsection}{Meeting 01 - Monday, February 1 - Course Introduction}
+\hypertarget{meeting-1-1---monday-january-24---course-introduction}{%
+\subsection*{Meeting 1-1 - Monday, January 24 - Course Introduction}\label{meeting-1-1---monday-january-24---course-introduction}}
+\addcontentsline{toc}{subsection}{Meeting 1-1 - Monday, January 24 - Course Introduction}
 
 \begin{itemize}
 \tightlist
@@ -821,7 +962,7 @@ February 1st.
   \begin{itemize}
   \tightlist
   \item
-    Complete the Course Onboarding tasks (see Blackboard - Module 1 \textgreater{} Course Onboarding)
+    Complete the Course Onboarding tasks (see Canvas - Modules \textgreater{} Course Onboarding)
   \item
     Complete the Meeting 01 preparatory readings, videos, and entry ticket
 
@@ -834,7 +975,7 @@ February 1st.
     \item
       Healy, Kieran. 2018. ``Introduction.'' In \emph{The plain person's guide to plain text}. (Link)
     \item
-      Entry Ticket 01 (Link)
+      Entry Ticket 1-1 (Link)
     \end{itemize}
   \end{itemize}
 \item
@@ -843,9 +984,9 @@ February 1st.
   \begin{itemize}
   \tightlist
   \item
-    Complete Lab 01 - A Simple Interactive Map
+    Complete Lab 1-1 - A Simple Interactive Map (GitHub)
   \item
-    Read through the Final Project instructions and draft your initial memo
+    Read through the Final Project instructions (Link) and draft your initial memo (Canvas)
   \end{itemize}
 \item
   \textbf{Optional Additional Readings:}
@@ -865,9 +1006,9 @@ February 1st.
 
 \begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
 
-\hypertarget{meeting-02---monday-february-8---map-production-basics}{%
-\subsection*{Meeting 02 - Monday, February 8 - Map Production Basics}\label{meeting-02---monday-february-8---map-production-basics}}
-\addcontentsline{toc}{subsection}{Meeting 02 - Monday, February 8 - Map Production Basics}
+\hypertarget{meeting-1-2---monday-january-31---map-production-basics}{%
+\subsection*{Meeting 1-2 - Monday, January 31 - Map Production Basics}\label{meeting-1-2---monday-january-31---map-production-basics}}
+\addcontentsline{toc}{subsection}{Meeting 1-2 - Monday, January 31 - Map Production Basics}
 
 \begin{itemize}
 \tightlist
@@ -877,20 +1018,26 @@ February 1st.
   \begin{itemize}
   \tightlist
   \item
-    Complete Lab-01 from last week
-  \item
-    Complete the Meeting 02 preparatory videos and entry ticket (via Blackboard)
+    \textbf{\emph{From prior meetings:}}
 
     \begin{itemize}
     \tightlist
     \item
-      Prep Video A - Analysis Development
+      Complete Lab 1-1 from last week
+    \end{itemize}
+  \item
+    \textbf{\emph{For this meeting:}}
+
+    \begin{itemize}
+    \tightlist
     \item
-      Prep Video B - Cartography Basics
+      Prep Video A - Analysis Development (Canvas)
     \item
-      Submit final project memo (\href{https://slu-soc5650.github.io/final-project/topic-data-selection.html}{Link})
+      Prep Video B - Cartography Basics (Canvas)
     \item
-      Entry Ticket 02
+      Read through the Final Project instructions (Link) and draft your initial memo (Canvas)
+    \item
+      Entry Ticket 1-2 (Canvas)
     \end{itemize}
   \end{itemize}
 \item
@@ -899,7 +1046,7 @@ February 1st.
   \begin{itemize}
   \tightlist
   \item
-    Complete Lab-02
+    Complete Lab 1-2 (GitHub)
   \item
     Follow-up with Chris in your Final Project repo about any outstanding memo questions
   \end{itemize}
@@ -917,9 +1064,9 @@ February 1st.
 
 \begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
 
-\hypertarget{meeting-03---monday-february-15---cartography-101}{%
-\subsection*{Meeting 03 - Monday, February 15 - Cartography 101}\label{meeting-03---monday-february-15---cartography-101}}
-\addcontentsline{toc}{subsection}{Meeting 03 - Monday, February 15 - Cartography 101}
+\hypertarget{meeting-1-3---monday-february-7---cartography-101}{%
+\subsection*{Meeting 1-3 - Monday, February 7 - Cartography 101}\label{meeting-1-3---monday-february-7---cartography-101}}
+\addcontentsline{toc}{subsection}{Meeting 1-3 - Monday, February 7 - Cartography 101}
 
 \begin{itemize}
 \tightlist
@@ -929,37 +1076,47 @@ February 1st.
   \begin{itemize}
   \tightlist
   \item
-    Complete Lab-02 from last week
-  \item
-    Complete the Meeting 03 preparatory videos, readings, and entry ticket (via Blackboard)
+    \textbf{\emph{From prior meetings:}}
 
     \begin{itemize}
     \tightlist
     \item
-      Prep Video A - Visual Contrast
+      Complete Lab 1-2 from last week
+    \end{itemize}
+  \item
+    \textbf{\emph{For this meeting:}}
+
+    \begin{itemize}
+    \tightlist
     \item
-      Prep Video B - Working with Color (1)
+      Prep Video A - Visual Contrast (Canvas)
     \item
-      Prep Video C - Working with Color (2)
+      Prep Video B - Color Theory (Canvas)
+    \item
+      Prep Video C - Working with Color (Canvas)
     \item
       Brewer, \emph{Designing Better Maps}, Chapters 7 and 8
     \item
-      Entry Ticket 03
+      Entry Ticket 1-3 (Canvas)
     \end{itemize}
   \end{itemize}
 \item
   \textbf{After Class:}
-\item
-  Complete Lab-03
+
+  \begin{itemize}
+  \tightlist
+  \item
+    Complete Lab 1-3 (GitHub)
+  \end{itemize}
 \end{itemize}
 
 \hypertarget{module-2---data-cleaning}{%
 \section*{Module 2 - Data Cleaning}\label{module-2---data-cleaning}}
 \addcontentsline{toc}{section}{Module 2 - Data Cleaning}
 
-\hypertarget{meeting-04---monday-february-22---data-cleaning-basics}{%
-\subsection*{Meeting 04 - Monday, February 22 - Data Cleaning Basics}\label{meeting-04---monday-february-22---data-cleaning-basics}}
-\addcontentsline{toc}{subsection}{Meeting 04 - Monday, February 22 - Data Cleaning Basics}
+\hypertarget{meeting-2-1---monday-february-14---data-cleaning-basics}{%
+\subsection*{Meeting 2-1 - Monday, February 14 - Data Cleaning Basics}\label{meeting-2-1---monday-february-14---data-cleaning-basics}}
+\addcontentsline{toc}{subsection}{Meeting 2-1 - Monday, February 14 - Data Cleaning Basics}
 
 \begin{itemize}
 \tightlist
@@ -974,7 +1131,7 @@ February 1st.
     \begin{itemize}
     \tightlist
     \item
-      Complete Lab-03 from last week
+      Complete Lab 1-3 from last week
     \end{itemize}
   \item
     \textbf{\emph{For this meeting:}}
@@ -982,17 +1139,17 @@ February 1st.
     \begin{itemize}
     \tightlist
     \item
-      Prep Video A - Types of Data and Levels of Measurement (Blackboard)
+      Prep Video A - Types of Data and Levels of Measurement (Canvas)
     \item
-      Prep Video B - Tidy Data (Blackboard)
+      Prep Video B - Tidy Data (Canvas)
     \item
-      Prep Video C - Verbs for Data Cleaning (1) (Blackboard)
+      Prep Video C - Verbs for Data Cleaning (1) (Canvas)
     \item
-      Prep Video D - Verbs for Data Cleaning (2) (Blackboard)
+      Prep Video D - Verbs for Data Cleaning (2) (Canvas)
     \item
       Brewer, \emph{Designing Better Maps}, Chapter 1, pp 1-6
     \item
-      Entry Ticket 04 (Blackboard)
+      Entry Ticket 2-1 (Canvas)
     \end{itemize}
   \end{itemize}
 \item
@@ -1001,17 +1158,17 @@ February 1st.
   \begin{itemize}
   \tightlist
   \item
-    Complete Lab-04 (GitHub)
+    Complete Lab 2-1 (GitHub)
   \item
-    Final Project WP-02 - Data Cleaning (due in two meetings)
+    Final Project WP-2 - Data Cleaning (due in two meetings; GitHub)
   \end{itemize}
 \end{itemize}
 
 \begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
 
-\hypertarget{meeting-05---monday-march-1---combining-data-sources}{%
-\subsection*{Meeting 05 - Monday, March 1 - Combining Data Sources}\label{meeting-05---monday-march-1---combining-data-sources}}
-\addcontentsline{toc}{subsection}{Meeting 05 - Monday, March 1 - Combining Data Sources}
+\hypertarget{meeting-2-2---monday-february-21---combining-data-sources}{%
+\subsection*{Meeting 2-2 - Monday, February 21 - Combining Data Sources}\label{meeting-2-2---monday-february-21---combining-data-sources}}
+\addcontentsline{toc}{subsection}{Meeting 2-2 - Monday, February 21 - Combining Data Sources}
 
 \begin{itemize}
 \tightlist
@@ -1026,7 +1183,7 @@ February 1st.
     \begin{itemize}
     \tightlist
     \item
-      Complete Lab-04 from last week
+      Complete Lab 2-1 from last week
     \end{itemize}
   \item
     \textbf{\emph{For this meeting:}}
@@ -1034,15 +1191,17 @@ February 1st.
     \begin{itemize}
     \tightlist
     \item
-      Prep Video A - Table Joins (Blackboard)
+      Prep Video A - Table Joins (Canvas)
     \item
-      Prep Video B - Accessing Census Geometric Data (Blackboard)
+      Prep Video B - Census Geography (Canvas)
     \item
-      Prep Video C - Accessing Census Tabular Data (Blackboard)
+      Prep Video C - Census TIGER/Line Data (Canvas)
+    \item
+      Prep Video D - Census Demographic Data (Canvas)
     \item
       Brewer, \emph{Designing Better Maps}, Chapter 1, pp 6-16
     \item
-      Entry Ticket 05 (Blackboard)
+      Entry Ticket 2-2 (Canvas)
     \end{itemize}
   \end{itemize}
 \item
@@ -1051,13 +1210,13 @@ February 1st.
   \begin{itemize}
   \tightlist
   \item
-    Complete Lab-05 (GitHub)
+    Complete Lab 2-2 (GitHub)
   \item
-    Final Project WP-02 - Data Cleaning
+    Final Project WP-2 - Data Cleaning
   \item
-    Final Project WP-03 - Combining Data Sources (due in two weeks)
+    Final Project WP-3 - Combining Data Sources (due in two meetings)
   \item
-    Final Project Annotated Bibliography (due next week; SOC 5650 students only)
+    Final Project WP-G1 - Annotated Bibliography (due next week; SOC 5650 students only; Canvas)
   \end{itemize}
 \end{itemize}
 
@@ -1065,9 +1224,9 @@ February 1st.
 \section*{Module 3 - Geoprocessing}\label{module-3---geoprocessing}}
 \addcontentsline{toc}{section}{Module 3 - Geoprocessing}
 
-\hypertarget{meeting-06---monday-march-8---working-with-map-projections}{%
-\subsection*{Meeting 06 - Monday, March 8 - Working with Map Projections}\label{meeting-06---monday-march-8---working-with-map-projections}}
-\addcontentsline{toc}{subsection}{Meeting 06 - Monday, March 8 - Working with Map Projections}
+\hypertarget{meeting-3-1---monday-february-28---working-with-map-projections}{%
+\subsection*{Meeting 3-1 - Monday, February 28 - Working with Map Projections}\label{meeting-3-1---monday-february-28---working-with-map-projections}}
+\addcontentsline{toc}{subsection}{Meeting 3-1 - Monday, February 28 - Working with Map Projections}
 
 \begin{itemize}
 \tightlist
@@ -1082,9 +1241,9 @@ February 1st.
     \begin{itemize}
     \tightlist
     \item
-      Complete Lab-05 from last week
+      Complete Lab 2-2 from last week
     \item
-      Complete Final Project WP-02 and (if in SOC 5650) the Annotated Bibliography
+      Complete Final Project WP-2 and (if in SOC 5650) the Annotated Bibliography
     \end{itemize}
   \item
     \textbf{\emph{For this meeting:}}
@@ -1092,13 +1251,15 @@ February 1st.
     \begin{itemize}
     \tightlist
     \item
-      Prep Video A - Projections (1) (Blackboard)
+      Prep Video A - Projections (1) (Canvas)
     \item
-      Prep Video B - Projections (2) (Blackboard)
+      Prep Video B - Projections (2) (Canvas)
+    \item
+      Gorr and Kurland, TBA
     \item
       Brewer, \emph{Designing Better Maps}, Chapter 1, pp 16-20
     \item
-      Entry Ticket 06 (Blackboard)
+      Entry Ticket 3-1 (Canvas)
     \end{itemize}
   \end{itemize}
 \item
@@ -1107,19 +1268,19 @@ February 1st.
   \begin{itemize}
   \tightlist
   \item
-    Complete Lab-06 (GitHub)
+    Complete Lab 3-1 (GitHub)
   \item
-    Final Project WP-03 - Combining Data Sources
+    Final Project WP-3 - Combining Data Sources
   \item
-    Final Project WP-04 - Projecting Data (due in two meetings)
+    Final Project WP-4 - Projecting Data (due in two meetings)
   \end{itemize}
 \end{itemize}
 
 \begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
 
-\hypertarget{meeting-07---monday-march-15---intersect-select-and-aggregate}{%
-\subsection*{Meeting 07 - Monday, March 15 - Intersect, Select, and Aggregate}\label{meeting-07---monday-march-15---intersect-select-and-aggregate}}
-\addcontentsline{toc}{subsection}{Meeting 07 - Monday, March 15 - Intersect, Select, and Aggregate}
+\hypertarget{meeting-3-2---monday-march-7---intersect-select-and-aggregate}{%
+\subsection*{Meeting 3-2 - Monday, March 7 - Intersect, Select, and Aggregate}\label{meeting-3-2---monday-march-7---intersect-select-and-aggregate}}
+\addcontentsline{toc}{subsection}{Meeting 3-2 - Monday, March 7 - Intersect, Select, and Aggregate}
 
 \begin{itemize}
 \tightlist
@@ -1134,9 +1295,9 @@ February 1st.
     \begin{itemize}
     \tightlist
     \item
-      Complete Lab-06 from last week
+      Complete Lab 3-1 from last week
     \item
-      Complete Final Project WP-03
+      Complete Final Project WP-3
     \end{itemize}
   \item
     \textbf{\emph{For this meeting:}}
@@ -1144,15 +1305,15 @@ February 1st.
     \begin{itemize}
     \tightlist
     \item
-      Prep Video A - Intersect (Blackboard)
+      Prep Video A - Intersect (Canvas)
     \item
-      Prep Video B - Select (Blackboard)
+      Prep Video B - Aggregate (Canvas)
     \item
-      Prep Video C - Aggregate (Blackboard)
+      Gorr and Kurland, TBA
     \item
       Brewer, \emph{Designing Better Maps}, Chapter 2
     \item
-      Entry Ticket 07 (Blackboard)
+      Entry Ticket 3-2 (Canvas)
     \end{itemize}
   \end{itemize}
 \item
@@ -1161,17 +1322,17 @@ February 1st.
   \begin{itemize}
   \tightlist
   \item
-    Complete Lab-07 (GitHub)
+    Complete Lab 3-2 (GitHub)
   \item
-    Final Project WP-04 - Projecting Data
+    Final Project WP-4 - Projecting Data
   \end{itemize}
 \end{itemize}
 
 \begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
 
-\hypertarget{meeting-08---monday-march-22---union-dissolve-and-merge}{%
-\subsection*{Meeting 08 - Monday, March 22 - Union, Dissolve, and Merge}\label{meeting-08---monday-march-22---union-dissolve-and-merge}}
-\addcontentsline{toc}{subsection}{Meeting 08 - Monday, March 22 - Union, Dissolve, and Merge}
+\hypertarget{meeting-3-3---monday-march-21---bind-dissolve-and-process}{%
+\subsection*{Meeting 3-3 - Monday, March 21 - Bind, Dissolve, and Process}\label{meeting-3-3---monday-march-21---bind-dissolve-and-process}}
+\addcontentsline{toc}{subsection}{Meeting 3-3 - Monday, March 21 - Bind, Dissolve, and Process}
 
 \begin{itemize}
 \tightlist
@@ -1186,9 +1347,9 @@ February 1st.
     \begin{itemize}
     \tightlist
     \item
-      Complete Lab-07 from last week
+      Complete Lab 3-2 from last week
     \item
-      Complete Final Project WP-04
+      Complete Final Project WP-4
     \end{itemize}
   \item
     \textbf{\emph{For this meeting:}}
@@ -1196,15 +1357,17 @@ February 1st.
     \begin{itemize}
     \tightlist
     \item
-      Prep Video A - Union (Blackboard)
+      Prep Video A - Bind (Canvas)
     \item
-      Prep Video B - Dissolve (Blackboard)
+      Prep Video B - Dissolve (Canvas)
     \item
-      Prep Video C - Merge (Blackboard)
+      Prep Video C - Centroids (Canvas)
+    \item
+      Gorr and Kurland, TBA
     \item
       Brewer, \emph{Designing Better Maps}, Chapter 3
     \item
-      Entry Ticket 08 (Blackboard)
+      Entry Ticket 3-3 (Canvas)
     \end{itemize}
   \end{itemize}
 \item
@@ -1213,19 +1376,19 @@ February 1st.
   \begin{itemize}
   \tightlist
   \item
-    Complete Lab-08 (GitHub)
+    Complete Lab 3-3 (GitHub)
   \item
-    Final Project WP-05 - Geoprocessing (due in two weeks)
+    Final Project WP-5 - Geoprocessing (due in two meetings)
   \end{itemize}
 \end{itemize}
 
-\hypertarget{module-4---map-products-with-arcgis}{%
-\section*{Module 4 - Map Products with ArcGIS}\label{module-4---map-products-with-arcgis}}
-\addcontentsline{toc}{section}{Module 4 - Map Products with ArcGIS}
+\hypertarget{module-4---map-products}{%
+\section*{Module 4 - Map Products}\label{module-4---map-products}}
+\addcontentsline{toc}{section}{Module 4 - Map Products}
 
-\hypertarget{meeting-09---monday-march-29---arcgis-online}{%
-\subsection*{Meeting 09 - Monday, March 29 - ArcGIS Online}\label{meeting-09---monday-march-29---arcgis-online}}
-\addcontentsline{toc}{subsection}{Meeting 09 - Monday, March 29 - ArcGIS Online}
+\hypertarget{meeting-4-1---monday-march-28---arcgis-online}{%
+\subsection*{Meeting 4-1 - Monday, March 28 - ArcGIS Online}\label{meeting-4-1---monday-march-28---arcgis-online}}
+\addcontentsline{toc}{subsection}{Meeting 4-1 - Monday, March 28 - ArcGIS Online}
 
 \begin{itemize}
 \tightlist
@@ -1240,7 +1403,7 @@ February 1st.
     \begin{itemize}
     \tightlist
     \item
-      Complete Lab-08 from last week (GitHub)
+      Complete Lab 3-3 from last week
     \end{itemize}
   \item
     \textbf{\emph{For this meeting:}}
@@ -1248,11 +1411,11 @@ February 1st.
     \begin{itemize}
     \tightlist
     \item
-      Prep Video A - Overview of ArcGIS Online (Blackboard)
+      Gorr and Kurland, TBA
     \item
       Brewer, \emph{Designing Better Maps}, Chapter 4
     \item
-      Entry Ticket 09 (Blackboard)
+      Entry Ticket 4-1 (Canvas)
     \end{itemize}
   \end{itemize}
 \item
@@ -1261,17 +1424,17 @@ February 1st.
   \begin{itemize}
   \tightlist
   \item
-    Complete Lab-09 (GitHub)
+    Complete Lab 4-1 (GitHub)
   \item
-    Final Project WP-05 - Geoprocessing
+    Final Project WP-5 - Geoprocessing
   \end{itemize}
 \end{itemize}
 
 \begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
 
-\hypertarget{meeting-10---monday-april-5---story-maps-part-1}{%
-\subsection*{Meeting 10 - Monday, April 5 - Story Maps, Part 1}\label{meeting-10---monday-april-5---story-maps-part-1}}
-\addcontentsline{toc}{subsection}{Meeting 10 - Monday, April 5 - Story Maps, Part 1}
+\hypertarget{meeting-4-2---monday-april-4---story-maps-part-1}{%
+\subsection*{Meeting 4-2 - Monday, April 4 - Story Maps, Part 1}\label{meeting-4-2---monday-april-4---story-maps-part-1}}
+\addcontentsline{toc}{subsection}{Meeting 4-2 - Monday, April 4 - Story Maps, Part 1}
 
 \begin{itemize}
 \tightlist
@@ -1286,9 +1449,9 @@ February 1st.
     \begin{itemize}
     \tightlist
     \item
-      Complete Lab-09 from last week (GitHub)
+      Complete Lab 4-1 from last week
     \item
-      Final Project WP-05
+      Final Project WP-5
     \end{itemize}
   \item
     \textbf{\emph{For this meeting:}}
@@ -1296,11 +1459,11 @@ February 1st.
     \begin{itemize}
     \tightlist
     \item
-      Prep Video A - Overview of ArcGIS Storymaps (Blackboard)
+      Gorr and Kurland, TBA
     \item
       Brewer, \emph{Designing Better Maps}, Chapter 5
     \item
-      Entry Ticket 10 (Blackboard)
+      Entry Ticket 4-2 (Canvas)
     \end{itemize}
   \end{itemize}
 \item
@@ -1309,17 +1472,17 @@ February 1st.
   \begin{itemize}
   \tightlist
   \item
-    Complete Lab-10 (GitHub)
+    Complete Lab 4-2 (GitHub)
   \item
-    Final Project Draft Paper (SOC 5650 students only)
+    Final Project WP-G2 - Draft Paper (SOC 5650 students only)
   \end{itemize}
 \end{itemize}
 
 \begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
 
-\hypertarget{meeting-11---monday-april-12---story-maps-part-2}{%
-\subsection*{Meeting 11 - Monday, April 12 - Story Maps, Part 2}\label{meeting-11---monday-april-12---story-maps-part-2}}
-\addcontentsline{toc}{subsection}{Meeting 11 - Monday, April 12 - Story Maps, Part 2}
+\hypertarget{meeting-4-3---monday-april-11---story-maps-part-2}{%
+\subsection*{Meeting 4-3 - Monday, April 11 - Story Maps, Part 2}\label{meeting-4-3---monday-april-11---story-maps-part-2}}
+\addcontentsline{toc}{subsection}{Meeting 4-3 - Monday, April 11 - Story Maps, Part 2}
 
 \begin{itemize}
 \tightlist
@@ -1334,9 +1497,9 @@ February 1st.
     \begin{itemize}
     \tightlist
     \item
-      Complete Lab-10 from last week (GitHub)
+      Complete Lab 4-2 from last week (GitHub)
     \item
-      Final Project Draft Paper (SOC 5650 students only)
+      Final Project WP-G2 - Draft Paper (SOC 5650 students only)
     \end{itemize}
   \item
     \textbf{\emph{For this meeting:}}
@@ -1344,11 +1507,11 @@ February 1st.
     \begin{itemize}
     \tightlist
     \item
-      Prep Video A - ArcGIS Storymap Details (Blackboard)
+      Gorr and Kurland, TBA
     \item
       Brewer, \emph{Designing Better Maps}, Chapter 6
     \item
-      Entry Ticket 11 (Blackboard)
+      Entry Ticket 4-3 (Canvas)
     \end{itemize}
   \end{itemize}
 \item
@@ -1357,21 +1520,19 @@ February 1st.
   \begin{itemize}
   \tightlist
   \item
-    Complete Lab-11 (GitHub)
+    Complete Lab 4-3 (GitHub)
   \item
-    Final Project Peer Review (SOC 5650 students only)
+    Final Project WP-G3 - Peer Review (SOC 5650 students only; due \textbf{Wednesday, April 20})
   \item
-    Final Project WP-06 - Draft Story Map (due in two weeks)
+    Final Project WP-6 - Draft Story Map
   \end{itemize}
 \end{itemize}
 
-\hypertarget{module-5---map-products-with-r}{%
-\section*{Module 5 - Map Products with R}\label{module-5---map-products-with-r}}
-\addcontentsline{toc}{section}{Module 5 - Map Products with R}
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
 
-\hypertarget{meeting-12---monday-april-19---web-mapping-with-leaflet}{%
-\subsection*{Meeting 12 - Monday, April 19 - Web Mapping with leaflet}\label{meeting-12---monday-april-19---web-mapping-with-leaflet}}
-\addcontentsline{toc}{subsection}{Meeting 12 - Monday, April 19 - Web Mapping with leaflet}
+\hypertarget{meeting-4-4---monday-april-25---print-maps-part-1}{%
+\subsection*{Meeting 4-4 - Monday, April 25 - Print Maps, Part 1}\label{meeting-4-4---monday-april-25---print-maps-part-1}}
+\addcontentsline{toc}{subsection}{Meeting 4-4 - Monday, April 25 - Print Maps, Part 1}
 
 \begin{itemize}
 \tightlist
@@ -1386,9 +1547,9 @@ February 1st.
     \begin{itemize}
     \tightlist
     \item
-      Complete Lab-11 from last week (GitHub)
+      Complete Lab 4-3 from last week
     \item
-      Final Project Peer Review (SOC 5650 students only)
+      Final Project WP-6 - Draft Story Map
     \end{itemize}
   \item
     \textbf{\emph{For this meeting:}}
@@ -1396,13 +1557,11 @@ February 1st.
     \begin{itemize}
     \tightlist
     \item
-      Prep Video A - Leaflet Review
-    \item
-      Prep Video B - Concatenating Strings
+      Gorr and Kurland, TBA
     \item
       Brewer, \emph{Designing Better Maps}, Chapter 9
     \item
-      Entry Ticket 12 (Blackboard)
+      Entry Ticket 4-4 (Canvas)
     \end{itemize}
   \end{itemize}
 \item
@@ -1411,17 +1570,15 @@ February 1st.
   \begin{itemize}
   \tightlist
   \item
-    Complete Lab-12 (GitHub)
-  \item
-    Final Project WP-06 - Draft Story Map
+    Complete Lab 4-4 (GitHub)
   \end{itemize}
 \end{itemize}
 
 \begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
 
-\hypertarget{meeting-13---monday-april-26---static-map-lyouts-with-tmap}{%
-\subsection*{Meeting 13 - Monday, April 26 - Static Map Lyouts with tmap}\label{meeting-13---monday-april-26---static-map-lyouts-with-tmap}}
-\addcontentsline{toc}{subsection}{Meeting 13 - Monday, April 26 - Static Map Lyouts with tmap}
+\hypertarget{meeting-4-5---monday-may-2---print-maps-part-2}{%
+\subsection*{Meeting 4-5 - Monday, May 2 - Print Maps, Part 2}\label{meeting-4-5---monday-may-2---print-maps-part-2}}
+\addcontentsline{toc}{subsection}{Meeting 4-5 - Monday, May 2 - Print Maps, Part 2}
 
 \begin{itemize}
 \tightlist
@@ -1436,9 +1593,7 @@ February 1st.
     \begin{itemize}
     \tightlist
     \item
-      Complete Lab-12 from last week (GitHub)
-    \item
-      Final Project WP-06
+      Complete Lab 4-4 from last week
     \end{itemize}
   \item
     \textbf{\emph{For this meeting:}}
@@ -1446,9 +1601,9 @@ February 1st.
     \begin{itemize}
     \tightlist
     \item
-      Prep Video A - tmap Elements
+      Gorr and Kurland, TBA
     \item
-      Entry Ticket 13 (Blackboard)
+      Entry Ticket 4-5 (Canvas)
     \end{itemize}
   \end{itemize}
 \item
@@ -1457,15 +1612,11 @@ February 1st.
   \begin{itemize}
   \tightlist
   \item
-    Complete Lab-14 (GitHub)
+    Complete Lab 4-5 (GitHub)
+  \item
+    Complete all remaining final project steps (due \textbf{Monday, May 16})
   \end{itemize}
 \end{itemize}
-
-\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
-
-\hypertarget{meeting-14---monday-may-3---tbd}{%
-\subsection*{Meeting 14 - Monday, May 3 - TBD}\label{meeting-14---monday-may-3---tbd}}
-\addcontentsline{toc}{subsection}{Meeting 14 - Monday, May 3 - TBD}
 
   \bibliography{book.bib,packages.bib}
 

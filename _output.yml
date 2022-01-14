@@ -5,7 +5,7 @@ bookdown::gitbook:
     toc:
       collapse: section
       before: |
-        <li><strong><a href="https://slu-soc5650.github.io/syllabus/">SOC 4650 and SOC 5650 Syllabus</a></strong></li>
+        <li><strong><a href="https://slu-soc5650.github.io/syllabus/">SOC 4650/5650 Syllabus</a></strong></li>
       after: |
         <li><a href="https://bookdown.org" target="_blank">Published with bookdown</a></li>
     edit: null
