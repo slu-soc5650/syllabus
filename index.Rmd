@@ -21,7 +21,7 @@ description: "This is the syllabus and reading list for Chris's sections of SOC 
 
 ### Course Website {-}
 
-<https://slu-soc5650.github.io>
+<https://canvas.slu.edu>
 
 ### Chris’s Information {-}
 

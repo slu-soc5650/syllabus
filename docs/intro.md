@@ -32,7 +32,7 @@ This course has five intertwined objectives. After completing the course, studen
 
 There are two core documents and resources for this course. This **Syllabus** sets out core expectations and policies for the course - i.e. what is *required* for this course. It includes a **Reading List** that contains topics, readings (both required and optional), and assignment due dates for each week. Once the semester starts, these documents will only be updated if a schedule change is necessary.
 
-In addition to these documents, regular updates will be provided on the [**course website**](https://slu-soc5650.github.io). Each class meeting will have a corresponding page on the site that includes links to handouts, YouTube videos, sample code, and additional descriptions of concepts covered in class. If bugs or issues arise, they will be documented along with solutions here as well. Please check the website regularly for updates and new content.
+In addition to these documents, regular updates will be provided on [**Canvas**](https://canvas.slu.edu). Each class meeting will have a corresponding page on the site that includes links to handouts, YouTube videos, sample code, and additional descriptions of concepts covered in class. If bugs or issues arise, they will be documented along with solutions here as well. We'll also use Canvas for sending out announcements, to host a class message board for questions, and for sharing grades with you all. Please check Canvas regularly for updates and new content.
 
 ## Readings
 
@@ -54,10 +54,7 @@ All readings are listed on the **Reading List** and should be completed before t
 Since we are meeting virtually, you must have access to a computer that you have Administrator rights for so that you can install the software that is needed for the course. Spatial data files tend to be large, and this course will involve tens of gigabytes worth of data. You'll need at least 20GB free on your computer for this course. **If you do not have a computer, or do not have reliable home internet, please let Chris know as soon as possible.**
 
 ## Services
-Over the course of the semester, we'll use two web-based services. Each of these will require you to create an account with a username and password. GitHub will require you to enable [two-factor authentication](https://en.wikipedia.org/wiki/Multi-factor_authentication) as well. I strongly recommend using a [password manager](https://lifehacker.com/5529133/five-best-password-managers).
-
-### Canvas
-<a href = "https://canvas.slu.edu" target = "_blank">**Canvas**</a> will be used for a few different tasks, including for sending out announcements, a class message board for questions, and for sharing grades with you all.
+Over the course of the semester, we'll use a number of web-based services. Each of these will require you to create an account with a username and password. GitHub will require you to enable [two-factor authentication](https://en.wikipedia.org/wiki/Multi-factor_authentication) as well. I strongly recommend using a [password manager](https://lifehacker.com/5529133/five-best-password-managers).
 
 ### Zoom
 We may use <a href = "https://zoom.us" target = "_blank">**Zoom**</a> for some course meetings this semester. You must use Zoom with your SLU account (as opposed to a personal account you may have), and can access Zoom via mySLU. Meeting information is available on Canvas, as are tips for using Zoom successfully.
