@@ -6,8 +6,8 @@
 ]{book}
 \usepackage{amsmath,amssymb}
 \usepackage{lmodern}
-\usepackage{ifxetex,ifluatex}
-\ifnum 0\ifxetex 1\fi\ifluatex 1\fi=0 % if pdftex
+\usepackage{iftex}
+\ifPDFTeX
   \usepackage[T1]{fontenc}
   \usepackage[utf8]{inputenc}
   \usepackage{textcomp} % provide euro and other symbols
@@ -148,7 +148,7 @@
 \usepackage{fancyhdr}
 \renewcommand{\chaptername}{Section}
 \renewcommand\thesection{\Alph{section}}
-\ifluatex
+\ifLuaTeX
   \usepackage{selnolig}  % disable illegal ligatures
 \fi
 \usepackage[]{natbib}
@@ -156,7 +156,7 @@
 
 \title{SOC 4650 \& 5650: Introduction to GIS}
 \author{Christopher Prener, Ph.D.}
-\date{2022-01-14}
+\date{2022-03-06}
 
 \begin{document}
 \maketitle
@@ -1248,7 +1248,9 @@ Select a module from the menu to see details about topics, readings, and assignm
     \item
       Prep Video B - Projections (2) (Canvas)
     \item
-      Gorr and Kurland, TBA
+      Gorr and Kurland, Chapter 1 (for an overview)
+    \item
+      Gorr and Kurland, Chapter 5 (pp.~163-176)
     \item
       Brewer, \emph{Designing Better Maps}, Chapter 1, pp 16-20
     \item
@@ -1302,7 +1304,9 @@ Select a module from the menu to see details about topics, readings, and assignm
     \item
       Prep Video B - Aggregate (Canvas)
     \item
-      Gorr and Kurland, TBA
+      Gorr and Kurland, Chapter 1 (for an overview)
+    \item
+      Gorr and Kurland, Chapter 6 (pp.~204-209; 216-220)
     \item
       Brewer, \emph{Designing Better Maps}, Chapter 2
     \item
@@ -1356,7 +1360,7 @@ Select a module from the menu to see details about topics, readings, and assignm
     \item
       Prep Video C - Centroids (Canvas)
     \item
-      Gorr and Kurland, TBA
+      Gorr and Kurland, Chapter 6 (pp.~200-203; 210-215; 221-226)
     \item
       Brewer, \emph{Designing Better Maps}, Chapter 3
     \item
@@ -1404,7 +1408,7 @@ Select a module from the menu to see details about topics, readings, and assignm
     \begin{itemize}
     \tightlist
     \item
-      Gorr and Kurland, TBA
+      Gorr and Kurland, Chapter 3 (pp.~104-109)
     \item
       Brewer, \emph{Designing Better Maps}, Chapter 4
     \item
@@ -1452,7 +1456,7 @@ Select a module from the menu to see details about topics, readings, and assignm
     \begin{itemize}
     \tightlist
     \item
-      Gorr and Kurland, TBA
+      Gorr and Kurland, Chapter 3 (pp.~109-114)
     \item
       Brewer, \emph{Designing Better Maps}, Chapter 5
     \item
@@ -1499,8 +1503,6 @@ Select a module from the menu to see details about topics, readings, and assignm
 
     \begin{itemize}
     \tightlist
-    \item
-      Gorr and Kurland, TBA
     \item
       Brewer, \emph{Designing Better Maps}, Chapter 6
     \item
@@ -1550,7 +1552,7 @@ Select a module from the menu to see details about topics, readings, and assignm
     \begin{itemize}
     \tightlist
     \item
-      Gorr and Kurland, TBA
+      Gorr and Kurland, Chapter 2
     \item
       Brewer, \emph{Designing Better Maps}, Chapter 9
     \item
@@ -1594,7 +1596,7 @@ Select a module from the menu to see details about topics, readings, and assignm
     \begin{itemize}
     \tightlist
     \item
-      Gorr and Kurland, TBA
+      Gorr and Kurland, Chapter 3 (pp.~83-94)
     \item
       Entry Ticket 4-5 (Canvas)
     \end{itemize}

@@ -115,7 +115,8 @@ Select a module from the menu to see details about topics, readings, and assignm
   * **_For this meeting:_**
     * Prep Video A - Projections (1) (<a href="https://canvas.slu.edu" target="_blank">Canvas</a>)
     * Prep Video B - Projections (2) (<a href="https://canvas.slu.edu" target="_blank">Canvas</a>)
-    * Gorr and Kurland, TBA
+    * Gorr and Kurland, Chapter 1 (for an overview)
+    * Gorr and Kurland, Chapter 5 (pp. 163-176)
     * Brewer, *Designing Better Maps*, Chapter 1, pp 16-20
     * Entry Ticket 3-1 (<a href="https://canvas.slu.edu" target="_blank">Canvas</a>)
 * **After Class:**
@@ -134,7 +135,8 @@ Select a module from the menu to see details about topics, readings, and assignm
   * **_For this meeting:_**
     * Prep Video A - Intersect (<a href="https://canvas.slu.edu" target="_blank">Canvas</a>)
     * Prep Video B - Aggregate (<a href="https://canvas.slu.edu" target="_blank">Canvas</a>)
-    * Gorr and Kurland, TBA
+    * Gorr and Kurland, Chapter 1 (for an overview)
+    * Gorr and Kurland, Chapter 6 (pp. 204-209; 216-220)
     * Brewer, *Designing Better Maps*, Chapter 2
     * Entry Ticket 3-2 (<a href="https://canvas.slu.edu" target="_blank">Canvas</a>)
 * **After Class:**
@@ -153,7 +155,7 @@ Select a module from the menu to see details about topics, readings, and assignm
     * Prep Video A - Bind (<a href="https://canvas.slu.edu" target="_blank">Canvas</a>)
     * Prep Video B - Dissolve (<a href="https://canvas.slu.edu" target="_blank">Canvas</a>)
     * Prep Video C - Centroids (<a href="https://canvas.slu.edu" target="_blank">Canvas</a>)
-    * Gorr and Kurland, TBA
+    * Gorr and Kurland, Chapter 6 (pp. 200-203; 210-215; 221-226)
     * Brewer, *Designing Better Maps*, Chapter 3
     * Entry Ticket 3-3 (<a href="https://canvas.slu.edu" target="_blank">Canvas</a>)
 * **After Class:**
@@ -168,7 +170,7 @@ Select a module from the menu to see details about topics, readings, and assignm
   * **_From prior meetings:_**
     * Complete Lab 3-3 from last week
   * **_For this meeting:_**
-    * Gorr and Kurland, TBA
+    * Gorr and Kurland, Chapter 3 (pp. 104-109)
     * Brewer, *Designing Better Maps*, Chapter 4
     * Entry Ticket 4-1 (<a href="https://canvas.slu.edu" target="_blank">Canvas</a>)
 * **After Class:**
@@ -184,7 +186,7 @@ Select a module from the menu to see details about topics, readings, and assignm
     * Complete Lab 4-1 from last week
     * Final Project WP-5
   * **_For this meeting:_**
-      * Gorr and Kurland, TBA
+      * Gorr and Kurland, Chapter 3 (pp. 109-114)
       * Brewer, *Designing Better Maps*, Chapter 5
       * Entry Ticket 4-2 (<a href="https://canvas.slu.edu" target="_blank">Canvas</a>)
 * **After Class:**
@@ -200,7 +202,6 @@ Select a module from the menu to see details about topics, readings, and assignm
     * Complete Lab 4-2 from last week (<a href="https://www.github.com/slu-soc5650" target="_blank">GitHub</a>)
     * Final Project WP-G2 - Draft Paper (SOC 5650 students only)
   * **_For this meeting:_**
-      * Gorr and Kurland, TBA
       * Brewer, *Designing Better Maps*, Chapter 6
       * Entry Ticket 4-3 (<a href="https://canvas.slu.edu" target="_blank">Canvas</a>)
 * **After Class:**
@@ -217,7 +218,7 @@ Select a module from the menu to see details about topics, readings, and assignm
     * Complete Lab 4-3 from last week
     * Final Project WP-6 - Draft Story Map
   * **_For this meeting:_**
-      * Gorr and Kurland, TBA
+      * Gorr and Kurland, Chapter 2
       * Brewer, *Designing Better Maps*, Chapter 9
       * Entry Ticket 4-4 (<a href="https://canvas.slu.edu" target="_blank">Canvas</a>)
 * **After Class:**
@@ -231,7 +232,7 @@ Select a module from the menu to see details about topics, readings, and assignm
   * **_From prior meetings:_**
     * Complete Lab 4-4 from last week
   * **_For this meeting:_**
-      * Gorr and Kurland, TBA
+      * Gorr and Kurland, Chapter 3 (pp. 83-94)
       * Entry Ticket 4-5 (<a href="https://canvas.slu.edu" target="_blank">Canvas</a>)
 * **After Class:**
    * Complete Lab 4-5 (<a href="https://www.github.com/slu-soc5650" target="_blank">GitHub</a>)
